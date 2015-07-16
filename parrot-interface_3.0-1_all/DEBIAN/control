@@ -1,0 +1,10 @@
+Package: parrot-interface
+Version: 3.0-1
+Architecture: all
+Priority: optional
+Maintainer: Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
+Depends: xinit, xorg, parrot-interface-common, parrot-mate | parrot-gnome | parrot-kde | parrot-lxde | parrot-xfce
+Suggests: parrot-interface-full
+Section: parrot
+Description: Parrot interface metapackage
+ metapackage that installs the graphic interface selected by frozenbox dev team
