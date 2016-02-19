@@ -1,9 +1,9 @@
 Package: parrot-interface
-Version: 3.0-1
+Version: 3.1
 Architecture: all
 Priority: optional
 Maintainer: Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
-Depends: xinit, xorg, parrot-interface-common, parrot-mate | parrot-gnome | parrot-kde | parrot-lxde | parrot-xfce
+Depends: xinit, xorg, parrot-interface-common, parrot-mate | parrot-xfce | parrot-lxde | parrot-kde | parrot-gnome
 Suggests: parrot-interface-full
 Section: parrot
 Description: Parrot interface metapackage
