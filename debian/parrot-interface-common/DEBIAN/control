@@ -1,11 +1,11 @@
 Package: parrot-interface-common
 Source: parrot-interface
-Version: 3.1+parrot1
+Version: 3.1+parrot2
 Architecture: all
 Maintainer: Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
 Installed-Size: 64
 Depends: xinit, xorg, parrot-wallpapers, parrot-themes, parrot-menu, parrot-skel, parrot-update-manager
-Recommends: abiword, bleachbit, bluetooth, bluez, blueman, dconf-editor, debmod, desktop-base, ffmpegthumbnailer, gdebi, gnumeric, gpa, gparted, hexchat, iceweasel-frozenmod, libnotify-send, lightdm-parrot, parrot-conky, parrot-sounds, parrot-welcome, synaptic, ssvnc, xboard, polyglot, crafty, geall, dvd+rw-tools, udftools
+Recommends: abiword, bleachbit, bluetooth, bluez, blueman, dconf-editor, debmod, desktop-base, ffmpegthumbnailer, gdebi, geany, gnumeric, gpa, gparted, hexchat, iceweasel-frozenmod, libnotify-send, lightdm-parrot, parrot-conky, parrot-sounds, parrot-welcome, synaptic, ssvnc, xboard, polyglot, crafty, geall, dvd+rw-tools, udftools
 Suggests: parrot-interface-full
 Section: info
 Priority: optional

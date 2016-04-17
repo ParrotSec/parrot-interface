@@ -1,6 +1,6 @@
 Package: parrot-interface-full
 Source: parrot-interface
-Version: 3.1+parrot1
+Version: 3.1+parrot2
 Architecture: all
 Maintainer: Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
 Installed-Size: 42
