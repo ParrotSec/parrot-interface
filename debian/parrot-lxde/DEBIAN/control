@@ -1,7 +1,7 @@
 Package: parrot-lxde
 Source: parrot-interface
-Version: 3.1+parrot0
-Architecture: amd64
+Version: 3.1+parrot1
+Architecture: all
 Maintainer: Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
 Installed-Size: 42
 Depends: parrot-interface-common, lxde

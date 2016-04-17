@@ -1,7 +1,7 @@
 Package: parrot-gnome
 Source: parrot-interface
-Version: 3.1+parrot0
-Architecture: amd64
+Version: 3.1+parrot1
+Architecture: all
 Maintainer: Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
 Installed-Size: 42
 Depends: parrot-interface-common, gnome-core, gedit, gnome-brave-icon-theme, gnome-shell-extensions, gnome-shell-extension-proxyswitcher, gnome-shell-extension-dashtodock, gnome-shell-extension-refreshwifi, gnome-shell-extension-easyscreencast, gnome-shell-extension-workspacestodock, gnome-tweak-tool, nautilus-pastebin, nautilus-wipe, nautiluscompare, nautilus-gtkhash, gnome-orca, file-roller, gnome-calculator

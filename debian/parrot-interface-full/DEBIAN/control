@@ -1,7 +1,7 @@
 Package: parrot-interface-full
 Source: parrot-interface
-Version: 3.1+parrot0
-Architecture: amd64
+Version: 3.1+parrot1
+Architecture: all
 Maintainer: Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
 Installed-Size: 42
 Recommends: gimp, pidgin, transmission-gtk, hexchat, libreoffice, brasero, totem, rhythmbox, remmina, baobab, seahorse, codeblocks, qtcreator, qconf, qt5-qmake, qt5-default, qmlscene, qtbase5-dev, icedove, enigmail

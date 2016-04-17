@@ -1,3 +1,9 @@
+parrot-interface (3.1+parrot1) testing; urgency=medium
+
+  * Fix architecture generation.
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@frozenbox.org>  Mon, 18 Apr 2016 00:24:05 +0200
+
 parrot-interface (3.1+parrot0) testing; urgency=medium
 
   * Include all the packages related to interface selection.

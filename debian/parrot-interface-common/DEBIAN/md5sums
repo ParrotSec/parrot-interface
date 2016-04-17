@@ -1,5 +1,5 @@
 cd5d1e5ba4e1a734b6b605c370b27e44  lib/systemd/system/postgresql@.service.d/parrot_postgresql.conf
-a51953e40c7adc31190d947ffedc3957  usr/share/doc/parrot-interface-common/changelog.gz
+175aef9d24a736ea497bcc865541b59b  usr/share/doc/parrot-interface-common/changelog.gz
 d32239bcb673463ab874e80d47fae504  usr/share/doc/parrot-interface-common/copyright
 15ff5b64ee1ce2c5547d03650a380598  usr/share/parrot-defaults/.bashrc
 43c49615e32660910612c7e7c9821944  usr/share/parrot-defaults/localstore.rdf

@@ -12,9 +12,6 @@ dh_link
 dh_strip_nondeterminism
 dh_compress
 dh_fixperms
-dh_strip
-dh_makeshlibs
-dh_shlibdeps
 dh_installdeb
 dh_gencontrol
 dh_md5sums
