@@ -1,0 +1,3 @@
+/etc/X11/Xsession.d/52fix-locales
+/etc/X11/Xsession.d/52noautomount
+/etc/xdg/xfce4/terminal/terminalrc

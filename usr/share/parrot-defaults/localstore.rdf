@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- We enable the personal toolbar by default in Parrot -->
+<RDF:RDF xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul">
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#PersonalToolbar"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#PersonalToolbar"
+                   collapsed="false" />
+</RDF:RDF>

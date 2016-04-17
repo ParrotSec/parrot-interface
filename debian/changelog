@@ -1,0 +1,13 @@
+parrot-interface (3.1+parrot0) testing; urgency=medium
+
+  * Include all the packages related to interface selection.
+
+ -- Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>  Sun, 17 Apr 2016 23:12:40 +0400
+
+parrot-welcome (3.0) testing; urgency=high
+
+  * Update for Parrot 3
+  * Debianized package source
+  * Import from previous source style
+
+ -- Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>  Sat, 09 Apr 2016 16:57:01 +0400

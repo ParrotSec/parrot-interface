@@ -1,0 +1,14 @@
+Package: parrot-mate
+Source: parrot-interface
+Version: 3.1+parrot0
+Architecture: amd64
+Maintainer: Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
+Installed-Size: 42
+Depends: mate-core, parrot-interface-common
+Recommends: atril, caja-gksu, caja-image-converter, caja-open-terminal, caja-sendto, caja-share, engrampa, eom, ffmpegthumbnailer, gnumeric, mate-applets, mate-bluetooth, mate-desktop-gnome, mate-indicator-applet, mate-media, mate-netspeed, mate-notification-daemon, mate-power-manager, mate-screensaver, mate-sensors-applet, mate-system-monitor, mate-system-tools, mate-themes, mate-user-share, mate-utils, mozo, network-manager-gnome | wicd, pluma
+Suggests: parrot-interface-full
+Section: info
+Priority: optional
+Homepage: http://www.parrotsec.org/
+Description: Parrot interface metapackage
+ metapackage that installs the graphic interface selected by frozenbox dev team

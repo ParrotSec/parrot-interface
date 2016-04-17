@@ -1,0 +1,16 @@
+etc/*
+etc/xdg/*
+etc/xdg/xfce4/*
+etc/xdg/xfce4/terminal/*
+etc/X11/*
+etc/X11/Xsession.d/*
+usr/*
+usr/share/*
+usr/share/doc/*
+usr/share/doc/parrot-interface-common/*
+usr/share/parrot-defaults/*
+lib/*
+lib/systemd/*
+lib/systemd/system/*
+lib/systemd/system/postgresql@.service.d/*
+
