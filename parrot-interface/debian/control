@@ -21,6 +21,10 @@ Architecture: all
 Depends: xinit, xorg, parrot-wallpapers, parrot-themes, parrot-menu, parrot-skel, parrot-update-manager
 Recommends: abiword, bleachbit, bluetooth, bluez, blueman, dconf-editor, debmod, desktop-base, ffmpegthumbnailer, gdebi, geany, gnumeric, gpa, gparted, hexchat, firefox, xul-ext-noscript, xul-ext-livehttpheaders, xul-ext-https-everywhere, xul-ext-cookie-monster, xul-ext-perspectives, xul-ext-webdeveloper, xul-ext-wot, libnotify-send, lightdm-parrot, parrot-conky, parrot-sounds, parrot-welcome, synaptic, ssvnc, xboard, polyglot, crafty, geall, dvd+rw-tools, udftools
 Suggests: parrot-interface-full
+Conflicts: iceweasel-frozenmod
+Breaks: iceweasel-frozenmod
+Provides: iceweasel-frozenmod
+Includes: iceweasel-frozenmod
 Description: Parrot interface metapackage
  metapackage that installs the graphic interface selected by frozenbox dev team
 
