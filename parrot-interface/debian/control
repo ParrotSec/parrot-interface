@@ -52,7 +52,7 @@ Description: LXDE based Parrot destop
 Package: parrot-mate
 Architecture: all
 Depends: mate-core, parrot-interface-common
-Recommends: atril, caja-gksu, caja-image-converter, caja-open-terminal, caja-sendto, caja-share, engrampa, eom, ffmpegthumbnailer, gnumeric, mate-applets, mate-bluetooth, mate-desktop-gnome, mate-indicator-applet, mate-media, mate-netspeed, mate-notification-daemon, mate-power-manager, mate-screensaver, mate-sensors-applet, mate-system-monitor, mate-system-tools, mate-themes, mate-user-share, mate-utils, mozo, network-manager-gnome | wicd, pluma
+Recommends: atril, caja-gksu, caja-image-converter, caja-open-terminal, caja-sendto, caja-share, caja, engrampa, eom, ffmpegthumbnailer, gnumeric, mate-applets, mate-bluetooth, mate-desktop-gnome, mate-indicator-applet, mate-media, mate-netspeed, mate-notification-daemon, mate-power-manager, mate-screensaver, mate-sensors-applet, mate-system-monitor, mate-system-tools, gtk2-engines, gtk2-engines-murrine, gtk2-engines-pixbuf, librsvg2-common, mate-user-share, mate-utils, mozo, network-manager-gnome | wicd, pluma
 Suggests: parrot-interface-full
 Description: Parrot interface metapackage
  metapackage that installs the graphic interface selected by frozenbox dev team
