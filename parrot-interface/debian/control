@@ -24,7 +24,7 @@ Suggests: parrot-interface-full
 Conflicts: iceweasel-frozenmod
 Breaks: iceweasel-frozenmod
 Provides: iceweasel-frozenmod
-Includes: iceweasel-frozenmod
+Includes: iceweasel-frozenmod, firefox-esr
 Description: Parrot interface metapackage
  metapackage that installs the graphic interface selected by frozenbox dev team
 
