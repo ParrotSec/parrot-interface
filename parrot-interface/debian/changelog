@@ -1,3 +1,9 @@
+parrot-interface (3.1+parrot4) UNRELEASED; urgency=medium
+
+  * Integrate and improve firefox mods
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Wed, 18 May 2016 00:35:08 +0200
+
 parrot-interface (3.1+parrot3) testing; urgency=high
 
   * Fix postgresql startup bug
