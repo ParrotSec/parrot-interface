@@ -1,3 +1,9 @@
+parrot-interface (3.2+parrot4) testing; urgency=medium
+
+  * Minor fixes
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Wed, 18 May 2016 01:10:44 +0200
+
 parrot-interface (3.2+parrot3) testing; urgency=medium
 
   * Fix firefox-esr conflicts
