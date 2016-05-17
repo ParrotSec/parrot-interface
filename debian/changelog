@@ -1,3 +1,9 @@
+parrot-interface (3.1+parrot3) testing; urgency=high
+
+  * Fix postgresql startup bug
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Tue, 17 May 2016 23:48:47 +0200
+
 parrot-interface (3.1+parrot2) testing; urgency=medium
 
   * geany needs to be there!
