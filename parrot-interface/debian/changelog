@@ -1,3 +1,9 @@
+parrot-interface (3.2+parrot6) testing; urgency=medium
+
+  * Add postinst
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Wed, 18 May 2016 09:13:08 +0200
+
 parrot-interface (3.2+parrot5) testing; urgency=medium
 
   * Final fix to postgresql (permission has to be set to 775)
