@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod 775 /usr/share/parrot-common/postgresql_reduce_shared_buffers
+chmod 775 /usr/share/parrot-defaults/postgresql_reduce_shared_buffers || true
