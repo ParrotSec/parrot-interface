@@ -1,3 +1,9 @@
+parrot-interface (3.3+parrot1) testing; urgency=medium
+
+  * Replace Code::Blocks with KDevelop
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Fri, 20 May 2016 23:10:14 +0200
+
 parrot-interface (3.3+parrot0) testing; urgency=medium
 
   * package tested, changing version
