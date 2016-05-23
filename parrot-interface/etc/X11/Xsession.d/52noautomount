@@ -1,7 +1,0 @@
-if [ -r /proc/cmdline ] && [ -x "$(which gsettings)" ]; then
-    if grep -q -E "\bnoautomount\b" /proc/cmdline 2>/dev/null; then
-	gsettings set org.gnome.desktop.media-handling automount false
-    else
-	gsettings set org.gnome.desktop.media-handling automount true
-    fi
-fi
