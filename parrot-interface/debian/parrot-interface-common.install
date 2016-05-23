@@ -2,8 +2,6 @@ etc/*
 etc/xdg/*
 etc/xdg/xfce4/*
 etc/xdg/xfce4/terminal/*
-etc/X11/*
-etc/X11/Xsession.d/*
 usr/*
 usr/share/*
 usr/share/doc/*
