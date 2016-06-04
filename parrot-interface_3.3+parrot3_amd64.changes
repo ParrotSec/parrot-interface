@@ -1,0 +1,56 @@
+Format: 1.8
+Date: Sun, 05 Jun 2016 01:45:01 +0400
+Source: parrot-interface
+Binary: parrot-interface parrot-interface-common parrot-interface-full parrot-gnome parrot-kde parrot-lxde parrot-mate parrot-xfce
+Architecture: source all
+Version: 3.3+parrot3
+Distribution: testing
+Urgency: medium
+Maintainer: Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
+Changed-By: Lisetta "Sheireen" Ferrero <sheireen@autistiche.org>
+Description:
+ parrot-gnome - GNOME based Parrot desktop
+ parrot-interface - Parrot interface metapackage
+ parrot-interface-common - Parrot interface metapackage
+ parrot-interface-full - Parrot FULL Interface metapackage
+ parrot-kde - KDE based Parrot desktop
+ parrot-lxde - LXDE based Parrot destop
+ parrot-mate - Parrot interface metapackage
+ parrot-xfce - XFCE based Parrot destop
+Changes:
+ parrot-interface (3.3+parrot3) testing; urgency=medium
+ .
+   * Refine dependencies for gtk3
+Checksums-Sha1:
+ d2d0282a2c0c8153d88977a4bf5e87df5d32e491 1204 parrot-interface_3.3+parrot3.dsc
+ d37923bc6ec88a0d87769abe57ed70787ed778a6 8963876 parrot-interface_3.3+parrot3.tar.xz
+ 129397828523f4295e547af394768124821fdedf 13190 parrot-gnome_3.3+parrot3_all.deb
+ 691fbceb994b9c270b1d094a77ad990ec9769820 8364610 parrot-interface-common_3.3+parrot3_all.deb
+ 2b8905bd532f46189f0f984f9e10d351e7a2480d 13220 parrot-interface-full_3.3+parrot3_all.deb
+ e4eff32f6e3edebca061fa365de4c8c81935ae26 13062 parrot-interface_3.3+parrot3_all.deb
+ 6068208308e0e1202e6ea2ab6a3b764fc49e55b6 13056 parrot-kde_3.3+parrot3_all.deb
+ e84491da819d42c33d623d1f04efb8b11b97d5f9 13044 parrot-lxde_3.3+parrot3_all.deb
+ a2862cf50c9b84ba0355073d13441996cb802af7 13284 parrot-mate_3.3+parrot3_all.deb
+ 3700e7114773a5d582f616c0367c52127179ab85 13060 parrot-xfce_3.3+parrot3_all.deb
+Checksums-Sha256:
+ d2f39c550351a13c3d535c578758bd99214424fd5c0956557382e7e384aa4f83 1204 parrot-interface_3.3+parrot3.dsc
+ 5538c4b17dc3ce8326fe0060c49870937c2e860560ef80b7c5e737b6967af34c 8963876 parrot-interface_3.3+parrot3.tar.xz
+ 8ac37f921ac2bc274e6c903abdc87c91ba987239118592f48ae30f3fc03d55f9 13190 parrot-gnome_3.3+parrot3_all.deb
+ 8d0c5f637d351ff3bacd8bcedf933575b23ba8398d3628a69ba089006215f54d 8364610 parrot-interface-common_3.3+parrot3_all.deb
+ 251168a2cf62e98e46019b88e1d0699230ec0f8dbc470b16907136e87c8f82a1 13220 parrot-interface-full_3.3+parrot3_all.deb
+ d93babfa1def90ec204942df0fe46617cb88e8689cd0a59645232099bd830c83 13062 parrot-interface_3.3+parrot3_all.deb
+ a712d61b8fdbc2fb8b743b35094ab165caaa2ff3b33b9c9c5380f7a718648085 13056 parrot-kde_3.3+parrot3_all.deb
+ 792f9941adc56b45f68b8624f7d1b57a623fd4c40d84715d353dbf50e56cb277 13044 parrot-lxde_3.3+parrot3_all.deb
+ af3e1e3c756ca83a7383b1d492f37b18a12d938519264eb8cb5e30b77f7fdc69 13284 parrot-mate_3.3+parrot3_all.deb
+ 69dc694a8e2bfd383cccb32428410b400942e5fc514bd1649bdf9a85a34c0e8d 13060 parrot-xfce_3.3+parrot3_all.deb
+Files:
+ 993205de74add2eabccd12bfd35d98ca 1204 info optional parrot-interface_3.3+parrot3.dsc
+ bd4aaaf1e27a0c3fbea06e5fdc2415d6 8963876 info optional parrot-interface_3.3+parrot3.tar.xz
+ 6fa7232eb132ca412e373a295baa44eb 13190 info optional parrot-gnome_3.3+parrot3_all.deb
+ 2456858cfb5b756bf9e39b19c4ddbac5 8364610 info optional parrot-interface-common_3.3+parrot3_all.deb
+ 1b5843855961b2f81e44c4b3004133ba 13220 info optional parrot-interface-full_3.3+parrot3_all.deb
+ 9a955900da87d55aa424d733644affe5 13062 info optional parrot-interface_3.3+parrot3_all.deb
+ 0e61b00c593c1cd18905ccf1ee6e760e 13056 info optional parrot-kde_3.3+parrot3_all.deb
+ 017982b7eaf9034b82e973ca7ee928a9 13044 info optional parrot-lxde_3.3+parrot3_all.deb
+ 8b1846703ac38cbc1b34491813e96031 13284 info optional parrot-mate_3.3+parrot3_all.deb
+ 564e935db3fe3700f0670703cbf3f835 13060 info optional parrot-xfce_3.3+parrot3_all.deb

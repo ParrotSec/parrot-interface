@@ -1,3 +1,9 @@
+parrot-interface (3.3+parrot3) testing; urgency=medium
+
+  * Refine dependencies for gtk3
+
+ -- Lisetta "Sheireen" Ferrero <sheireen@autistiche.org>  Sun, 05 Jun 2016 01:45:01 +0400
+
 parrot-interface (3.3+parrot2) testing; urgency=medium
 
   * Remove useless files now moved to parrot-core
