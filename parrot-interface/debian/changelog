@@ -1,3 +1,9 @@
+parrot-interface (3.4+parrot0) testing; urgency=medium
+
+  * Make parrot-interface-full more lightweight
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Fri, 17 Jun 2016 12:19:52 +0200
+
 parrot-interface (3.3+parrot3) testing; urgency=medium
 
   * Refine dependencies for gtk3
