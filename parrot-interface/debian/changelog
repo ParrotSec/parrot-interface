@@ -1,3 +1,9 @@
+parrot-interface (3.5+parrot0) testing; urgency=medium
+
+  * Fix firefox profile
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Tue, 21 Jun 2016 18:51:06 +0200
+
 parrot-interface (3.4+parrot0) testing; urgency=medium
 
   * Make parrot-interface-full more lightweight
