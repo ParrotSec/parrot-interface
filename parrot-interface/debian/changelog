@@ -1,3 +1,9 @@
+parrot-interface (3.6+parrot0) testing; urgency=medium
+
+  * Remove custom noscript bundle
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 10 Jul 2016 15:08:35 +0200
+
 parrot-interface (3.5+parrot0) testing; urgency=medium
 
   * Fix firefox profile
