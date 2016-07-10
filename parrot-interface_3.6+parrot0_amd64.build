@@ -66,7 +66,6 @@ dpkg-buildpackage: info: full upload; Debian-native package (full source is incl
 Now running lintian...
 E: parrot-interface source: source-is-missing usr/lib/firefox-esr/browser/prefs.js line length is 912 characters (>512)
 E: parrot-interface source: source-is-missing usr/lib/firefox-esr/browser/sessionstore.js line length is 1613 characters (>512)
-E: parrot-interface source: source-is-missing etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/prefs.js line length is 912 characters (>512)
 W: parrot-interface source: debhelper-but-no-misc-depends parrot-interface
 W: parrot-interface source: debhelper-but-no-misc-depends parrot-interface-common
 W: parrot-interface source: debhelper-but-no-misc-depends parrot-interface-full
@@ -79,77 +78,38 @@ W: parrot-interface source: maintainer-script-lacks-debhelper-token debian/parro
 W: parrot-interface source: maintainer-also-in-uploaders
 W: parrot-interface source: changelog-should-mention-nmu
 W: parrot-interface source: source-nmu-has-incorrect-version-number 3.6+parrot0
-E: parrot-interface-full: copyright-file-contains-full-gpl-license
-E: parrot-interface-full: copyright-should-refer-to-common-license-file-for-gpl
-W: parrot-interface-full: extended-description-line-too-long
-W: parrot-interface-full: unknown-section info
+E: parrot-lxde: copyright-file-contains-full-gpl-license
+E: parrot-lxde: copyright-should-refer-to-common-license-file-for-gpl
+W: parrot-lxde: unknown-section info
 E: parrot-kde: copyright-file-contains-full-gpl-license
 E: parrot-kde: copyright-should-refer-to-common-license-file-for-gpl
 W: parrot-kde: unknown-section info
+E: parrot-interface-common: copyright-file-contains-full-gpl-license
+E: parrot-interface-common: copyright-should-refer-to-common-license-file-for-gpl
+W: parrot-interface-common: unknown-section info
+E: parrot-interface-common: depends-on-metapackage depends: xorg
+W: parrot-interface-common: desktop-command-not-in-package usr/share/applications/firefox-esr.desktop firefox
+W: parrot-interface-common: desktop-command-not-in-package usr/share/applications/firefox.desktop firefox
+W: parrot-interface-common: script-not-executable usr/share/applications/firefox-esr.desktop
+W: parrot-interface-common: unusual-interpreter usr/share/applications/firefox-esr.desktop #!xdg-open
+W: parrot-interface-common: script-not-executable usr/share/applications/firefox.desktop
+W: parrot-interface-common: unusual-interpreter usr/share/applications/firefox.desktop #!xdg-open
+W: parrot-interface-common: executable-not-elf-or-script usr/lib/firefox-esr/browser/places.sqlite
+W: parrot-interface-common: maintainer-script-ignores-errors postinst
+E: parrot-gnome: copyright-file-contains-full-gpl-license
+E: parrot-gnome: copyright-should-refer-to-common-license-file-for-gpl
+W: parrot-gnome: unknown-section info
 E: parrot-mate: copyright-file-contains-full-gpl-license
 E: parrot-mate: copyright-should-refer-to-common-license-file-for-gpl
 W: parrot-mate: unknown-section info
 E: parrot-xfce: copyright-file-contains-full-gpl-license
 E: parrot-xfce: copyright-should-refer-to-common-license-file-for-gpl
 W: parrot-xfce: unknown-section info
-E: parrot-interface-common: copyright-file-contains-full-gpl-license
-E: parrot-interface-common: copyright-should-refer-to-common-license-file-for-gpl
-W: parrot-interface-common: unknown-section info
-E: parrot-interface-common: depends-on-metapackage depends: xorg
-W: parrot-interface-common: desktop-command-not-in-package usr/share/applications/firefox-common.desktop firefox
-W: parrot-interface-common: desktop-command-not-in-package usr/share/applications/firefox.desktop firefox
-W: parrot-interface-common: script-not-executable usr/share/applications/firefox-common.desktop
-W: parrot-interface-common: unusual-interpreter usr/share/applications/firefox-common.desktop #!xdg-open
-W: parrot-interface-common: script-not-executable usr/share/applications/firefox.desktop
-W: parrot-interface-common: unusual-interpreter usr/share/applications/firefox.desktop #!xdg-open
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/compatibility.ini
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/.parentlock
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/addons.json
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/directoryLinks.json
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/cert_override.txt
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/safebrowsing/googpub-phish-shavar.pset
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/secmod.db
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/_CACHE_CLEAN_
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/search-metadata.json
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/storage/permanent/moz-safe-about+home/idb/818200132aebmoouht.sqlite
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/revocations.txt
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/safebrowsing/goog-malware-shavar.pset
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/safebrowsing/googpub-phish-shavar.cache
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/key3.db
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/extensions/useragentoverrider@qixinglu.com.xpi
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/places.sqlite
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/SiteSecurityServiceState.txt
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/safebrowsing/test-malware-simple.sbstore
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/webapps/webapps.json
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/safebrowsing/test-phish-simple.cache
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/cert8.db
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/safebrowsing/test-malware-simple.cache
-W: parrot-interface-common: executable-not-elf-or-script usr/lib/firefox-esr/browser/places.sqlite
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/safebrowsing/goog-malware-shavar.cache
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/times.json
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/pluginreg.dat
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/safebrowsing/test-malware-simple.pset
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/safebrowsing/goog-badbinurl-shavar.pset
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/safebrowsing/goog-malware-shavar.sbstore
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/safebrowsing/test-phish-simple.sbstore
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/profiles.ini
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/searchplugins/frozensearch.xml
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/mimeTypes.rdf
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/safebrowsing/test-phish-simple.pset
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/safebrowsing/goog-badbinurl-shavar.cache
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/safebrowsing/googpub-phish-shavar.sbstore
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/blocklist.xml
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/permissions.sqlite
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/safebrowsing/goog-badbinurl-shavar.sbstore
-W: parrot-interface-common: executable-not-elf-or-script etc/skel/.mozilla/firefox/iNFubtGImosdf.Parrot/storage/permanent/moz-safe-about+home/.metadata
-W: parrot-interface-common: maintainer-script-ignores-errors postinst
 E: parrot-interface: copyright-file-contains-full-gpl-license
 E: parrot-interface: copyright-should-refer-to-common-license-file-for-gpl
 W: parrot-interface: unknown-section info
-E: parrot-lxde: copyright-file-contains-full-gpl-license
-E: parrot-lxde: copyright-should-refer-to-common-license-file-for-gpl
-W: parrot-lxde: unknown-section info
-E: parrot-gnome: copyright-file-contains-full-gpl-license
-E: parrot-gnome: copyright-should-refer-to-common-license-file-for-gpl
-W: parrot-gnome: unknown-section info
+E: parrot-interface-full: copyright-file-contains-full-gpl-license
+E: parrot-interface-full: copyright-should-refer-to-common-license-file-for-gpl
+W: parrot-interface-full: extended-description-line-too-long
+W: parrot-interface-full: unknown-section info
 Finished running lintian.

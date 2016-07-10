@@ -19,8 +19,8 @@ Package-List:
  parrot-mate deb info optional arch=all
  parrot-xfce deb info optional arch=all
 Checksums-Sha1:
- b0feb54d6679f9656feb032a34328c3c050b0a78 3946720 parrot-interface_3.6+parrot0.tar.xz
+ b34d80651e5974aff00155622ca1a673c04f86a5 3898028 parrot-interface_3.6+parrot0.tar.xz
 Checksums-Sha256:
- 4ae5825e97b79f202d61377c66b870b340050d738e0abbff72c8265384e4c567 3946720 parrot-interface_3.6+parrot0.tar.xz
+ 600eeb0f89889b836a8601bdb2ea13f1082f7402858a1804c41ff8dd89ff3df4 3898028 parrot-interface_3.6+parrot0.tar.xz
 Files:
- 150866369853d18b6c06903267a760f4 3946720 parrot-interface_3.6+parrot0.tar.xz
+ d696a942c74834d47ebc7701f5e7f205 3898028 parrot-interface_3.6+parrot0.tar.xz

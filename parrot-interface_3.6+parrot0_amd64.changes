@@ -22,35 +22,35 @@ Changes:
  .
    * Remove custom noscript bundle
 Checksums-Sha1:
- cb8cc2a0bb60da9a32ab24dea77f4feceb35183d 1204 parrot-interface_3.6+parrot0.dsc
- b0feb54d6679f9656feb032a34328c3c050b0a78 3946720 parrot-interface_3.6+parrot0.tar.xz
- 62fda5a78ca075d277f93abd5aeae29d6a2bbd36 13294 parrot-gnome_3.6+parrot0_all.deb
- f22eb9750bbcef95e250041d24428e1bab61b365 7667318 parrot-interface-common_3.6+parrot0_all.deb
- b750c06e5499b7e554b538deecdca13c12bbc1f3 13318 parrot-interface-full_3.6+parrot0_all.deb
- 4a6b3170cde88fb3aa5b650d5feea2ec838acf39 13174 parrot-interface_3.6+parrot0_all.deb
- acdb5e38b9e70364c0bf1776c8f304f34a541721 13156 parrot-kde_3.6+parrot0_all.deb
- d13a83235bd4e7b5910ce13c2fa9a73dd0b31735 13134 parrot-lxde_3.6+parrot0_all.deb
- 465679f71714fb0d424709a8de2e3012a891f5ec 13384 parrot-mate_3.6+parrot0_all.deb
- 191760556253625145d9cfc624c2366cf02d43f6 13168 parrot-xfce_3.6+parrot0_all.deb
+ 338c152788dd1864e6d2196ce9275f7ba0cbd85b 1204 parrot-interface_3.6+parrot0.dsc
+ b34d80651e5974aff00155622ca1a673c04f86a5 3898028 parrot-interface_3.6+parrot0.tar.xz
+ e54e8f69df4a707f4d22cbd21e4c0ffeb92ec78e 13308 parrot-gnome_3.6+parrot0_all.deb
+ 08aab7784d105caa0b058e43c36b38f3647d1073 3884012 parrot-interface-common_3.6+parrot0_all.deb
+ 325065cf5acb0bd03dfe7947db4199c95badd98a 13316 parrot-interface-full_3.6+parrot0_all.deb
+ e2ffda6d045119eb67ad9abaa9a73a2580624c39 13164 parrot-interface_3.6+parrot0_all.deb
+ 9be09a9d2ecb41244a0a1477f0fe13b80c32f833 13166 parrot-kde_3.6+parrot0_all.deb
+ 46a20336a1e41d8b381a988abb33ee0e72f9774c 13140 parrot-lxde_3.6+parrot0_all.deb
+ 2ff3dbc5e41691a2b76ed2362cd5a0f368e93d02 13384 parrot-mate_3.6+parrot0_all.deb
+ 72d99c40d3eecac5c7ce2565c69874d267ad286d 13178 parrot-xfce_3.6+parrot0_all.deb
 Checksums-Sha256:
- 29520c4fbf0da7fcc0376d30632bc8eeda0850213169b952a3436ffb16fb3bdb 1204 parrot-interface_3.6+parrot0.dsc
- 4ae5825e97b79f202d61377c66b870b340050d738e0abbff72c8265384e4c567 3946720 parrot-interface_3.6+parrot0.tar.xz
- eff885fac2442f23db21c900d7731e78c9dde854218bad72e9700fdad99a6c43 13294 parrot-gnome_3.6+parrot0_all.deb
- 365e7c2c0723376b028e85f4d4dd7bc60e49242ea8137ca22bb7c4c67f5958a8 7667318 parrot-interface-common_3.6+parrot0_all.deb
- 2fea426b236d65e371266a9d31f28c7cdb9461c2bec9b773a52619fe7d74ef03 13318 parrot-interface-full_3.6+parrot0_all.deb
- ffd4935f8c22f37b8a4c4cbe0feaefc412b3b4d9880c284ef91a6a3232ecb0cf 13174 parrot-interface_3.6+parrot0_all.deb
- 9cb8e7eb5fa431854fb47689fe4b43d65c80e1068564c2936b6cf89aff02767a 13156 parrot-kde_3.6+parrot0_all.deb
- e3210fe8d50044893082ac5e281298134c250946a065c97a7cf7c72024441341 13134 parrot-lxde_3.6+parrot0_all.deb
- fd7ccae58597060af69df96f70c4088bb74360631fafad8e28e3493477ab5e6a 13384 parrot-mate_3.6+parrot0_all.deb
- b89f14f5296e59ef8b42a7646be31b71a3b1d51865cba480c72c1fe7c3961c1a 13168 parrot-xfce_3.6+parrot0_all.deb
+ 052f7f1196d3bbb19731dc4b1416f943b0bde7278b2a993d4d6e3bcdcf94abdf 1204 parrot-interface_3.6+parrot0.dsc
+ 600eeb0f89889b836a8601bdb2ea13f1082f7402858a1804c41ff8dd89ff3df4 3898028 parrot-interface_3.6+parrot0.tar.xz
+ bb847f87be6154edce06c7519df34b469030f58aa593991f4a9feb4bc1e652c4 13308 parrot-gnome_3.6+parrot0_all.deb
+ 44552b4564ad795cb04665491431c46df868571eb7b7d2c4e91c49c05a602b04 3884012 parrot-interface-common_3.6+parrot0_all.deb
+ 1793030cb1f9aecf800f875680597887b728d34d4e7c23f0f2d42c7e9aa2f6b3 13316 parrot-interface-full_3.6+parrot0_all.deb
+ 0373a76305b52512bd57ebc754a38f0e3e1b9889c4387134caf7a90f619f5e5d 13164 parrot-interface_3.6+parrot0_all.deb
+ 0fade876f6d36e36edfebac856fd620fc5c1c0f459e3bb6140e73c15c7238b59 13166 parrot-kde_3.6+parrot0_all.deb
+ baf247308839bf9ef9b06cb319fc0f6626493192898baa14b390c05748ec5b04 13140 parrot-lxde_3.6+parrot0_all.deb
+ 8fac48bd95bf39ac8c40a71440b2588e4c9215f6ec9e5cc24d86d36400b996d2 13384 parrot-mate_3.6+parrot0_all.deb
+ 3146ca235c2db0eba6e0abe314309d0fbf9edbb86d16e6f11ce17a2cddcc9ebe 13178 parrot-xfce_3.6+parrot0_all.deb
 Files:
- be857e887bd789ee8c969aebe0b32911 1204 info optional parrot-interface_3.6+parrot0.dsc
- 150866369853d18b6c06903267a760f4 3946720 info optional parrot-interface_3.6+parrot0.tar.xz
- 5b0455973ef4f6f966cd4abd3b764ae1 13294 info optional parrot-gnome_3.6+parrot0_all.deb
- 0a5846b7646b66dfd18bf5cb33d91e88 7667318 info optional parrot-interface-common_3.6+parrot0_all.deb
- bf9a56e018ba5cc6bc7987730edd549f 13318 info optional parrot-interface-full_3.6+parrot0_all.deb
- 87855acbf6b92a662ad6f7cffb8a13ee 13174 info optional parrot-interface_3.6+parrot0_all.deb
- 40b50d98628090e80bb690f04624ac05 13156 info optional parrot-kde_3.6+parrot0_all.deb
- 296a67ee7ba4beb629d8379170d7e460 13134 info optional parrot-lxde_3.6+parrot0_all.deb
- 061191ac0c0624ab3ef947e6004540ae 13384 info optional parrot-mate_3.6+parrot0_all.deb
- fc0699ce0c8bf8c0f6c04d9fa6c88345 13168 info optional parrot-xfce_3.6+parrot0_all.deb
+ f339095e09f04d31a3b6c0e11aecee82 1204 info optional parrot-interface_3.6+parrot0.dsc
+ d696a942c74834d47ebc7701f5e7f205 3898028 info optional parrot-interface_3.6+parrot0.tar.xz
+ b8df207f6ff68209789721eee2aadc60 13308 info optional parrot-gnome_3.6+parrot0_all.deb
+ 2e20c333b15f16a8e826ed7fa2b72003 3884012 info optional parrot-interface-common_3.6+parrot0_all.deb
+ cb23a0762ea66d0282bb4c3ba40ddd20 13316 info optional parrot-interface-full_3.6+parrot0_all.deb
+ 93718b40b81f1f4afa4e4de2dcceccb3 13164 info optional parrot-interface_3.6+parrot0_all.deb
+ b2943c001593382722020c546a0b7b25 13166 info optional parrot-kde_3.6+parrot0_all.deb
+ 9662ab734075c9ba870c65d1aced03c9 13140 info optional parrot-lxde_3.6+parrot0_all.deb
+ b0e7563f945be6e0db9c824f86cf76d0 13384 info optional parrot-mate_3.6+parrot0_all.deb
+ 35889494af429b454c616c21ea5a5c0e 13178 info optional parrot-xfce_3.6+parrot0_all.deb
