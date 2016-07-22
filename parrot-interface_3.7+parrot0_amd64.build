@@ -1,6 +1,6 @@
  dpkg-buildpackage -rfakeroot -D -us -uc
 dpkg-buildpackage: info: source package parrot-interface
-dpkg-buildpackage: info: source version 3.6+parrot0
+dpkg-buildpackage: info: source version 3.7+parrot0
 dpkg-buildpackage: info: source distribution testing
 dpkg-buildpackage: info: source changed by Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
  dpkg-source --before-build parrot-interface
@@ -14,8 +14,8 @@ dh clean
  dpkg-source -b parrot-interface
 dpkg-source: warning: unknown information field 'Includes' in input data in package's section of control info file
 dpkg-source: info: using source format '3.0 (native)'
-dpkg-source: info: building parrot-interface in parrot-interface_3.6+parrot0.tar.xz
-dpkg-source: info: building parrot-interface in parrot-interface_3.6+parrot0.dsc
+dpkg-source: info: building parrot-interface in parrot-interface_3.7+parrot0.tar.xz
+dpkg-source: info: building parrot-interface in parrot-interface_3.7+parrot0.dsc
  debian/rules build
 dh build
    dh_testdir
@@ -49,15 +49,15 @@ make[1]: uscita dalla directory "/home/palinuro/Desktop/repo/parrot-interface/pa
 dpkg-gencontrol: warning: unknown information field 'Includes' in input data in package's section of control info file
    dh_md5sums
    dh_builddeb
-dpkg-deb: building package 'parrot-interface' in '../parrot-interface_3.6+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-interface-common' in '../parrot-interface-common_3.6+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-interface-full' in '../parrot-interface-full_3.6+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-gnome' in '../parrot-gnome_3.6+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-kde' in '../parrot-kde_3.6+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-lxde' in '../parrot-lxde_3.6+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-mate' in '../parrot-mate_3.6+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-xfce' in '../parrot-xfce_3.6+parrot0_all.deb'.
- dpkg-genchanges  >../parrot-interface_3.6+parrot0_amd64.changes
+dpkg-deb: building package 'parrot-interface' in '../parrot-interface_3.7+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-interface-common' in '../parrot-interface-common_3.7+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-interface-full' in '../parrot-interface-full_3.7+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-gnome' in '../parrot-gnome_3.7+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-kde' in '../parrot-kde_3.7+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-lxde' in '../parrot-lxde_3.7+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-mate' in '../parrot-mate_3.7+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-xfce' in '../parrot-xfce_3.7+parrot0_all.deb'.
+ dpkg-genchanges  >../parrot-interface_3.7+parrot0_amd64.changes
 dpkg-genchanges: warning: unknown information field 'Includes' in input data in package's section of control info file
 dpkg-genchanges: info: including full source code in upload
  dpkg-source --after-build parrot-interface
@@ -77,28 +77,10 @@ W: parrot-interface source: debhelper-but-no-misc-depends parrot-xfce
 W: parrot-interface source: maintainer-script-lacks-debhelper-token debian/parrot-interface-common.postinst
 W: parrot-interface source: maintainer-also-in-uploaders
 W: parrot-interface source: changelog-should-mention-nmu
-W: parrot-interface source: source-nmu-has-incorrect-version-number 3.6+parrot0
-E: parrot-lxde: copyright-file-contains-full-gpl-license
-E: parrot-lxde: copyright-should-refer-to-common-license-file-for-gpl
-W: parrot-lxde: unknown-section info
+W: parrot-interface source: source-nmu-has-incorrect-version-number 3.7+parrot0
 E: parrot-kde: copyright-file-contains-full-gpl-license
 E: parrot-kde: copyright-should-refer-to-common-license-file-for-gpl
 W: parrot-kde: unknown-section info
-E: parrot-interface-common: copyright-file-contains-full-gpl-license
-E: parrot-interface-common: copyright-should-refer-to-common-license-file-for-gpl
-W: parrot-interface-common: unknown-section info
-E: parrot-interface-common: depends-on-metapackage depends: xorg
-W: parrot-interface-common: desktop-command-not-in-package usr/share/applications/firefox-esr.desktop firefox
-W: parrot-interface-common: desktop-command-not-in-package usr/share/applications/firefox.desktop firefox
-W: parrot-interface-common: script-not-executable usr/share/applications/firefox-esr.desktop
-W: parrot-interface-common: unusual-interpreter usr/share/applications/firefox-esr.desktop #!xdg-open
-W: parrot-interface-common: script-not-executable usr/share/applications/firefox.desktop
-W: parrot-interface-common: unusual-interpreter usr/share/applications/firefox.desktop #!xdg-open
-W: parrot-interface-common: executable-not-elf-or-script usr/lib/firefox-esr/browser/places.sqlite
-W: parrot-interface-common: maintainer-script-ignores-errors postinst
-E: parrot-gnome: copyright-file-contains-full-gpl-license
-E: parrot-gnome: copyright-should-refer-to-common-license-file-for-gpl
-W: parrot-gnome: unknown-section info
 E: parrot-mate: copyright-file-contains-full-gpl-license
 E: parrot-mate: copyright-should-refer-to-common-license-file-for-gpl
 W: parrot-mate: unknown-section info
@@ -112,4 +94,22 @@ E: parrot-interface-full: copyright-file-contains-full-gpl-license
 E: parrot-interface-full: copyright-should-refer-to-common-license-file-for-gpl
 W: parrot-interface-full: extended-description-line-too-long
 W: parrot-interface-full: unknown-section info
+E: parrot-lxde: copyright-file-contains-full-gpl-license
+E: parrot-lxde: copyright-should-refer-to-common-license-file-for-gpl
+W: parrot-lxde: unknown-section info
+E: parrot-gnome: copyright-file-contains-full-gpl-license
+E: parrot-gnome: copyright-should-refer-to-common-license-file-for-gpl
+W: parrot-gnome: unknown-section info
+E: parrot-interface-common: copyright-file-contains-full-gpl-license
+E: parrot-interface-common: copyright-should-refer-to-common-license-file-for-gpl
+W: parrot-interface-common: unknown-section info
+E: parrot-interface-common: depends-on-metapackage depends: xorg
+W: parrot-interface-common: desktop-command-not-in-package usr/share/applications/firefox-esr.desktop firefox
+W: parrot-interface-common: desktop-command-not-in-package usr/share/applications/firefox.desktop firefox
+W: parrot-interface-common: script-not-executable usr/share/applications/firefox-esr.desktop
+W: parrot-interface-common: unusual-interpreter usr/share/applications/firefox-esr.desktop #!xdg-open
+W: parrot-interface-common: script-not-executable usr/share/applications/firefox.desktop
+W: parrot-interface-common: unusual-interpreter usr/share/applications/firefox.desktop #!xdg-open
+W: parrot-interface-common: executable-not-elf-or-script usr/lib/firefox-esr/browser/places.sqlite
+W: parrot-interface-common: maintainer-script-ignores-errors postinst
 Finished running lintian.
