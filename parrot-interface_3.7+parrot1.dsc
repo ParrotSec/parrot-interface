@@ -2,7 +2,7 @@ Format: 3.0 (native)
 Source: parrot-interface
 Binary: parrot-interface, parrot-interface-common, parrot-interface-full, parrot-gnome, parrot-kde, parrot-lxde, parrot-mate, parrot-xfce
 Architecture: all
-Version: 3.7+parrot0
+Version: 3.7+parrot1
 Maintainer: Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>, Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
 Homepage: http://www.parrotsec.org/
@@ -19,8 +19,8 @@ Package-List:
  parrot-mate deb info optional arch=all
  parrot-xfce deb info optional arch=all
 Checksums-Sha1:
- add4ae76c650a7d1458e7b0bf147aff379e47839 3898068 parrot-interface_3.7+parrot0.tar.xz
+ 7889ad872883522751ba85612be9a292e00f3b3c 3898084 parrot-interface_3.7+parrot1.tar.xz
 Checksums-Sha256:
- 248f46ff663c6fbe2c440406a46d3765a988910d0bce2f25a5c71cf26e024457 3898068 parrot-interface_3.7+parrot0.tar.xz
+ e9fdc56fd21f5b1a64a02e057a5878b45cd3472e7c0d35aa09e2e9710ddfa508 3898084 parrot-interface_3.7+parrot1.tar.xz
 Files:
- 3932ee44df7e2648401370603c1640ff 3898068 parrot-interface_3.7+parrot0.tar.xz
+ 30c08c661a208aa6c6e89678ac8c029d 3898084 parrot-interface_3.7+parrot1.tar.xz

@@ -19,7 +19,7 @@ Description: Parrot interface metapackage
 Package: parrot-interface-common
 Architecture: all
 Depends: xinit, xorg, parrot-wallpapers, parrot-themes, parrot-menu, parrot-skel, parrot-update-manager
-Recommends: abiword, bleachbit, bluetooth, bluez, blueman, dconf-editor, debmod, desktop-base, ffmpegthumbnailer, gdebi, geany, gnumeric, gpa, gparted, hexchat, firefox, xul-ext-noscript, xul-ext-livehttpheaders, xul-ext-https-everywhere, xul-ext-webdeveloper, xul-ext-wot, libnotify-send, lightdm-parrot, parrot-conky, parrot-sounds, parrot-welcome, synaptic, xboard, polyglot, crafty, dvd+rw-tools, udftools, torbrowser-launcher, vidalia
+Recommends: abiword, bleachbit, bluetooth, bluez, blueman, dconf-editor, debmod, desktop-base, ffmpegthumbnailer, gdebi, geany, gnumeric, gpa, gparted, hexchat, firefox, xul-ext-noscript, xul-ext-livehttpheaders, xul-ext-https-everywhere, xul-ext-webdeveloper, xul-ext-wot, libnotify-send, lightdm-parrot, parrot-sounds, parrot-welcome, synaptic, xboard, polyglot, crafty, dvd+rw-tools, udftools
 Suggests: parrot-interface-full
 Conflicts: iceweasel-frozenmod
 Breaks: iceweasel-frozenmod
