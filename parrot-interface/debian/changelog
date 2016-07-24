@@ -1,9 +1,13 @@
-parrot-interface (3.7+parrot1) UNRELEASED; urgency=medium
+parrot-interface (3.7+parrot2) testing; urgency=medium
 
+  [ Lisetta "Sheireen" Ferrero ]
   * Remove torbrowser and vidalia (to be added to parrot-anon)
   * Remove parrot-conky
 
- -- Lisetta "Sheireen" Ferrero <sheireen@autistiche.org>  Sat, 23 Jul 2016 10:34:21 +0400
+  [ Lorenzo "Palinuro" Faletra ]
+  * Add new improved firefox profile
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 25 Jul 2016 00:23:48 +0200
 
 parrot-interface (3.7+parrot0) testing; urgency=medium
 
