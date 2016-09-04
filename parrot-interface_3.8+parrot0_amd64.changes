@@ -1,0 +1,77 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 04 Sep 2016 11:11:21 +0200
+Source: parrot-interface
+Binary: parrot-interface parrot-interface-common parrot-interface-full parrot-gnome parrot-kde parrot-lxde parrot-mate parrot-xfce
+Architecture: source all
+Version: 3.8+parrot0
+Distribution: testing
+Urgency: medium
+Maintainer: Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
+Changed-By: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Description:
+ parrot-gnome - GNOME based Parrot desktop
+ parrot-interface - Parrot interface metapackage
+ parrot-interface-common - Parrot interface metapackage
+ parrot-interface-full - Parrot FULL Interface metapackage
+ parrot-kde - KDE based Parrot desktop
+ parrot-lxde - LXDE based Parrot destop
+ parrot-mate - Parrot interface metapackage
+ parrot-xfce - XFCE based Parrot destop
+Changes:
+ parrot-interface (3.8+parrot0) testing; urgency=medium
+ .
+   * rmove gimp and kdevelop from parrot-interface-full
+Checksums-Sha1:
+ 35b09ce09d854b5a81cfda2339a2bd3f71420324 2071 parrot-interface_3.8+parrot0.dsc
+ 3972b8878e753367a732b0d925d1402df15fcf1b 6624236 parrot-interface_3.8+parrot0.tar.xz
+ 78551ea6fc91a94587ab82c2b20400bf14dee344 13444 parrot-gnome_3.8+parrot0_all.deb
+ a1168325ae35fef75adf8b4d14daf23971992b40 6596280 parrot-interface-common_3.8+parrot0_all.deb
+ 9eb386013bb46a32a2a41041c8ee7fde31fd88ff 13450 parrot-interface-full_3.8+parrot0_all.deb
+ 73b486aa634d2415ea5d0234b369d932bb30b0a2 13312 parrot-interface_3.8+parrot0_all.deb
+ c6567710783569c94ff4c71cc9b3b7bb133ea69b 13294 parrot-kde_3.8+parrot0_all.deb
+ b5eda1d65f69d03e31810515abf0f9769eb85f2e 13278 parrot-lxde_3.8+parrot0_all.deb
+ fd5cd4d2e34192d879cd52b650901c8f9aa8a6df 13526 parrot-mate_3.8+parrot0_all.deb
+ d06cca9d0f9024ddfddad773d8b8b56f43b31e41 13310 parrot-xfce_3.8+parrot0_all.deb
+Checksums-Sha256:
+ 20db9e8b595f8e98685e952dc0ea68861b2937ffd04cf041f8f6552fca1932f9 2071 parrot-interface_3.8+parrot0.dsc
+ 97a5986b53480cf43188fba37e6fb1c666b289faab331b1167866fc401d07e62 6624236 parrot-interface_3.8+parrot0.tar.xz
+ b36094669c1177f4d67c2ababbaa80a6a8eb748d23b3e0ed46400f83d451e575 13444 parrot-gnome_3.8+parrot0_all.deb
+ 3e4136138e249391609ebc5979c95a1ce7e74907990bf079a0dc75ddc8694354 6596280 parrot-interface-common_3.8+parrot0_all.deb
+ 221d69dc00fceb240c43cbcebc4a3bc838a597155696f8fdd3cf6ce3f53ace88 13450 parrot-interface-full_3.8+parrot0_all.deb
+ 978359246563b5cdb691f769f5a89668e856592db73e5738010627312f81b77e 13312 parrot-interface_3.8+parrot0_all.deb
+ d3a99cf7b4edc9d23e9e7807a9d902cc69808f8498e8bd66c8c21bb206d73353 13294 parrot-kde_3.8+parrot0_all.deb
+ bc483dd042f54cc2cdb5f4cead3d9835d9a382d05bfe99438d71a1293e139b6a 13278 parrot-lxde_3.8+parrot0_all.deb
+ a3c9cdbf96fd802c4ff49d7d10cfaed64fe2491dd33c565e2ee7f769f904aeca 13526 parrot-mate_3.8+parrot0_all.deb
+ 94ffecb8717999c42e046ed298ae0bfdfdf27dfdeb36663584a52857ab603843 13310 parrot-xfce_3.8+parrot0_all.deb
+Files:
+ 0517aa08a9084be6339e34497ae125ce 2071 info optional parrot-interface_3.8+parrot0.dsc
+ be395cc6ebd460d60c08031165a937d5 6624236 info optional parrot-interface_3.8+parrot0.tar.xz
+ 5c70ffc9ab50eff0299a07fc67e3174f 13444 info optional parrot-gnome_3.8+parrot0_all.deb
+ 66feaf4e71b0ed63322723254ad19055 6596280 info optional parrot-interface-common_3.8+parrot0_all.deb
+ e07195807b909047684b2924852be46f 13450 info optional parrot-interface-full_3.8+parrot0_all.deb
+ eaf80d3ad3cf02d634f9649361440252 13312 info optional parrot-interface_3.8+parrot0_all.deb
+ 7f1205f5b6e7c2114aa5f0db098cd2bc 13294 info optional parrot-kde_3.8+parrot0_all.deb
+ 8a723cafa84f85a37fd1e1fc5518fcaa 13278 info optional parrot-lxde_3.8+parrot0_all.deb
+ 565d78d30de9859e20f1efbf7d71d252 13526 info optional parrot-mate_3.8+parrot0_all.deb
+ 41ef0f751764433b71a862c1709e2f8f 13310 info optional parrot-xfce_3.8+parrot0_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBAgAGBQJXy+WIAAoJEHGs4WSSiv5qVucQAJ6leAN5KYI6ooCwfvHSGmhg
+ayaFQzekE78SROx2LTqqZPqQIM1whpHXCP71DyE6pqBTvl3bf2WLMJ7G28QJRGYe
+rRgXviyv2aY0rxjsLu+TDf+nblCrItlfRRrR+iCRk0KmZpgUDg4HpqU3b0v6LhVI
+dpuA5qiK6Eg4m3sSMZqEkNJhcbmb7lKypjRiHxIrOCoytjRJr11mHuWyxJ4uj3py
+8OTxjolkLva5G1gZjPyVu/lsND+4mfCjGZ3K+vm/0tcwfW9cAo9643LVLs6LhJuH
+u18S0aQhuXopfFzZN0OAPU/RYJuLFjNpg05qULQVgdHh+j0SLtjp0rmnB4bESqjH
+iZPzbOuSV3Wi09y3WlVDY0lpphvM0oXYaRg2NnFB+081WCvyF7EmCaLm5YyU9286
+zfot3coDhxOM/IZ7pJxJY60M+24nl+YRdReukUkdhfqnvBesg2DsNs+6lduUQ7v/
+zvjC7B3jxvWpjKcBPnnLin4q6OUYxFhaRDIoeMi2Qbv+JCgt7eR5+KEh4kTab8du
+3rAjXi9LHYg5OTrq+xs1fk979IvXI2U3TI+WOBuORzlnlwGJa5K4h9WDk7AuE8ur
+bUo45SyAHxwpqziVgLhpeJVNuBujfO5rU5uKjw2mioIRUDnGESfbs7zvMRi29Voc
+lhX1Kfbosku25TPdvASr
+=SLdz
+-----END PGP SIGNATURE-----

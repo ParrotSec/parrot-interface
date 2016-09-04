@@ -1,3 +1,9 @@
+parrot-interface (3.8+parrot0) testing; urgency=medium
+
+  * rmove gimp and kdevelop from parrot-interface-full
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 04 Sep 2016 11:11:21 +0200
+
 parrot-interface (3.7+parrot2) testing; urgency=medium
 
   [ Lisetta "Sheireen" Ferrero ]
