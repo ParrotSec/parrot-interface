@@ -1,3 +1,9 @@
+parrot-interface (3.8+parrot2) testing; urgency=medium
+
+  * Add breeze-cursor-theme to parrot-mate
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Oct 2016 02:01:53 +0200
+
 parrot-interface (3.8+parrot0) testing; urgency=medium
 
   * rmove gimp and kdevelop from parrot-interface-full
