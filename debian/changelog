@@ -1,3 +1,14 @@
+parrot-interface (3.9+parrot0) testing; urgency=medium
+
+  [ Lisetta "Sheireen" Ferrero ]
+  * remove WOT and useless extensions
+  * minor fixes 
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Modifyt pakage to use the gbp tool
+
+ -- Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>  Mon, 04 Dec 2016 22:51:32 +0300
+
 parrot-interface (3.8+parrot2) testing; urgency=medium
 
   * Add breeze-cursor-theme to parrot-mate

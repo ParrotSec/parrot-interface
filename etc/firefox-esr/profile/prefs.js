@@ -11,5 +11,5 @@
 user_pref("browser.startup.homepage","http://search.frozenbox.org/pwn");
 user_pref("network.proxy.autoconfig_url", "file:///etc/anonsurf/onion.pac");
 user_pref("network.proxy.socks", "127.0.0.1");
-user_pref("network.proxy.socks_port", 9150);
+user_pref("network.proxy.socks_port", 9050);
 user_pref("network.proxy.type", 2);
