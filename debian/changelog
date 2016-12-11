@@ -1,3 +1,9 @@
+parrot-interface (3.9+parrot1) testing; urgency=medium
+
+  * Fix trackpad support
+
+ -- Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>  Sun, 11 Dec 2016 12:14:14 +0300
+
 parrot-interface (3.9+parrot0) testing; urgency=medium
 
   [ Lisetta "Sheireen" Ferrero ]

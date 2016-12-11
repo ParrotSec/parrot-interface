@@ -18,7 +18,7 @@ Description: Parrot interface metapackage
 
 Package: parrot-interface-common
 Architecture: all
-Depends: xinit, xorg, parrot-wallpapers, parrot-themes, parrot-menu, parrot-skel, parrot-update-manager
+Depends: xinit, xorg, xserver-xorg-input-all, xserver-xorg-input-mtrack, xserver-xorg-input-multitouch, xserver-xorg-input-mtouch, xserver-xorg-input-synaptics, xserver-xorg-input-vmmouse, parrot-wallpapers, parrot-themes, parrot-menu, parrot-skel, parrot-update-manager
 Recommends: abiword, bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, ffmpegthumbnailer, gdebi, geany, gnumeric, gpa, gparted, hexchat, firefox, xul-ext-noscript, libnotify-send, lightdm-parrot, parrot-sounds, parrot-welcome, synaptic, xboard, polyglot, crafty, dvd+rw-tools, udftools
 Suggests: parrot-interface-full
 Conflicts: iceweasel-frozenmod
