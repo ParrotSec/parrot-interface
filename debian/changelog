@@ -1,3 +1,9 @@
+parrot-interface (3.9+parrot2) testing; urgency=medium
+
+  * Fix wrong xorg dependencies
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 13 Dec 2016 02:09:57 +0100
+
 parrot-interface (3.9+parrot1) testing; urgency=medium
 
   * Fix trackpad support
