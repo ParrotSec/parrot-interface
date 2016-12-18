@@ -1,3 +1,10 @@
+parrot-interface (3.9+parrot3) testing; urgency=medium
+
+  * Remove unusable dependency
+  * add mate-desktop-environment dependency
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 18 Dec 2016 15:59:21 +0100
+
 parrot-interface (3.9+parrot2) testing; urgency=medium
 
   * Fix wrong xorg dependencies
