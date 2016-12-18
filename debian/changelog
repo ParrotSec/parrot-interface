@@ -1,3 +1,9 @@
+parrot-interface (3.9+parrot4) testing; urgency=medium
+
+  * remove mate-desktop environment to save 122MB of disk space
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 18 Dec 2016 16:13:12 +0100
+
 parrot-interface (3.9+parrot3) testing; urgency=medium
 
   * Remove unusable dependency
