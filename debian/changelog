@@ -1,3 +1,9 @@
+parrot-interface (3.9+parrot5) testing; urgency=medium
+
+  * Remove parrot-welcome (we need to rewrite it)
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 18 Dec 2016 19:13:55 +0100
+
 parrot-interface (3.9+parrot4) testing; urgency=medium
 
   * remove mate-desktop environment to save 122MB of disk space
