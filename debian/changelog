@@ -1,3 +1,9 @@
+parrot-interface (3.9+parrot6) testing; urgency=medium
+
+  * include mate-applets and mate-sensors-applet
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 21 Dec 2016 22:59:54 +0100
+
 parrot-interface (3.9+parrot5) testing; urgency=medium
 
   * Remove parrot-welcome (we need to rewrite it)
