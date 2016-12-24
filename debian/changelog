@@ -1,6 +1,7 @@
-parrot-interface (3.9+parrot7) testing; urgency=medium
+parrot-interface (3.10+parrot0) testing; urgency=medium
 
-  * replake kdm with lightdm-parrot
+  * replace kdm with lightdm-parrot
+  * add missing mate dependencies
 
  -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 24 Dec 2016 01:01:30 +0100
 
