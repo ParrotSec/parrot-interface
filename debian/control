@@ -41,7 +41,8 @@ Description: GNOME based Parrot desktop
 
 Package: parrot-kde
 Architecture: all
-Depends: parrot-interface-common, kde-plasma-desktop, plasma-desktop, kdm
+Depends: parrot-interface-common, kde-plasma-desktop, plasma-desktop
+Recommends: lightdm-parrot
 Description: KDE based Parrot desktop
  This metapackage installs a minimalistic KDE desktop on Parrot Security OS.
 
