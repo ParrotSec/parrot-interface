@@ -1,3 +1,19 @@
+parrot-interface (3.11+parrot0) testing; urgency=medium
+
+  * Change firefox homepage
+  * Adjust firefox bookmars
+  * Enable .onion browsing
+  * Clean firefox timestamps in configs
+  * Improve desktop metapackages (adding tasksel tasks)
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 12 Feb 2017 17:13:18 +0100
+
+parrot-interface (3.10+parrot0) testing; urgency=medium
+
+  * Replace firefox-esr with firefox (latest version is better)
+
+ -- Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>  Wed, 04 Jan 2017 15:03:49 +0300
+
 parrot-interface (3.9+parrot5) testing; urgency=medium
 
   * Remove parrot-welcome (we need to rewrite it)

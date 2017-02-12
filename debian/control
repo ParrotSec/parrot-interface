@@ -19,7 +19,7 @@ Description: Parrot interface metapackage
 Package: parrot-interface-common
 Architecture: all
 Depends: xinit, xorg, xserver-xorg-input-all, xserver-xorg-input-multitouch, xserver-xorg-input-synaptics, parrot-wallpapers, parrot-themes, parrot-menu, parrot-skel, parrot-update-manager
-Recommends: abiword, bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, ffmpegthumbnailer, gdebi, geany, gnumeric, gpa, gparted, hexchat, firefox, xul-ext-noscript, libnotify-send, lightdm-parrot, parrot-sounds, synaptic, xboard, polyglot, crafty, dvd+rw-tools, udftools
+Recommends: abiword, bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, ffmpegthumbnailer, gdebi, geany, gnumeric, gpa, gparted, hexchat, irssi, firefox, xul-ext-noscript, libnotify-send, lightdm-parrot, parrot-sounds, synaptic, xboard, polyglot, crafty, dvd+rw-tools, udftools
 Suggests: parrot-interface-full
 Breaks: iceweasel-frozenmod
 Replaces: iceweasel-frozenmod, firefox-esr, firefox, iceweasel
@@ -41,13 +41,15 @@ Description: GNOME based Parrot desktop
 
 Package: parrot-kde
 Architecture: all
-Depends: parrot-interface-common, kde-plasma-desktop, plasma-desktop, kdm
+Depends: parrot-interface-common, kde-plasma-desktop, plasma-desktop
+Recommends: task-kde-desktop, kdm
 Description: KDE based Parrot desktop
  This metapackage installs a minimalistic KDE desktop on Parrot Security OS.
 
 Package: parrot-lxde
 Architecture: all
 Depends: parrot-interface-common, lxde
+Recommends: task-lxde-desktop
 Description: LXDE based Parrot destop
  This metapackage installs a minimalistic LXDE desktop on Parrot Security OS.
 
@@ -62,5 +64,6 @@ Description: Parrot interface metapackage
 Package: parrot-xfce
 Architecture: all
 Depends: parrot-interface-common, xfce4, lightdm, network-manager-gnome
+Recommends: task-xfce-desktop
 Description: XFCE based Parrot destop
  This metapackage installs a minimalistic XFCE desktop on Parrot Security OS.

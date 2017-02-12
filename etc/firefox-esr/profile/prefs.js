@@ -8,7 +8,8 @@
  * To make a manual change to preferences, you can visit the URL about:config
  * For more information, see http://www.mozilla.org/unix/customizing.html#prefs
  */
-user_pref("browser.startup.homepage","http://search.frozenbox.org/pwn");
+user_pref("network.dns.blockDotOnion", false);
+user_pref("browser.startup.homepage","https://start.parrotsec.org");
 user_pref("network.proxy.autoconfig_url", "file:///etc/anonsurf/onion.pac");
 user_pref("network.proxy.socks", "127.0.0.1");
 user_pref("network.proxy.socks_port", 9050);
