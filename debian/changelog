@@ -1,3 +1,9 @@
+parrot-interface (3.11+parrot2) testing; urgency=medium
+
+  * Import changes from git
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 14 Feb 2017 13:08:13 +0100
+
 parrot-interface (3.11+parrot1) testing; urgency=medium
 
   * Include mate-applets
@@ -19,6 +25,19 @@ parrot-interface (3.10+parrot0) testing; urgency=medium
   * Replace firefox-esr with firefox (latest version is better)
 
  -- Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>  Wed, 04 Jan 2017 15:03:49 +0300
+
+parrot-interface (3.10+parrot0) testing; urgency=medium
+
+  * replace kdm with lightdm-parrot
+  * add missing mate dependencies
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 24 Dec 2016 01:01:30 +0100
+
+parrot-interface (3.9+parrot6) testing; urgency=medium
+
+  * include mate-applets and mate-sensors-applet
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 21 Dec 2016 22:59:54 +0100
 
 parrot-interface (3.9+parrot5) testing; urgency=medium
 
