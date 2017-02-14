@@ -1,3 +1,9 @@
+parrot-interface (3.11+parrot1) testing; urgency=medium
+
+  * Include mate-applets
+
+ -- Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>  Tue, 14 Feb 2017 13:09:07 +1100
+
 parrot-interface (3.11+parrot0) testing; urgency=medium
 
   * Change firefox homepage
