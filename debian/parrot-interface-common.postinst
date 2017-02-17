@@ -1,5 +1,2 @@
 #!/bin/bash
 chmod 775 /usr/share/parrot-defaults/postgresql_reduce_shared_buffers || true
-
-rm /home/*/.mozilla/firefox/iNFubtGImosdf.Parrot/extensions/{73a6fe31-595d-460b-a920-fcc0f8843232}.xpi || true
-rm /home/*/.mozilla/firefox/iNFubtGImosdf.Parrot/extensions/{d40f5e7b-d2cf-4856-b441-cc613eeffbe3}.xpi || true

@@ -1,3 +1,10 @@
+parrot-interface (3.12+parrot0) testing; urgency=medium
+
+  * Remove packages which depend from gtkd
+  * Add firefox-esr in alternative to firefox
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 17 Feb 2017 19:09:56 +0100
+
 parrot-interface (3.11+parrot2) testing; urgency=medium
 
   * Import changes from git
