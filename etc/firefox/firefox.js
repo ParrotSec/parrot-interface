@@ -8,15 +8,21 @@
  * To make a manual change to preferences, you can visit the URL about:config
  * For more information, see http://www.mozilla.org/unix/customizing.html#prefs
  */
-user_pref("network.dns.blockDotOnion", false);
-user_pref("browser.startup.homepage","https://start.parrotsec.org");
-user_pref("network.proxy.autoconfig_url", "file:///etc/anonsurf/onion.pac");
-user_pref("network.proxy.socks", "127.0.0.1");
-user_pref("network.proxy.socks_port", 9050);
-user_pref("network.proxy.type", 2);
+pref("network.dns.blockDotOnion", false);
+pref("browser.startup.homepage","https://start.parrotsec.org");
+pref("pref.browser.homepage.disable_button.current_page", false);
+pref("startup.homepage_welcome_url", "https://start.parrotsec.org");
+pref("startup.homepage_override_url", "https://start.parrotsec.org");
+pref("startup.homepage_welcome_url.additional", "https://docs.parrotsec.org/donate");
+pref("network.proxy.autoconfig_url", "file:///etc/anonsurf/onion.pac");
+pref("network.proxy.socks", "127.0.0.1");
+pref("network.proxy.socks_port", 9050);
+pref("network.proxy.type", 2);
 pref("extensions.update.enabled", true);
 pref("intl.locale.matchOS", true);
 pref("browser.shell.checkDefaultBrowser", false);
 pref("media.gmp-manager.url.override", "data:text/plain,");
 pref("media.gmp-gmpopenh264.enabled", false);
 pref("datareporting.healthreport.uploadEnabled", false);
+pref("browser.search.defaultenginename", "DuckDuckGo");
+pref("capability.policy.maonoscript.sites", "parrotsec.org cloudflare.com frozenbox.org duckduckgo.org about: about:addons about:blank about:blocked about:certerror about:config about:crashes about:home about:memory about:neterror about:plugins about:preferences about:privatebrowsing about:sessionrestore about:srcdoc about:support blob: chrome: http://cloudflare.com http://frozenbox.org http://parrotsec.org http://duckduckgo.org https://cloudflare.com https://frozenbox.org https://parrotsec.org https://duckduckgo.org mediasource: moz-extension: moz-safe-about: resource:");
