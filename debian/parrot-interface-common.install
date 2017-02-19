@@ -4,8 +4,6 @@ etc/xdg/xfce4/*
 etc/xdg/xfce4/terminal/*
 usr/*
 usr/share/*
-usr/share/doc/*
-usr/share/doc/parrot-interface-common/*
 usr/share/parrot-defaults/*
 lib/*
 lib/systemd/*

@@ -1,3 +1,9 @@
+parrot-interface (3.12+parrot1) testing; urgency=medium
+
+  * Fix firefox profiles
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 19 Feb 2017 04:45:28 +0100
+
 parrot-interface (3.12+parrot0) testing; urgency=medium
 
   * Remove packages which depend from gtkd
