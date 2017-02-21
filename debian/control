@@ -11,7 +11,7 @@ Homepage: http://www.parrotsec.org/
 
 Package: parrot-interface
 Architecture: all
-Depends: xinit, xorg, parrot-interface-common, parrot-mate | parrot-xfce | parrot-lxde | parrot-kde | parrot-gnome
+Depends: xinit, xorg, parrot-interface-common, parrot-mate | parrot-interface-stub | parrot-cinnamon | parrot-xfce | parrot-lxde | parrot-kde | parrot-gnome
 Suggests: parrot-interface-full
 Description: Parrot interface metapackage
  metapackage that installs the graphic interface
@@ -61,9 +61,15 @@ Suggests: parrot-interface-full
 Description: Parrot interface metapackage
  metapackage that installs the graphic interface
 
-Package: parrot-xfce
+Package: parrot-cinnamon
 Architecture: all
-Depends: parrot-interface-common, xfce4, lightdm, network-manager-gnome
-Recommends: task-xfce-desktop
-Description: XFCE based Parrot destop
- This metapackage installs a minimalistic XFCE desktop on Parrot Security OS.
+Depends: parrot-interface-common, cinnamon-desktop-environment
+Recommends: task-cinnamon-desktop
+Description: CINNAMON based Parrot destop
+ This metapackage installs a minimalistic CINNAMON desktop on Parrot Security OS
+ 
+Package: parrot-interface-stub
+Architecture: all
+Description: stub/empty package for parrot-interface
+ This is a stub/empty package that, if installed, allows the removal of the default
+ desktop environment without causing the removal of parrot-interface and parrot-interface-common
