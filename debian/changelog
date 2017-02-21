@@ -1,3 +1,11 @@
+parrot-interface (3.14+parrot0) testing; urgency=medium
+
+  * Add cinnamon support
+  * Prevent installation of xfce when mate is removed
+  * Pretend to have a beer offered by erg.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 21 Feb 2017 21:39:28 +0100
+
 parrot-interface (3.13+parrot0) testing; urgency=medium
 
   * Move firefox profiles to parrot-skel
