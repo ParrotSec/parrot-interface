@@ -1,3 +1,9 @@
+parrot-interface (3.14+parrot2) testing; urgency=medium
+
+  * Add onboard virtual keyboard
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 26 Feb 2017 18:53:18 +0100
+
 parrot-interface (3.14+parrot1) testing; urgency=medium
 
   * Improve metapackages
