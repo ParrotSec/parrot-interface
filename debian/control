@@ -19,7 +19,7 @@ Description: Parrot interface metapackage
 Package: parrot-interface-common
 Architecture: all
 Depends: xinit, xorg, xserver-xorg-input-all, xserver-xorg-input-multitouch, xserver-xorg-input-synaptics, parrot-wallpapers, parrot-themes, parrot-menu, parrot-skel
-Recommends: abiword, bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, ffmpegthumbnailer, gdebi, geany, gnumeric, gpa, gparted, hexchat, irssi, firefox | firefox-esr, xul-ext-noscript, libnotify-send, lightdm-parrot, parrot-sounds, synaptic, xboard, polyglot, crafty, dvd+rw-tools, udftools
+Recommends: abiword, bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, ffmpegthumbnailer, gdebi, geany, gnumeric, gpa, gparted, hexchat, irssi, firefox | firefox-esr, xul-ext-noscript, xul-ext-useragentswitcher, xul-ext-ublock-origin, xul-ext-spdy-indicator, xul-ext-lightbeam, libnotify-send, lightdm-parrot, synaptic, xboard, polyglot, crafty, dvd+rw-tools, udftools, system-config-printer, system-config-lvm, policycoreutils-gui
 Suggests: parrot-interface-full
 Breaks: iceweasel-frozenmod
 Replaces: iceweasel-frozenmod, firefox-esr, firefox, iceweasel
@@ -56,7 +56,7 @@ Description: LXDE based Parrot destop
 Package: parrot-mate
 Architecture: all
 Depends: mate-core, parrot-interface-common
-Recommends: atril, breeze-cursor-theme, caja-gksu, caja-image-converter, caja-open-terminal, caja-sendto, caja-share, caja, engrampa, eom, ffmpegthumbnailer, gnumeric, mate-applets, mate-applet-topmenu, mate-indicator-applet, mate-media, mate-menu, mate-netspeed, mate-notification-daemon, mate-optimus, mate-polkit-bin, mate-power-manager, mate-screensaver, mate-sensors-applet, mate-sensors-applet-nvidia, mate-system-monitor, mate-system-tools, mate-sensors-applet, mate-tweak, gtk3-engines-breeze, gtk3-engines-oxygen, mate-user-share, mate-utils, mozo, network-manager-gnome | wicd, pluma
+Recommends: atril, breeze-cursor-theme, caja-gksu, caja-image-converter, caja-open-terminal, caja-sendto, caja-share, caja, engrampa, eom, ffmpegthumbnailer, gnome-system-tools, gnumeric, mate-applets, mate-applet-topmenu, mate-indicator-applet, mate-media, mate-menu, mate-netspeed, mate-notification-daemon, mate-optimus, mate-polkit-bin, mate-power-manager, mate-screensaver, mate-sensors-applet, mate-sensors-applet-nvidia, mate-system-monitor, mate-system-tools, mate-sensors-applet, mate-tweak, gtk3-engines-breeze, gtk3-engines-oxygen, mate-user-share, mate-utils, mozo, network-manager-gnome | wicd, pluma
 Suggests: parrot-interface-full
 Description: Parrot interface metapackage
  metapackage that installs the graphic interface

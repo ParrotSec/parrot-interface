@@ -12,7 +12,6 @@ pref("network.dns.blockDotOnion", false);
 pref("browser.startup.homepage","https://start.parrotsec.org");
 pref("pref.browser.homepage.disable_button.current_page", false);
 pref("startup.homepage_welcome_url", "https://start.parrotsec.org");
-pref("startup.homepage_override_url", "https://start.parrotsec.org");
 pref("startup.homepage_welcome_url.additional", "https://docs.parrotsec.org/donate");
 pref("network.proxy.autoconfig_url", "file:///etc/anonsurf/onion.pac");
 pref("network.proxy.socks", "127.0.0.1");
