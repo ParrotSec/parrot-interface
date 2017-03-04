@@ -1,3 +1,13 @@
+parrot-interface (3.15+parrot0) testing; urgency=medium
+
+  * Add missing dependencies
+  * Improve kde,lxde,gnome metapackages
+  * Add xfce again
+  * Improve browser packages
+  * Use sddm for kde and add exception on parrot-interface-common
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 04 Mar 2017 02:17:23 +0100
+
 parrot-interface (3.14+parrot3) testing; urgency=medium
 
   * Remove lightbeam as it installs more than 700Mb of useless dependencies (texlive)
