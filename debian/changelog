@@ -1,3 +1,15 @@
+parrot-interface (3.15+parrot2) testing; urgency=medium
+
+  * Change firefox launcher
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 05 Mar 2017 21:26:19 +0100
+
+parrot-interface (3.15+parrot1) testing; urgency=medium
+
+  * Fix gnome metapackage
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 04 Mar 2017 10:26:08 +0100
+
 parrot-interface (3.15+parrot0) testing; urgency=medium
 
   * Add missing dependencies
