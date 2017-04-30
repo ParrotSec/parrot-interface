@@ -1,3 +1,10 @@
+parrot-interface (3.16+parrot0) testing; urgency=medium
+
+  * Add parrot-updater dependency
+  * Add gdm3 as an alternative display manager for gnome
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 30 Apr 2017 20:39:24 +0200
+
 parrot-interface (3.15+parrot2) testing; urgency=medium
 
   * Change firefox launcher

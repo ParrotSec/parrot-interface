@@ -18,8 +18,8 @@ Description: Parrot interface metapackage
 
 Package: parrot-interface-common
 Architecture: all
-Depends: xinit, xorg, xserver-xorg-input-all, xserver-xorg-input-multitouch, xserver-xorg-input-synaptics, parrot-wallpapers, parrot-themes, parrot-menu, parrot-skel
-Recommends: abiword, bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, ffmpegthumbnailer, gdebi, geany, gnumeric, gpa, gparted, hexchat, irssi, firefox, xul-ext-noscript, xul-ext-useragentswitcher, xul-ext-ublock-origin, libnotify-send, lightdm-parrot | sddm, synaptic, xboard, polyglot, crafty, dvd+rw-tools, udftools, system-config-printer, system-config-lvm, policycoreutils-gui, onboard, pulseaudio, alsa-base, alsa-tools, alsa-utils
+Depends: xinit, xorg, xserver-xorg-input-all, xserver-xorg-input-multitouch, xserver-xorg-input-synaptics, parrot-wallpapers, parrot-themes, parrot-menu, parrot-skel, parrot-updater
+Recommends: abiword, bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, ffmpegthumbnailer, gdebi, geany, gnumeric, gpa, gparted, hexchat, irssi, firefox | firefox-esr, xul-ext-noscript, xul-ext-useragentswitcher, xul-ext-ublock-origin, libnotify-send, lightdm-parrot | sddm | gdm3, synaptic, xboard, polyglot, crafty, dvd+rw-tools, udftools, system-config-printer, system-config-lvm, policycoreutils-gui, onboard, pulseaudio, alsa-base, alsa-tools, alsa-utils
 Suggests: parrot-interface-full
 Breaks: iceweasel-frozenmod
 Replaces: iceweasel-frozenmod, firefox-esr, firefox, iceweasel
@@ -35,7 +35,8 @@ Description: Parrot FULL Interface metapackage
 
 Package: parrot-gnome
 Architecture: all
-Depends: parrot-interface-common, gnome-core, gedit, gnome-brave-icon-theme, gnome-shell-extensions, gnome-shell-extension-proxyswitcher, gnome-shell-extension-dashtodock, gnome-shell-extension-refreshwifi, gnome-shell-extension-easyscreencast, gnome-shell-extension-workspacestodock, gnome-tweak-tool, nautilus-wipe, nautilus-gtkhash , gnome-orca, file-roller, gnome-calculator
+Depends: parrot-interface-common gnome-core, gedit, gnome-brave-icon-theme, gnome-shell-extensions, gnome-shell-extension-proxyswitcher, gnome-shell-extension-dashtodock, gnome-shell-extension-refreshwifi, gnome-shell-extension-easyscreencast, gnome-shell-extension-workspacestodock, gnome-tweak-tool, nautilus-wipe, nautilus-gtkhash , gnome-orca, file-roller, gnome-calculator
+Recommends: gdm3
 Description: GNOME based Parrot desktop
  This metapackage installs a minimalistic GNOME desktop on Parrot Security OS.
 
@@ -57,7 +58,7 @@ Description: LXDE based Parrot destop
  This metapackage installs a minimalistic LXDE desktop on Parrot Security OS.
 
 Package: parrot-mate
-Architecture: all
+Architecture: any
 Depends: mate-core, parrot-interface-common
 Recommends: atril, breeze-cursor-theme, caja-gksu, caja-image-converter, caja-open-terminal, caja-sendto, caja-share, caja, engrampa, eom, ffmpegthumbnailer, gnome-system-tools, gnumeric, mate-applets, mate-applet-topmenu, mate-indicator-applet, mate-media, mate-menu, mate-netspeed, mate-notification-daemon, mate-optimus, mate-polkit-bin, mate-power-manager, mate-screensaver, mate-sensors-applet, mate-sensors-applet-nvidia, mate-system-monitor, mate-system-tools, mate-sensors-applet, mate-tweak, gtk3-engines-breeze, gtk3-engines-oxygen, mate-user-share, mate-utils, mozo, network-manager-gnome | wicd, pluma
 Suggests: parrot-interface-full
