@@ -19,7 +19,7 @@ Description: Parrot interface metapackage
 Package: parrot-interface-common
 Architecture: all
 Depends: xinit, xorg, xserver-xorg-input-all, xserver-xorg-input-multitouch, xserver-xorg-input-synaptics, parrot-wallpapers, parrot-themes, parrot-menu, parrot-skel, parrot-updater
-Recommends: abiword, bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, ffmpegthumbnailer, gdebi, geany, gnumeric, gpa, gparted, hexchat, irssi, firefox | firefox-esr, xul-ext-noscript, xul-ext-useragentswitcher, xul-ext-ublock-origin, libnotify-send, lightdm-parrot | sddm | gdm3, synaptic, xboard, polyglot, crafty, dvd+rw-tools, udftools, system-config-printer, system-config-lvm, policycoreutils-gui, onboard, pulseaudio, alsa-base, alsa-tools, alsa-utils
+Recommends: abiword, bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, ffmpegthumbnailer, gdebi, geany, gnumeric, gpa, gparted, hexchat, irssi, firefox | firefox-esr, xul-ext-noscript, xul-ext-useragentswitcher, xul-ext-ublock-origin, xul-ext-torbirdy, libnotify-send, lightdm-parrot | sddm | gdm3, synaptic, xboard, polyglot, crafty, dvd+rw-tools, udftools, system-config-printer, system-config-lvm, policycoreutils-gui, onboard, pulseaudio, alsa-base, alsa-tools, alsa-utils
 Suggests: parrot-interface-full
 Breaks: iceweasel-frozenmod
 Replaces: iceweasel-frozenmod, firefox-esr, firefox, iceweasel
