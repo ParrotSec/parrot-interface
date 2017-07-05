@@ -1,3 +1,9 @@
+parrot-interface (3.16+parrot2) testing; urgency=medium
+
+  * Remove xul-ext-torbirdy.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 05 Jul 2017 14:36:38 +0200
+
 parrot-interface (3.16+parrot1) testing; urgency=medium
 
   * Add useful dependencies to parrot-interface-common.
