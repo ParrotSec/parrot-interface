@@ -9,10 +9,8 @@
  */
 
 user_pref("network.dns.blockDotOnion", false);
-user_pref("browser.startup.homepage","https://start.parrotsec.org");
-user_pref("startup.homepage_welcome_url", "https://start.parrotsec.org");
-user_pref("startup.homepage_override_url", "https://start.parrotsec.org");
-user_pref("startup.homepage_welcome_url.additional", "https://docs.parrotsec.org/donate");
+user_pref("browser.startup.homepage", "https://start.parrotsec.org/");
+user_pref("startup.homepage_welcome_url", "https://docs.parrotsec.org/donate");
 user_pref("accessibility.blockautorefresh", true);
 user_pref("accessibility.browsewithcaret", true);
 user_pref("browser.search.defaultenginename", "DuckDuckGo");
@@ -27,7 +25,6 @@ user_pref("dom.mozApps.used", true);
 user_pref("experiments.activeExperiment", false);
 user_pref("extensions.blocklist.pingCountTotal", 2);
 user_pref("extensions.blocklist.pingCountVersion", 2);
-user_pref("extensions.bootstrappedAddons", "{\"loop@mozilla.org\":{\"version\":\"1.1.14\",\"type\":\"extension\",\"descriptor\":\"/usr/lib/firefox-esr/browser/features/loop@mozilla.org.xpi\",\"multiprocessCompatible\":false,\"runInSafeMode\":true},\"useragentoverrider@qixinglu.com\":{\"version\":\"0.2.5.1-signed\",\"type\":\"extension\",\"descriptor\":\"/usr/lib/firefox-esr/browser/extensions/useragentoverrider@qixinglu.com.xpi\",\"multiprocessCompatible\":false,\"runInSafeMode\":false}}");
 user_pref("extensions.databaseSchema", 17);
 user_pref("extensions.e10sBlockedByAddons", true);
 user_pref("extensions.getAddons.databaseSchema", 5);
@@ -66,9 +63,9 @@ user_pref("services.sync.tabs.lastSyncLocal", "0");
 user_pref("signon.importedFromSqlite", true);
 user_pref("toolkit.telemetry.reportingpolicy.firstRun", false);
 user_pref("ui.key.menuAccessKeyFocuses", false);
-pref("extensions.update.enabled", true);
-pref("intl.locale.matchOS", true);
-pref("browser.shell.checkDefaultBrowser", false);
-pref("media.gmp-manager.url.override", "data:text/plain,");
-pref("media.gmp-gmpopenh264.enabled", false);
-pref("datareporting.healthreport.uploadEnabled", false);
+user_pref("extensions.update.enabled", true);
+user_pref("intl.locale.matchOS", true);
+user_pref("browser.shell.checkDefaultBrowser", false);
+user_pref("media.gmp-manager.url.override", "data:text/plain,");
+user_pref("media.gmp-gmpopenh264.enabled", false);
+user_pref("datareporting.healthreport.uploadEnabled", false);

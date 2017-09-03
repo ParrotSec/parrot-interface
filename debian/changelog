@@ -1,3 +1,23 @@
+parrot-interface (3.18+parrot0) testing; urgency=medium
+
+  * Add lxkeymap.
+  * Add parrot keyboard selector popup.
+  * Update parrot-mate for mate 1.18.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 03 Sep 2017 13:23:09 +0200
+
+parrot-interface (3.17+parrot1) testing; urgency=medium
+
+  * Add mate-calc.
+
+ -- Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>  Thu, 31 Aug 2017 02:49:54 +0200
+
+parrot-interface (3.17+parrot0) testing; urgency=medium
+
+  * Add snapd.
+
+ -- Lisetta "Sheireen" Ferrero <sheireen@autistiche.org>  Wed, 26 Jul 2017 12:58:39 +0200
+
 parrot-interface (3.16+parrot2) testing; urgency=medium
 
   * Remove xul-ext-torbirdy.
