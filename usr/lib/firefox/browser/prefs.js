@@ -9,8 +9,8 @@
  */
 
 user_pref("network.dns.blockDotOnion", false);
-user_pref("browser.startup.homepage", "https://start.parrotsec.org/");
-user_pref("startup.homepage_welcome_url", "https://docs.parrotsec.org/donate");
+user_pref("browser.startup.homepage", "https://start.parrotsec.org/?v=3.9");
+user_pref("startup.homepage_welcome_url", "https://docs.parrotsec.org/donate?v=3.9");
 user_pref("accessibility.blockautorefresh", true);
 user_pref("accessibility.browsewithcaret", true);
 user_pref("browser.search.defaultenginename", "DuckDuckGo");
@@ -18,6 +18,7 @@ user_pref("browser.search.hiddenOneOffs", "Bing,Amazon.com,eBay,Twitter");
 user_pref("browser.search.useDBForOrder", true);
 user_pref("browser.toolbarbuttons.introduced.pocket-button", true);
 user_pref("browser.uiCustomization.state", "{\"placements\":{\"PanelUI-contents\":[\"edit-controls\",\"zoom-controls\",\"new-window-button\",\"privatebrowsing-button\",\"save-page-button\",\"print-button\",\"history-panelmenu\",\"fullscreen-button\",\"find-button\",\"preferences-button\",\"add-ons-button\",\"developer-button\",\"sync-button\"],\"toolbar-menubar\":[\"menubar-items\"],\"nav-bar\":[\"urlbar-container\",\"search-container\",\"bookmarks-menu-button\",\"pocket-button\",\"downloads-button\",\"home-button\",\"loop-button\",\"useragentoverrider-button\",\"https-everywhere-button\",\"noscript-tbb\",\"wot-button\"],\"TabsToolbar\":[\"tabbrowser-tabs\",\"new-tab-button\",\"alltabs-button\"],\"web-developer-toolbar\":[\"web-developer-disable-toolbar\",\"web-developer-cookies-toolbar\",\"web-developer-css-toolbar\",\"web-developer-forms-toolbar\",\"web-developer-images-toolbar\",\"web-developer-information-toolbar\",\"web-developer-miscellaneous-toolbar\",\"web-developer-outline-toolbar\",\"web-developer-resize-toolbar\",\"web-developer-tools-toolbar\",\"web-developer-view-source-toolbar\",\"web-developer-options-toolbar\",\"customizableui-special-spring1\",\"web-developer-render-mode-statusbar\",\"web-developer-css-statusbar\",\"web-developer-javascript-statusbar\"],\"addon-bar\":[\"addonbar-closebutton\",\"status-bar\"],\"PersonalToolbar\":[\"personal-bookmarks\"]},\"seen\":[],\"dirtyAreaCache\":[\"toolbar-menubar\",\"nav-bar\",\"TabsToolbar\",\"web-developer-toolbar\",\"PersonalToolbar\"],\"currentVersion\":5,\"newElementCount\":1}");
+user_pref("noscript.global", true);
 user_pref("capability.policy.maonoscript.sites", "parrotsec.org cloudflare.com frozenbox.org duckduckgo.org about: about:addons about:blank about:blocked about:certerror about:config about:crashes about:home about:memory about:neterror about:plugins about:preferences about:privatebrowsing about:sessionrestore about:srcdoc about:support blob: chrome: http://cloudflare.com http://frozenbox.org http://parrotsec.org http://duckduckgo.org https://cloudflare.com https://frozenbox.org https://parrotsec.org https://duckduckgo.org mediasource: moz-extension: moz-safe-about: resource:");
 user_pref("datareporting.healthreport.service.firstRun", false);
 user_pref("dom.apps.reset-permissions", true);

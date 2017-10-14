@@ -1,3 +1,11 @@
+parrot-interface (3.19+parrot0) testing; urgency=medium
+
+  * Allow javascipt globally on firefox.
+  * Add version tag to firefox homepage.
+  * Add xdg-user-dirs dependency.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 15 Oct 2017 01:29:05 +0200
+
 parrot-interface (3.18+parrot1) testing; urgency=medium
 
   * Update d/*.install
