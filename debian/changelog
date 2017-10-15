@@ -1,3 +1,9 @@
+parrot-interface (3.19+parrot1) testing; urgency=medium
+
+  * Minor fix to firefox config.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 15 Oct 2017 11:58:31 +0200
+
 parrot-interface (3.19+parrot0) testing; urgency=medium
 
   * Allow javascipt globally on firefox.

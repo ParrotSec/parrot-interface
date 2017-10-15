@@ -9,9 +9,6 @@
  * For more information, see http://www.mozilla.org/unix/customizing.html#prefs
  */
 pref("network.dns.blockDotOnion", false);
-pref("browser.startup.homepage","https://start.parrotsec.org");
-pref("pref.browser.homepage.disable_button.current_page", false);
-pref("startup.homepage_welcome_url", "https://docs.parrotsec.org/donate");
 pref("network.proxy.autoconfig_url", "file:///etc/anonsurf/onion.pac");
 pref("network.proxy.socks", "127.0.0.1");
 pref("network.proxy.socks_port", 9050);
