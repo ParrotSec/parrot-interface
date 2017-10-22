@@ -2,8 +2,9 @@
 
 if [ -f ~/.keymap-selected ]
 then
-	exit 0
+	setxkbmap $(cat "~/.keymap-selected")
 else
-	touch ~/.keymap-selected
-	lxkeymap
+	sleep 5
+	setxkbmap us
+	lxkeymap && touch ~/.keymap-selected
 fi

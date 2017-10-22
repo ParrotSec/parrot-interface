@@ -1,3 +1,9 @@
+parrot-interface (4.0+parrot0) testing; urgency=medium
+
+  * Rewrite firefox launchers to be sandboxed by firejail.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 22 Oct 2017 23:00:43 +0200
+
 parrot-interface (3.19+parrot1) testing; urgency=medium
 
   * Minor fix to firefox config.

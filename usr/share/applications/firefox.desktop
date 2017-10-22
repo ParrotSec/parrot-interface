@@ -1,9 +1,9 @@
 [Desktop Entry]
-Name=Firefox Profile Manager
+Name=Firefox
 Comment=Browse the World Wide Web
-GenericName=Web Browser (profile manager)
-X-GNOME-FullName=Firefox Profile Manager
-Exec=firefox -ProfileManager %u
+GenericName=Web Browser
+X-GNOME-FullName=Firefox
+Exec=firefox %u
 Terminal=false
 X-MultipleArgs=false
 Type=Application
