@@ -1,3 +1,10 @@
+parrot-interface (4.0+parrot1) testing; urgency=medium
+
+  * Update firefox extensions (ublock origin, noscript, privacy badger).
+  * Improve parrot-interface-common dependencies.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 27 Nov 2017 00:06:39 +0100
+
 parrot-interface (4.0+parrot0) testing; urgency=medium
 
   * Rewrite firefox launchers to be sandboxed by firejail.
