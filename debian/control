@@ -19,7 +19,7 @@ Description: Parrot interface metapackage
 Package: parrot-interface-common
 Architecture: all
 Depends: xinit, xorg, xdg-user-dirs, xdg-user-dirs-gtk, xserver-xorg-input-all, xserver-xorg-input-multitouch, xserver-xorg-input-synaptics, lxkeymap, parrot-wallpapers, parrot-themes, parrot-menu, parrot-skel, parrot-updater
-Recommends: abiword, bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, ffmpegthumbnailer, gdebi, geany, gnumeric, gpa, gparted, hexchat, irssi, firefox | firefox-esr, xul-ext-noscript, xul-ext-useragentswitcher, xul-ext-ublock-origin, libnotify-send, lightdm-parrot | sddm | gdm3, snapd, synaptic, xboard, polyglot, crafty, dvd+rw-tools, udftools, system-config-printer, onboard, pulseaudio, alsa-base, alsa-tools, alsa-utils, ffmpeg, qbittorrent, keepassxc, claws-mail
+Recommends: abiword, bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, gdebi, geany, gpa, gparted, hexchat, irssi, firefox | firefox-esr, libnotify-send, lightdm-parrot | sddm | gdm3, snapd, synaptic, xboard, polyglot, crafty, dvd+rw-tools, udftools, system-config-printer, onboard, pulseaudio, alsa-base, alsa-tools, alsa-utils, ffmpeg, qbittorrent, keepassxc, claws-mail | thunderbird, redshift, redshift-gtk
 Suggests: parrot-interface-full
 Replaces: firefox-esr, firefox, iceweasel
 Description: Parrot interface metapackage
@@ -27,7 +27,7 @@ Description: Parrot interface metapackage
 
 Package: parrot-interface-full
 Architecture: all
-Recommends: pidgin, hexchat, libreoffice, brasero, remmina,redshift,redshift-gtk, baobab, seahorse, qtcreator, thunderbird, enigmail, cups, ricochet-im, vlc, mpv
+Recommends: pidgin, hexchat, libreoffice, brasero, remmina, redshift, redshift-gtk, baobab, seahorse, qtcreator, thunderbird, enigmail, cups, ricochet-im, vlc, mpv
 Description: Parrot FULL Interface metapackage
  metapackage that installs ALL the user applications required in a standard
  home computer as photo manager, music manager, video editor, email client, office suite etc
