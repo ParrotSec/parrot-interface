@@ -1,13 +1,13 @@
 Source: parrot-interface
 Priority: optional
-Maintainer: Parrot Devel Team <parrot-devel@lists.parrotsec.org>
+Maintainer: Parrot Dev Team <team@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
            Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>
-Standards-Version: 4.0.0
+Standards-Version: 4.1.4
 Section: info
-Build-Depends: debhelper (>= 9)
+Build-Depends: debhelper (>= 10)
 Build-Depends-Indep: pkg-config
-Homepage: http://www.parrotsec.org/
+Homepage: https://www.parrotsec.org/
 
 Package: parrot-interface
 Architecture: all
@@ -19,7 +19,7 @@ Description: Parrot interface metapackage
 Package: parrot-interface-common
 Architecture: all
 Depends: xinit, xorg, xdg-user-dirs, xdg-user-dirs-gtk, xserver-xorg-input-all, xserver-xorg-input-multitouch, xserver-xorg-input-synaptics, lxkeymap, parrot-wallpapers, parrot-themes, parrot-menu, parrot-skel, parrot-updater
-Recommends: abiword, bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, gdebi, geany, gpa, gparted, hexchat, irssi, firefox | firefox-esr, libnotify-send, lightdm-parrot | sddm | gdm3, snapd, synaptic, xboard, polyglot, crafty, dvd+rw-tools, udftools, system-config-printer, onboard, pulseaudio, alsa-base, alsa-tools, alsa-utils, ffmpeg, qbittorrent, keepassxc, claws-mail | thunderbird, redshift, redshift-gtk
+Recommends: bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, gdebi, geany, gpa, gparted, hexchat, irssi, firefox | firefox-esr, libnotify-send, lightdm-parrot | sddm | gdm3, snapd, synaptic, xboard, polyglot, crafty, dvd+rw-tools, udftools, system-config-printer, onboard, pulseaudio, alsa-base, alsa-tools, alsa-utils, ffmpeg, qbittorrent, keepassxc, claws-mail | thunderbird, redshift, redshift-gtk, pidgin, pidgin-encryption, pidgin-openpgp, pidgin-otr, pidgin-mra, pidgin-nateon, pidgin-themes, pidgin-plugin-pack, pidgin-privacy-please
 Suggests: parrot-interface-full
 Replaces: firefox-esr, firefox, iceweasel
 Description: Parrot interface metapackage
@@ -59,7 +59,7 @@ Description: LXDE based Parrot destop
 Package: parrot-mate
 Architecture: any
 Depends: mate-core, parrot-interface-common
-Recommends: atril, breeze-cursor-theme, caja-actions, caja-gksu, caka-gtkhash, caja-image-converter, caja-open-terminal, caja-sendto, caja-share, caja-xattr-tags, caja, engrampa, eom, gnome-system-tools, gnumeric, mate-applets, mate-applet-brisk-menu, mate-applet-topmenu, mate-calc, mate-common, mate-control-center, mate-dock-applet, mate-indicator-applet, mate-media, mate-menu, mate-netspeed, mate-notification-daemon, mate-polkit-bin, mate-power-manager, mate-screensaver, mate-sensors-applet, mate-sensors-applet-nvidia, mate-system-monitor, mate-system-tools, mate-tweak, gtk3-engines-breeze, mate-utils, mozo, network-manager-gnome | wicd, pluma
+Recommends: atril, breeze-cursor-theme, caja-actions, caja-gksu, caka-gtkhash, caja-image-converter, caja-open-terminal, caja-sendto, caja-share, caja-xattr-tags, caja, engrampa, eom, gnome-system-tools, mate-applets, mate-applet-brisk-menu, mate-applet-topmenu, mate-calc, mate-common, mate-control-center, mate-dock-applet, mate-indicator-applet, mate-media, mate-menu, mate-netspeed, mate-notification-daemon, mate-polkit-bin, mate-power-manager, mate-screensaver, mate-sensors-applet, mate-sensors-applet-nvidia, mate-system-monitor, mate-system-tools, mate-tweak, gtk3-engines-breeze, mate-utils, mozo, network-manager-gnome | wicd, pluma
 Suggests: parrot-interface-full
 Description: Parrot interface metapackage
  metapackage that installs the graphic interface
