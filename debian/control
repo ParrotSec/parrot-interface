@@ -19,7 +19,7 @@ Description: Parrot interface metapackage
 Package: parrot-interface-common
 Architecture: all
 Depends: xinit, xorg, xdg-user-dirs, xdg-user-dirs-gtk, xserver-xorg-input-all, xserver-xorg-input-multitouch, xserver-xorg-input-synaptics, lxkeymap, parrot-wallpapers, parrot-themes, parrot-menu, parrot-skel, parrot-updater
-Recommends: bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, gdebi, geany, gpa, gparted, hexchat, irssi, firefox | firefox-esr, libnotify-send, lightdm-parrot | sddm | gdm3, snapd, synaptic, xboard, polyglot, crafty, dvd+rw-tools, udftools, system-config-printer, onboard, pulseaudio, alsa-base, alsa-tools, alsa-utils, ffmpeg, qbittorrent, keepassxc, claws-mail | thunderbird, redshift, redshift-gtk, pidgin, pidgin-encryption, pidgin-openpgp, pidgin-otr, pidgin-mra, pidgin-nateon, pidgin-themes, pidgin-plugin-pack, pidgin-privacy-please
+Recommends: bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, gdebi, geany, gpa, gparted, hexchat, firefox | firefox-esr, libnotify-send, lightdm-parrot | sddm | gdm3, snapd, synaptic, xboard, dvd+rw-tools, udftools, system-config-printer, onboard, pulseaudio, alsa-base, alsa-tools, alsa-utils, qbittorrent, keepassxc, thunderbird | claws-mail, redshift-gtk, dino-im, gnome-software, gnome-software-plugin-snap, gnome-software-plugin-flatpak
 Suggests: parrot-interface-full
 Replaces: firefox-esr, firefox, iceweasel
 Description: Parrot interface metapackage
@@ -82,7 +82,7 @@ Recommends: task-xfce-desktop,
  libcanberra-gtk-module
 Description: XFCE based Parrot destop
  This metapackage installs a minimalistic XFCE desktop on Parrot Security OS
- 
+
 Package: parrot-interface-stub
 Architecture: all
 Description: stub/empty package for parrot-interface

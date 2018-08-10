@@ -1,3 +1,18 @@
+parrot-interface (4.2+parrot1) testing; urgency=medium
+
+  * Add gnome-software with snap and flatpak support.
+  * Use thunderbird by default.
+  * Clean some useless dependencies.
+  * Other minor changes.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 11 Aug 2018 00:54:00 +0200
+
+parrot-interface (4.1+parrot2) testing; urgency=medium
+
+  * Replace pidgin with dino-im (it's 2018, not 2006).
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 28 Jun 2018 17:20:04 +0200
+
 parrot-interface (4.1+parrot1) testing; urgency=medium
 
   * Bump Debian-Standard version 4.1.4.
