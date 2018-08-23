@@ -1,3 +1,10 @@
+parrot-interface (4.2+parrot2) testing; urgency=medium
+
+  * Move gnome-software from parrot-interface-common to parrot-interface-full.
+  * Drop default gnome-software flatpak plugin.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 23 Aug 2018 05:13:15 +0200
+
 parrot-interface (4.2+parrot1) testing; urgency=medium
 
   * Add gnome-software with snap and flatpak support.
