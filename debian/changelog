@@ -1,3 +1,11 @@
+parrot-interface (4.3+parrot1) testing; urgency=medium
+
+  * Drop unsupported desktops.
+  * Improve parrot-interface-full
+  * Review required packages.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 04 Nov 2018 18:07:50 +0100
+
 parrot-interface (4.2+parrot2) testing; urgency=medium
 
   * Move gnome-software from parrot-interface-common to parrot-interface-full.

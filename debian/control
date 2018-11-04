@@ -3,11 +3,12 @@ Priority: optional
 Maintainer: Parrot Dev Team <team@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
            Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>
-Standards-Version: 4.1.4
+Standards-Version: 4.2.0
 Section: info
 Build-Depends: debhelper (>= 10)
 Build-Depends-Indep: pkg-config
 Homepage: https://www.parrotsec.org/
+
 
 Package: parrot-interface
 Architecture: all
@@ -16,21 +17,33 @@ Suggests: parrot-interface-full
 Description: Parrot interface metapackage
  metapackage that installs the graphic interface
 
+
 Package: parrot-interface-common
 Architecture: all
 Depends: xinit, xorg, xdg-user-dirs, xdg-user-dirs-gtk, xserver-xorg-input-all, xserver-xorg-input-multitouch, xserver-xorg-input-synaptics, lxkeymap, parrot-wallpapers, parrot-themes, parrot-menu, parrot-skel, parrot-updater
-Recommends: bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, gdebi, geany, gpa, gparted, hexchat, firefox | firefox-esr, libnotify-send, lightdm-parrot | sddm | gdm3, snapd, synaptic, xboard, dvd+rw-tools, udftools, system-config-printer, onboard, pulseaudio, alsa-base, alsa-tools, alsa-utils, qbittorrent, keepassxc, thunderbird | claws-mail, redshift-gtk, dino-im
+Recommends: bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, gdebi, geany, gparted, firefox | firefox-esr, libnotify-send, lightdm-parrot | sddm | gdm3, synaptic, xboard, pulseaudio, alsa-base, alsa-tools, alsa-utils, qbittorrent, dino-im, vlc
 Suggests: parrot-interface-full
 Replaces: firefox-esr, firefox, iceweasel
 Description: Parrot interface metapackage
- metapackage that installs the graphic interface
+ metapackage that installs the basic tools for the Parrot OS environment.
+
 
 Package: parrot-interface-full
 Architecture: all
-Recommends: pidgin, hexchat, libreoffice, brasero, remmina, redshift, redshift-gtk, baobab, seahorse, qtcreator, thunderbird, enigmail, cups, ricochet-im, vlc, mpv, gnome-software, gnome-software-plugin-snap
+Depends: parrot-interface-common
+Recommends: gpa, hexchat, snapd, libreoffice, brasero, dvd+rw-tools, udftools, system-config-printer, onboard, remmina, redshift, redshift-gtk, vscodium, thunderbird, enigmail, cups, ricochet-im, vlc, mpv, keepassxc, thunderbird | claws-mail, dino-im, zeal, electrum, zulucrypt, ricochet-im, libreoffice, homebank, qownnotes, planner, rhythmbox, shotwell, cheese, gimp
 Description: Parrot FULL Interface metapackage
  metapackage that installs ALL the user applications required in a standard
- home computer as photo manager, music manager, video editor, email client, office suite etc
+ home computer as photo manager, music manager, video editor, email client, office suite etc.
+
+
+Package: parrot-interface-devel
+Architecture: all
+Depends: parrot-interface-common
+Recommends: qtcreator, qtbase5-dev, qt5-default, qt5-qmake, cmake, gcc, g++, git, valgrind, vscodium, zeal, geany, git-cola, golang, default-jdk, devscripts
+Description: Parrot DEVEL Interface metapackage
+ metapackage that installs a full development environment for Parrot OS.
+
 
 Package: parrot-gnome
 Architecture: all
@@ -39,22 +52,17 @@ Recommends: gdm3
 Description: GNOME based Parrot desktop
  This metapackage installs a minimalistic GNOME desktop on Parrot Security OS.
 
+
 Package: parrot-kde
 Architecture: all
 Depends: parrot-interface-common,
  kde-plasma-desktop,
  plasma-nm,
  sddm
-Recommends: lightdm-parrot
+Suggests: lightdm-parrot
 Description: KDE based Parrot desktop
  This metapackage installs a minimalistic KDE desktop on Parrot Security OS.
 
-Package: parrot-lxde
-Architecture: all
-Depends: parrot-interface-common, lxde
-Recommends: task-lxde-desktop, libcanberra-gtk3-module, libcanberra-gtk-module
-Description: LXDE based Parrot destop
- This metapackage installs a minimalistic LXDE desktop on Parrot Security OS.
 
 Package: parrot-mate
 Architecture: any
@@ -62,26 +70,8 @@ Depends: mate-core, parrot-interface-common
 Recommends: atril, breeze-cursor-theme, caja-actions, caja-gksu, caka-gtkhash, caja-image-converter, caja-open-terminal, caja-sendto, caja-share, caja-xattr-tags, caja, engrampa, eom, gnome-system-tools, mate-applets, mate-applet-brisk-menu, mate-applet-topmenu, mate-calc, mate-common, mate-control-center, mate-dock-applet, mate-indicator-applet, mate-media, mate-menu, mate-netspeed, mate-notification-daemon, mate-polkit-bin, mate-power-manager, mate-screensaver, mate-sensors-applet, mate-sensors-applet-nvidia, mate-system-monitor, mate-system-tools, mate-tweak, gtk3-engines-breeze, mate-utils, mozo, network-manager-gnome | wicd, pluma
 Suggests: parrot-interface-full
 Description: Parrot interface metapackage
- metapackage that installs the graphic interface
+ metapackage that installs the graphic interface.
 
-Package: parrot-cinnamon
-Architecture: all
-Depends: parrot-interface-common, cinnamon-desktop-environment
-Recommends: task-cinnamon-desktop
-Description: CINNAMON based Parrot destop
- This metapackage installs a minimalistic CINNAMON desktop on Parrot Security OS
-
-Package: parrot-xfce
-Architecture: all
-Depends: parrot-interface-common,xfce4,
- xfce4-terminal,
- xfce4-power-manager-plugins,
- network-manager-gnome,
-Recommends: task-xfce-desktop,
- libcanberra-gtk3-module,
- libcanberra-gtk-module
-Description: XFCE based Parrot destop
- This metapackage installs a minimalistic XFCE desktop on Parrot Security OS
 
 Package: parrot-interface-stub
 Architecture: all
