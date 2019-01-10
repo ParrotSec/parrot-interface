@@ -47,7 +47,7 @@ Description: Parrot DEVEL Interface metapackage
 
 Package: parrot-gnome
 Architecture: all
-Depends: parrot-interface-common, gnome-core, gedit, gnome-brave-icon-theme, gnome-shell-extensions, gnome-shell-extension-proxyswitcher, gnome-shell-extension-dashtodock, gnome-shell-extension-easyscreencast, gnome-shell-extension-workspacestodock, gnome-tweak-tool, nautilus-wipe, nautilus-gtkhash, gnome-orca, file-roller, gnome-calculator
+Depends: parrot-interface-common, gnome-core, gedit, gnome-brave-icon-theme, gnome-shell-extensions, gnome-shell-extension-proxyswitcher, gnome-shell-extension-dashtodock, gnome-shell-extension-easyscreencast, gnome-tweak-tool, nautilus-wipe, nautilus-gtkhash, gnome-orca, file-roller, gnome-calculator
 Recommends: gdm3
 Description: GNOME based Parrot desktop
  This metapackage installs a minimalistic GNOME desktop on Parrot Security OS.
