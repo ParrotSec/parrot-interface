@@ -1,3 +1,9 @@
+parrot-interface (4.3+parrot3.1) testing; urgency=medium
+
+  * Rebuild package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 04 Feb 2019 17:38:09 +0100
+
 parrot-interface (4.3+parrot2) testing; urgency=medium
 
   * Remove deprecated gnome-shell extension.
