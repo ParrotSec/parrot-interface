@@ -21,7 +21,7 @@ Description: Parrot interface metapackage
 Package: parrot-interface-common
 Architecture: all
 Depends: xinit, xorg, xdg-user-dirs, xdg-user-dirs-gtk, xserver-xorg-input-all, xserver-xorg-input-multitouch, xserver-xorg-input-synaptics, lxkeymap, parrot-wallpapers, parrot-themes, parrot-menu, parrot-skel, parrot-updater
-Recommends: bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, gdebi, geany, gparted, firefox | firefox-esr, libnotify-send, lightdm-parrot | sddm | gdm3, synaptic, xboard, pulseaudio, alsa-base, alsa-tools, alsa-utils, qbittorrent, dino-im, vlc
+Recommends: bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, gdebi, geany, gparted, firefox | firefox-esr, libnotify-send, lightdm-parrot | sddm | gdm3, synaptic, xboard, pulseaudio, alsa-base, alsa-tools, alsa-utils, qbittorrent, revolt | nheko, vlc
 Suggests: parrot-interface-full
 Replaces: firefox-esr, firefox, iceweasel
 Description: Parrot interface metapackage
@@ -31,7 +31,7 @@ Description: Parrot interface metapackage
 Package: parrot-interface-full
 Architecture: all
 Depends: parrot-interface-common
-Recommends: gpa, hexchat, snapd, libreoffice, brasero, dvd+rw-tools, udftools, system-config-printer, onboard, remmina, redshift, redshift-gtk, enigmail, cups, vlc, mpv, keepassxc, thunderbird | claws-mail, dino-im, zeal, electrum, zulucrypt, homebank, qownnotes, planner, rhythmbox, shotwell, cheese, gimp
+Recommends: gpa, hexchat, snapd, libreoffice, brasero, dvd+rw-tools, udftools, system-config-printer, onboard, remmina, redshift, redshift-gtk, enigmail, cups, vlc, mpv, keepassxc, thunderbird | claws-mail, zeal, electrum, zulucrypt, homebank, qownnotes, planner, rhythmbox, shotwell, cheese, gimp
 Description: Parrot FULL Interface metapackage
  metapackage that installs ALL the user applications required in a standard
  home computer as photo manager, music manager, video editor, email client, office suite etc.
