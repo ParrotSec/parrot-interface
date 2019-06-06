@@ -1,3 +1,9 @@
+parrot-interface (4.7+parrot1) testing; urgency=medium
+
+  * Remove some useless tools to make the system more lightweight.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 06 Jun 2019 16:45:59 +0200
+
 parrot-interface (4.6+parrot3) testing; urgency=medium
 
   * Add network-manager vpn plugins to parrot-mate.
