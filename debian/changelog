@@ -1,3 +1,12 @@
+parrot-interface (4.8+parrot1) rolling-testing; urgency=medium
+
+  * Remove thunderbird and enigmail from parrot-interface-full.
+  * Move parrot-updater as recommended.
+  * Remove snapd from recommends.
+  * Move postgresql hook to parrot-core.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 21 Oct 2019 14:53:55 +0200
+
 parrot-interface (4.7+parrot1) testing; urgency=medium
 
   * Remove some useless tools to make the system more lightweight.
