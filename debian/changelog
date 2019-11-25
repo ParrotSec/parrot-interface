@@ -1,3 +1,9 @@
+parrot-interface (4.8+parrot2) rolling-testing; urgency=medium
+
+  * Add firefox and chromium plugins via package manager.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 25 Nov 2019 01:31:26 +0100
+
 parrot-interface (4.8+parrot1) rolling-testing; urgency=medium
 
   * Remove thunderbird and enigmail from parrot-interface-full.
