@@ -1,3 +1,15 @@
+parrot-interface (4.8+parrot4) rolling-testing; urgency=medium
+
+  * Update Makefile.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 29 Jan 2020 22:04:45 +0100
+
+parrot-interface (4.8+parrot3) rolling; urgency=medium
+
+  * Add missing kde packages.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 29 Jan 2020 18:57:53 +0100
+
 parrot-interface (4.8+parrot2) rolling-testing; urgency=medium
 
   * Add firefox and chromium plugins via package manager.

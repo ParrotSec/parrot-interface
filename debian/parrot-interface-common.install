@@ -7,8 +7,4 @@ usr/*
 usr/bin/*
 usr/share/*
 usr/share/parrot-defaults/*
-lib/*
-lib/systemd/*
-lib/systemd/system/*
-lib/systemd/system/postgresql@.service.d/*
 

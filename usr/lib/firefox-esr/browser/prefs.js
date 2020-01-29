@@ -111,3 +111,6 @@ user_pref("intl.locale.matchOS", true);
 user_pref("browser.shell.checkDefaultBrowser", false);
 user_pref("datareporting.healthreport.uploadEnabled", false);
 user_pref("browser.search.defaultenginename", "DuckDuckGo");
+user_pref("security.webauth.u2f", true);
+user_pref("security.webauth.webauthn", true);
+user_pref("security.webauth.webauthn_enable_usbtoken", true);

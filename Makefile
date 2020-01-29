@@ -6,10 +6,10 @@ install:
 	mkdir -p $(DESTDIR)/usr/bin/
 	mkdir -p $(DESTDIR)/usr/share/applications/
 	mkdir -p $(DESTDIR)/etc/xdg/autostart/
-	chmod -R 0644 etc/* usr/* lib/*
+	chmod -R 0644 $(DESTDIR)/etc/* $(DESTDIR)/usr/*
 	chmod 755 usr/share/parrot-defaults/postgresql_reduce_shared_buffers
-	chown root:root etc/* usr/* lib/*
-	cp -r etc/* usr/* lib/* $(DESTDIR)/
+	chown root:root $(DESTDIR)/etc/* $(DESTDIR)/usr/*
+	cp -r etc/* usr/* $(DESTDIR)/
 	cp keyboard-selector/keyboard-selector.sh $(DESTDIR)/usr/bin/keyboard-selector
 	cp keyboard-selector/parrot-keyboard-selector.desktop $(DESTDIR)/etc/xdg/autostart/
 	cp keyboard-selector/parrot-keyboard-selector.desktop $(DESTDIR)/usr/share/applications/
