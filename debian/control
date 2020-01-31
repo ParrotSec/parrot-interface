@@ -36,7 +36,7 @@ Description: Parrot interface metapackage
 Package: parrot-interface-full
 Architecture: all
 Depends: parrot-interface-common
-Recommends: gpa, hexchat, libreoffice, brasero, dvd+rw-tools, udftools, system-config-printer, onboard, remmina, redshift-gtk, cups, vlc, mpv, keepassxc, zeal, electrum, zulucrypt, rhythmbox, shotwell, gimp
+Recommends: gpa, hexchat, libreoffice, brasero, dvd+rw-tools, udftools, system-config-printer, onboard, remmina, redshift-gtk, cups, vlc, mpv, keepassxc, zeal, electrum, zulucrypt, rhythmbox, shotwell, gimp, snapd, cheese
 Description: Parrot FULL Interface metapackage
  metapackage that installs ALL the user applications required in a standard
  home computer as photo manager, music manager, video editor, email client, office suite etc.
