@@ -1,3 +1,12 @@
+parrot-interface (4.8+parrot6) rolling-testing; urgency=medium
+
+  * Install only primary libreoffice applications.
+  * Remove some useless programs nobody wanted.
+  * Create the parrot-interface-extra metapackage.
+  * Make default DE icons removable via parrot-icons-stub to save extra space.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 05 Feb 2020 23:31:12 +0100
+
 parrot-interface (4.8+parrot5) rolling-testing; urgency=medium
 
   * Re-include snapd and cheese.
