@@ -20,7 +20,7 @@ Description: Parrot interface metapackage
 
 Package: parrot-interface-common
 Architecture: all
-Depends: xinit, xorg, xdg-user-dirs, xdg-user-dirs-gtk, xserver-xorg-input-all, xserver-xorg-input-multitouch, xserver-xorg-input-synaptics, lxkeymap, parrot-wallpapers, parrot-themes, parrot-menu, parrot-skel
+Depends: xinit, xorg, xdg-user-dirs, xdg-user-dirs-gtk, xserver-xorg-input-all, xserver-xorg-input-multitouch, xserver-xorg-input-synaptics, lxkeymap, parrot-wallpapers, parrot-themes, parrot-menu, parrot-skel, python-dbus
 Recommends: bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, gdebi, geany, gparted, firefox | firefox-esr, libnotify-send, lightdm-parrot | sddm | gdm3, synaptic, xboard, pulseaudio, alsa-base, alsa-tools, alsa-utils, qbittorrent, vlc, parrot-updater, keyboard-selector,
  webext-ublock-origin,
  chromium-ublock-origin,
@@ -93,13 +93,3 @@ Architecture: all
 Description: stub/empty package for parrot-interface
  This is a stub/empty package that, if installed, allows the removal of the default
  desktop environment without causing the removal of parrot-interface and parrot-interface-common
-
-Package: parrot-icons-stub
-Architecture: all
-Depends: parrot-themes
-Provides: adwaita-icon-theme, elementary-xfce-icon-theme, mate-icon-theme, gnome-icon-theme, oxygen-icon-theme
-Breaks: adwaita-icon-theme, elementary-xfce-icon-theme, mate-icon-theme, gnome-icon-theme, oxygen-icon-theme
-Description: Save space by removing unwanted default icon themes.
- This package makes possible to remove the default icon themes of some desktop environments
- without breaking them, and provides the parrot icon theme instead.
- The purpose of this package is to save some storage space.
