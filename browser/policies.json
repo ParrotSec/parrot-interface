@@ -1,0 +1,56 @@
+{
+  "policies": {
+    "DisplayBookmarksToolbar": true,
+    "NoDefaultBookmarks": true,
+    "OverrideFirstRunPage": "",
+    "OverridePostUpdatePage": "https://parrotsec.org",
+    "Homepage": {
+      "URL": "https://start.parrot.sh",
+      "Locked": false,
+      "StartPage": "homepage"
+    },
+    "DisableTelemetry": true,
+    "Cookies": {
+      "Default": true,
+      "AcceptThirdParty": "never",
+      "RejectTracker": true,
+    },
+    "DisableFeedbackCommands": true,
+    "DisableFirefoxStudies": true,
+    "DisablePocket": true,
+    "DontCheckDefaultBrowser": true,
+    "EnableTrackingProtection": {
+      "Value": true,
+      "Cryptomining": true,
+      "Fingerprinting": true,
+    },
+    "FirefoxHome": {
+      "Search": true,
+      "TopSites": true,
+      "Highlights": false,
+      "Pocket": false,
+      "Snippets": false,
+      "Locked": false
+    },
+    "HardwareAcceleration": true,
+    "NetworkPrediction": false,
+    "PopupBlocking": {
+      "Allow": ["https://crypt.parrot.sh",
+                "https://cloud.parrot.sh",
+                "https://pad.parrot.sh"],
+      "Default": false,
+      "Locked": false
+    },
+    "dom.disable_window_move_resize": true,
+    "extensions.getAddons.showPane": false,
+    "extensions.htmlaboutaddons.recommendations.enabled": false,
+    "network.IDN_show_punycode": true,
+    "security.ssl.errorReporting.enabled": false,
+    "PromptForDownloadLocation": true,
+    "SearchSuggestEnabled": false,
+    "SupportMenu": {
+      "Title": "Parrot Support",
+      "URL": "https://comunity.parrotsec.org",
+      "AccessKey": "S"
+    }
+}

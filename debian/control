@@ -25,7 +25,6 @@ Recommends: bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, gd
  webext-ublock-origin,
  chromium-ublock-origin,
  webext-https-everywhere,
- webext-noscript,
  webext-privacy-badger
 Suggests: parrot-interface-full
 Replaces: firefox-esr, firefox, iceweasel
