@@ -1,3 +1,13 @@
+parrot-interface (4.9+parrot2) rolling-testing; urgency=medium
+
+  * Disable telemetry in firefox.
+  * Add missing bookmarks.
+  * Remove amazon shit from firefox configs.
+  * Enable tracking protection when possible.
+  * Fix policies.json firefox path.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 20 Feb 2020 23:37:10 +0100
+
 parrot-interface (4.9+parrot1) rolling; urgency=medium
 
   * Change approach to firefox profiles.

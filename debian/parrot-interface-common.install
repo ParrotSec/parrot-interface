@@ -12,4 +12,4 @@ browser/parrot.js etc/firefox/
 browser/distribution.ini usr/share/firefox-esr/distribution/
 browser/distribution.ini usr/share/firefox/distribution/
 browser/policies.json usr/share/firefox-esr/distribution/
-browser/policies.json usr/share/firefox-esr/distribution/
+browser/policies.json usr/share/firefox/distribution/
