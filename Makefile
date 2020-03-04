@@ -17,5 +17,3 @@ install:
 	chown root:root $(DESTDIR)/etc/xdg/autostart/parrot-keyboard-selector.desktop
 	chmod 755 $(DESTDIR)/usr/bin/keyboard-selector
 	chmod 755 $(DESTDIR)/etc/xdg/autostart/parrot-keyboard-selector.desktop
-	
-

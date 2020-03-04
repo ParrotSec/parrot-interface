@@ -9,6 +9,8 @@ usr/share/*
 usr/share/parrot-defaults/*
 browser/parrot.js etc/firefox-esr/
 browser/parrot.js etc/firefox/
+browser/parrot.js usr/share/firefox-esr/browser/defaults/preferences/00parrot.js
+browser/parrot.js usr/share/firefox/browser/defaults/preferences/00parrot.js
 browser/distribution.ini usr/share/firefox-esr/distribution/
 browser/distribution.ini usr/share/firefox/distribution/
 browser/policies.json usr/share/firefox-esr/distribution/

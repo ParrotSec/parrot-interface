@@ -1,3 +1,10 @@
+parrot-interface (4.9+parrot3) rolling-testing; urgency=medium
+
+  * Force parrot.js firefox setting and override default values.
+  * Add encryptpad.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 04 Mar 2020 22:42:17 +0100
+
 parrot-interface (4.9+parrot2) rolling-testing; urgency=medium
 
   * Disable telemetry in firefox.
