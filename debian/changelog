@@ -1,3 +1,9 @@
+parrot-interface (4.9+parrot6) rolling-testing; urgency=medium
+
+  * Remove old lxkeyboard package (deprecated).
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 24 Apr 2020 20:20:43 +0200
+
 parrot-interface (4.9+parrot5) rolling-testing; urgency=medium
 
   * Fix firefox config.
