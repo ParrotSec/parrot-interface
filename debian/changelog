@@ -1,3 +1,33 @@
+parrot-interface (4.9+parrot9) rolling-testing; urgency=medium
+
+  * Fix mozilla extensions bug.
+    +				     _____
+    +				    ||	 ||
+    +				    |\___/|
+    +				    |	  |
+    +				    |	  |
+    +				    |	  |
+    +				    |	  |
+    +				    |	  |
+    +				    |	  |
+    +			       _____|<--->|_____
+    +			      /     |	  |	\
+    +			 /    |     |	  |	| \
+    +			 |    |     |	  |	|  |
+    +			 |    |     |	  |	|  |
+    +			 |			|  |
+    +			 |			|  |
+    +			 |			  /
+    +			 |			 /
+    +			  \		       /
+    +			   \		      /
+    +			    |		      |
+    +			    |		      |
+    +
+  * 
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 29 Apr 2020 15:38:03 +0200
+
 parrot-interface (4.9+parrot8) rolling-testing; urgency=medium
 
   * Include privacy badger.
