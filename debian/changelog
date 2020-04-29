@@ -1,3 +1,10 @@
+parrot-interface (4.9+parrot8) rolling-testing; urgency=medium
+
+  * Include privacy badger.
+  * Include ublock origin.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 29 Apr 2020 13:35:39 +0200
+
 parrot-interface (4.9+parrot7) rolling-testing; urgency=medium
 
   * Remove old keyboard selector based on lxkeymap.
