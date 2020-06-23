@@ -1,3 +1,10 @@
+parrot-interface (4.9+parrot10) rolling; urgency=medium
+
+  * Remove snapd.
+    + We don't see why canonical should be able to apply telemetry to our users.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 23 Jun 2020 12:31:52 +0200
+
 parrot-interface (4.9+parrot9) rolling-testing; urgency=medium
 
   * Fix mozilla extensions bug.
