@@ -1,3 +1,9 @@
+parrot-interface (4.10+parrot2) rolling-testing; urgency=medium
+
+  * Fix install file.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 07 Aug 2020 20:20:58 +0200
+
 parrot-interface (4.10+parrot1) rolling-testing; urgency=medium
 
   * Add xfce support.

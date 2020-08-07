@@ -12,7 +12,7 @@ Homepage: https://www.parrotsec.org/
 
 Package: parrot-interface
 Architecture: all
-Depends: xinit, xorg, parrot-interface-common, parrot-mate | parrot-interface-stub | parrot-kde | parrot-cinnamon | parrot-xfce | parrot-lxde | parrot-gnome
+Depends: xinit, xorg, parrot-interface-common, parrot-mate | parrot-interface-stub | parrot-kde | parrot-xfce | parrot-gnome
 Suggests: parrot-interface-full
 Description: Parrot interface metapackage
  metapackage that installs the graphic interface
