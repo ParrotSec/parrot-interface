@@ -11,5 +11,5 @@ browser/distribution.ini usr/share/firefox-esr/distribution/
 browser/distribution.ini usr/share/firefox/distribution/
 browser/policies.json usr/share/firefox-esr/distribution/
 browser/policies.json usr/share/firefox/distribution/
-browser/addons/jid1-MnnxcxisBPnSXQ-eff@jetpack.xpi usr/share/firefox/distribution/extensions/
-browser/addons/uBlock0@raymondhill.net.xpi usr/share/firefox/distribution/extensions/
+#browser/addons/jid1-MnnxcxisBPnSXQ-eff@jetpack.xpi usr/share/firefox/distribution/extensions/
+#browser/addons/uBlock0@raymondhill.net.xpi usr/share/firefox/distribution/extensions/
