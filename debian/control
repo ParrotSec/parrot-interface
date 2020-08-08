@@ -83,7 +83,7 @@ Package: parrot-xfce
 Architecture: all
 Depends: parrot-interface-common,
  xfce4,
- task-xfce.desktop,
+ task-xfce-desktop,
  gtk3-engines-breeze,
  mate-terminal,
  network-manager-gnome,
