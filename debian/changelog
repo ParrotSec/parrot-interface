@@ -1,3 +1,12 @@
+parrot-interface (4.10+parrot3) rolling-testing; urgency=medium
+
+  * Move hexchat to extras.
+  * Add element-desktop matrix client.
+  * Remove dead links from browser profile.
+  + Add FSF email self defense manual to browser profile.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 08 Aug 2020 03:38:31 +0200
+
 parrot-interface (4.10+parrot2) rolling-testing; urgency=medium
 
   * Fix install file.
