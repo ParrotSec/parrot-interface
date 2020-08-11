@@ -81,7 +81,8 @@ Description: KDE based Parrot desktop
 
 Package: parrot-xfce
 Architecture: any
-Depends: xfce4,
+Depends: parrot-interface-common,
+ xfce4,
  xfce4-terminal,
  xfce4-screenshooter,
  xfce4-whiskermenu-plugin,
