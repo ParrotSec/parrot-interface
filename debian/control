@@ -80,24 +80,25 @@ Description: KDE based Parrot desktop
 
 
 Package: parrot-xfce
-Architecture: all
-Depends: parrot-interface-common,
- xfce4,
- task-xfce-desktop,
- gtk3-engines-breeze,
- mate-terminal,
- network-manager-gnome,
- network-manager-openvpn-gnome,
- network-manager-ssh-gnome,
- network-manager-openvpn,
- network-manager-fortisslvpn-gnome,
- network-manager-l2tp-gnome,
- network-manager-openconnect-gnome,
- network-manager-pptp-gnome,
- network-manager-vpnc-gnome
-Suggests: lightdm-parrot
-Description: XFCE based Parrot desktop
- This metapackage installs a minimalistic XFCE desktop on Parrot Security OS.
+Architecture: any
+Depends: xfce4,
+ xfce4-terminal,
+ xfce4-screenshooter,
+ xfce4-whiskermenu-plugin,
+ xfce4-weather-plugin,
+ xfce4-power-manager,
+ xfce4-screensaver,
+ mousepad,
+ gpicview
+Description: Parrot interface metapackage
+ parrot-xfce desktop contains dependencies for
+ custom XFCE4 Desktop Environment on Parrot.
+ .
+ It contains: xfce4, xfce4-terminal,
+ xfce4-screenshooter, xfce4-whiskermenu-plugin,
+ xfce4-weather-plugin, xfce4-power-manager,
+ xfce4-screensaver, gpicview (image viewer),
+ mousepad (text editor)
 
 
 Package: parrot-mate
