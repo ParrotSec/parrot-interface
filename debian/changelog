@@ -1,3 +1,9 @@
+parrot-interface (4.10+parrot6) rolling-testing; urgency=medium
+
+  * Update parrot-xfce architecture from any to all.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 12 Aug 2020 13:25:14 +0200
+
 parrot-interface (4.10+parrot5) rolling-testing; urgency=medium
 
   * Drop tasksel metapackage for xfce (it installs mate as well).

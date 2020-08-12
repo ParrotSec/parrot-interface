@@ -81,7 +81,7 @@ Description: KDE based Parrot desktop
 
 
 Package: parrot-xfce
-Architecture: any
+Architecture: all
 Depends: parrot-interface-common,
  xfce4,
  xfce4-screensaver,
