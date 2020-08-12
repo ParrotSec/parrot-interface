@@ -2,7 +2,8 @@ Source: parrot-interface
 Priority: optional
 Maintainer: Parrot Dev Team <team@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
-           Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>
+           Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>,
+           Nong Hoang "Dmknght" Tu <dmknght@parrotsec.org>
 Standards-Version: 4.2.0
 Section: info
 Build-Depends: debhelper (>= 10)
