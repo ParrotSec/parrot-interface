@@ -96,7 +96,8 @@ Depends: parrot-interface-common,
  gpicview,
  network-manager-gnome,
  network-manager-openvpn-gnome,
- gtk2-engines-murrine
+ gtk2-engines-murrine,
+ mate-system-monitor,
 Description: Parrot interface metapackage
  parrot-xfce desktop contains dependencies for
  custom XFCE4 Desktop Environment on Parrot.
