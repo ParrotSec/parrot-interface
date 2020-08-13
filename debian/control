@@ -92,7 +92,8 @@ Depends: parrot-interface-common,
  xfce4-power-manager,
  xfce4-screensaver,
  mousepad,
- gpicview
+ gpicview,
+ gtk2-engines-murrine
 Description: Parrot interface metapackage
  parrot-xfce desktop contains dependencies for
  custom XFCE4 Desktop Environment on Parrot.
