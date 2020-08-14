@@ -92,7 +92,15 @@ Depends: parrot-interface-common,
  xfce4-power-manager,
  xfce4-screensaver,
  mousepad,
- gpicview
+ gpicview,
+ network-manager-gnome,
+ network-manager-openvpn-gnome,
+ network-manager-ssh-gnome,
+ network-manager-fortisslvpn-gnome,
+ network-manager-l2tp-gnome,
+ network-manager-openconnect-gnome,
+ network-manager-pptp-gnome,
+ network-manager-vpnc-gnome
 Description: Parrot interface metapackage
  parrot-xfce desktop contains dependencies for
  custom XFCE4 Desktop Environment on Parrot.
