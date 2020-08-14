@@ -26,7 +26,8 @@ Recommends: bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, gd
  webext-ublock-origin,
  chromium-ublock-origin,
  webext-https-everywhere,
- webext-privacy-badger
+ webext-privacy-badger,
+ libatk-adaptor
 Suggests: parrot-interface-full
 Replaces: firefox-esr, firefox, iceweasel
 Description: Parrot interface metapackage
@@ -100,7 +101,8 @@ Depends: parrot-interface-common,
  network-manager-l2tp-gnome,
  network-manager-openconnect-gnome,
  network-manager-pptp-gnome,
- network-manager-vpnc-gnome
+ network-manager-vpnc-gnome,
+ gtk2-engines-murrine,
 Description: Parrot interface metapackage
  parrot-xfce desktop contains dependencies for
  custom XFCE4 Desktop Environment on Parrot.
