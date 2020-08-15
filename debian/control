@@ -91,6 +91,7 @@ Depends: parrot-interface-common,
  xfce4-whiskermenu-plugin,
  xfce4-weather-plugin,
  xfce4-power-manager,
+ xfce4-places-plugin,
  xfce4-screensaver,
  mousepad,
  gpicview,
@@ -108,11 +109,11 @@ Description: Parrot interface metapackage
  parrot-xfce desktop contains dependencies for
  custom XFCE4 Desktop Environment on Parrot.
  .
- It contains: xfce4, xfce4-terminal,
- xfce4-screenshooter, xfce4-whiskermenu-plugin,
- xfce4-weather-plugin, xfce4-power-manager,
- xfce4-screensaver, gpicview (image viewer),
- mousepad (text editor)
+ It contains: xfce4 desktop, screensaver,
+ screenshot, text editor, image viewer,
+ network manager, system monitor.
+ .
+ Plugins: weather, places, whisker menu.
 
 
 Package: parrot-mate
