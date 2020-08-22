@@ -2,8 +2,11 @@ parrot-interface (4.10+parrot10) rolling-testing; urgency=medium
 
   * Move onboard virtual keyboard to parrot-interface-common.
   * Add dasher visual keyboard to parrot-interface-common.
+  * Update debian standard version.
+  * Update new copyright.
+  * Fix invalid section name.
 
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 22 Aug 2020 21:03:49 +0200
+ -- Nong Hoang Tu <dmknght@parrotsec.org>  Thu, 20 Aug 2020 01:18:06 +0700
 
 parrot-interface (4.10+parrot9) rolling-testing; urgency=medium
 
@@ -96,7 +99,6 @@ parrot-interface (4.9+parrot9) rolling-testing; urgency=medium
     +			    |		      |
     +			    |		      |
     +
-  * 
 
  -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 29 Apr 2020 15:38:03 +0200
 

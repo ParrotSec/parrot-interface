@@ -4,9 +4,9 @@ Maintainer: Parrot Dev Team <team@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
            Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>,
            Nong Hoang "Dmknght" Tu <dmknght@parrotsec.org>
-Standards-Version: 4.2.0
-Section: info
-Build-Depends: debhelper (>= 10)
+Standards-Version: 4.5.0
+Section: tasks
+Build-Depends: debhelper (>= 12)
 Build-Depends-Indep: pkg-config
 Homepage: https://www.parrotsec.org/
 
@@ -41,25 +41,15 @@ Depends: parrot-interface-common
 Recommends: gpa, element-desktop, libreoffice-writer, libreoffice-calc, libreoffice-impress, libreoffice-draw, brasero, dvd+rw-tools, udftools, system-config-printer, remmina, redshift-gtk, cups, vlc, mpv, zeal, electrum, zulucrypt, gimp, cheese
 Description: Parrot FULL Interface metapackage
  metapackage that installs ALL the user applications required in a standard
- home computer as photo manager, music manager, video editor, email client, office suite etc.
+ home computer as photo manager, music manager, video editor, email client,
+ office suite etc.
 
 Package: parrot-interface-extra
 Architecture: all
 Recommends: libreoffice, blender, vlc, rhythmbox, shotwell, gimp, krita, kdenlive, inkscape, cheese, telegram-desktop, hexchat
 Description: Extra desktop user programs.
- Provides extra desktop packages like:
- * libreoffice
- * blender
- * vlc
- * rhythmbox
- * shotwell
- * cheese
- * gimp
- * krita
- * kdenlive
- * inkscape
- * telegram-desktop
- * hexchat
+ Provides extra desktop packages for daily usage like:
+ image viewers, office, chat clients, ...
 
 
 Package: parrot-gnome
@@ -129,5 +119,6 @@ Description: Parrot interface metapackage
 Package: parrot-interface-stub
 Architecture: all
 Description: stub/empty package for parrot-interface
- This is a stub/empty package that, if installed, allows the removal of the default
- desktop environment without causing the removal of parrot-interface and parrot-interface-common
+ This is a stub/empty package that, if installed, allows the
+ removal of the default desktop environment without causing
+ the removal of parrot-interface and parrot-interface-common
