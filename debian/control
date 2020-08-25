@@ -126,7 +126,7 @@ Description: stub/empty package for parrot-interface
 
 Package: parrot-zsh
 Architecture: all
-Depends: zsh, zsh-syntax-highlighting, zsh-autosuggestions, parrot-skel
+Depends: zsh, zsh-syntax-highlighting, zsh-autocomplete, parrot-skel
 Description: Custom ZSH shell on Parrot
  This is a meta package that installs ZSH shell,
  autocomplete plugin and syntax-highlight plugin.
