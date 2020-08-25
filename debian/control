@@ -123,18 +123,3 @@ Description: stub/empty package for parrot-interface
  removal of the default desktop environment without causing
  the removal of parrot-interface and parrot-interface-common
 
-
-Package: parrot-zsh
-Architecture: all
-Depends: zsh, zsh-syntax-highlighting, zsh-autocomplete, zsh-autosuggestions, parrot-skel
-Description: Custom ZSH shell on Parrot
- This is a meta package that installs ZSH shell,
- autocomplete plugin and syntax-highlight plugin.
- .
- Default profile of ZSH is in parrot-skel.
- It contains:
- * Custom PROMPT (show hostname, date, username,
-  pwd)
- * Custom PATH
- * Custom alias for some useful commands
- * Settings for auto-completion
