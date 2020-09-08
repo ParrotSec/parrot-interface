@@ -96,7 +96,7 @@ Depends: parrot-interface-common,
  network-manager-vpnc-gnome,
  gtk2-engines-murrine,
  mate-system-monitor
-Conflicts: light-locker
+Conflicts: light-locker, xscreensaver
 Description: Parrot interface metapackage
  parrot-xfce desktop contains dependencies for
  custom XFCE4 Desktop Environment on Parrot.
@@ -106,8 +106,9 @@ Description: Parrot interface metapackage
  network manager, system monitor.
  .
  Plugins: weather, places, whisker menu.
- "light-locker" package causes a bug that
- user can't type password in screensaver.
+ "light-locker" and "xscreensaver" package
+ causes a bug that user can't type password
+ to unlock screen.
  We block it from installation.
 
 
