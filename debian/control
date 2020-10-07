@@ -98,7 +98,7 @@ Depends: parrot-interface-common,
  mate-system-monitor,
  thunar-archive-plugin,
  engrampa,
-Conflicts: light-locker, xscreensaver
+Breaks: light-locker, xscreensaver
 Description: Parrot interface metapackage
  parrot-xfce desktop contains dependencies for
  custom XFCE4 Desktop Environment on Parrot.
