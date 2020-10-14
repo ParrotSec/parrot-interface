@@ -95,7 +95,6 @@ Depends: parrot-interface-common,
  network-manager-pptp-gnome,
  network-manager-vpnc-gnome,
  gtk2-engines-murrine,
- mate-system-monitor,
  thunar-archive-plugin,
  engrampa,
 Breaks: light-locker, xscreensaver
