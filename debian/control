@@ -127,3 +127,11 @@ Description: stub/empty package for parrot-interface
  removal of the default desktop environment without causing
  the removal of parrot-interface and parrot-interface-common
 
+
+Package: parrot-i3
+Architecture: all
+Depends: feh, polybar, font-cantarell
+Description: Meta package for i3 Window Manager
+ This package is metapackage for i3 Window Manager
+ on Parrot OS. It installs polybar, feh, font 
+ cantarell, font Awesome5 to user's system.
