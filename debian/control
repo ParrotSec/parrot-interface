@@ -95,6 +95,7 @@ Depends: parrot-interface-common,
  gtk2-engines-murrine,
  thunar-archive-plugin,
  engrampa,
+ fonts-cantarell
 Breaks: light-locker, xscreensaver
 Description: Parrot interface metapackage
  parrot-xfce desktop contains dependencies for
