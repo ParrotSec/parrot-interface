@@ -28,7 +28,6 @@ Recommends: bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, gd
  webext-https-everywhere,
  webext-privacy-badger,
  libatk-adaptor,
- python-dbus
 Suggests: parrot-interface-full
 Replaces: firefox-esr, firefox, iceweasel
 Description: Parrot interface metapackage
