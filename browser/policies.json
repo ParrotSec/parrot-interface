@@ -3,9 +3,9 @@
     "DisplayBookmarksToolbar": true,
     "NoDefaultBookmarks": true,
     "OverrideFirstRunPage": "",
-    "OverridePostUpdatePage": "https://parrotsec.org",
+    "OverridePostUpdatePage": "https://start.parrotsec.org",
     "Homepage": {
-      "URL": "https://start.parrot.sh",
+      "URL": "https://start.parrotsec.org",
       "Locked": false,
       "StartPage": "homepage"
     },
@@ -36,7 +36,6 @@
     "NetworkPrediction": false,
     "PopupBlocking": {
       "Allow": ["https://crypt.parrot.sh",
-                "https://cloud.parrot.sh",
                 "https://pad.parrot.sh"],
       "Default": false,
       "Locked": false
