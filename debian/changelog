@@ -1,3 +1,10 @@
+parrot-interface (4.11) rolling-testing; urgency=medium
+
+  * Fix bash.academy link in firefox bookmarks.
+  * Update donations link in firebox bookmarks.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 19 Feb 2021 18:39:59 +0100
+
 parrot-interface (4.10+parrot10) rolling-testing; urgency=medium
 
   * Move onboard virtual keyboard to parrot-interface-common.
