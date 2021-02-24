@@ -37,7 +37,7 @@ Description: Parrot interface metapackage
 Package: parrot-interface-full
 Architecture: all
 Depends: parrot-interface-common
-Recommends: gpa, element-desktop, libreoffice-writer, libreoffice-calc, libreoffice-impress, libreoffice-draw, brasero, dvd+rw-tools, udftools, system-config-printer, remmina, redshift-gtk, cups, vlc, mpv, zeal, electrum, zulucrypt, gimp, cheese
+Recommends: gpa, element-desktop, libreoffice-writer, libreoffice-calc, libreoffice-impress, libreoffice-draw, brasero, dvd+rw-tools, udftools, system-config-printer, remmina, cups, vlc, mpv, zeal, electrum, zulucrypt, gimp, cheese
 Description: Parrot FULL Interface metapackage
  metapackage that installs ALL the user applications required in a standard
  home computer as photo manager, music manager, video editor, email client,
