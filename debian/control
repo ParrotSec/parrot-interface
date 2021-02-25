@@ -132,7 +132,7 @@ Description: stub/empty package for parrot-interface
 
 Package: parrot-i3
 Architecture: all
-Depends: i3, feh, polybar, font-cantarell, fonts-font-awesome
+Depends: i3, feh, polybar, fonts-cantarell, fonts-font-awesome
 Description: Meta package for i3 Window Manager
  This package is metapackage for i3 Window Manager
  on Parrot OS. It installs polybar, feh, font 
