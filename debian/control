@@ -4,7 +4,7 @@ Maintainer: Parrot Dev Team <team@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
            Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>,
            Nong Hoang "Dmknght" Tu <dmknght@parrotsec.org>
-Standards-Version: 4.5.0
+Standards-Version: 4.5.1
 Section: tasks
 Build-Depends: debhelper (>= 12)
 Build-Depends-Indep: pkg-config
