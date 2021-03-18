@@ -97,7 +97,8 @@ Depends: parrot-interface-common,
  thunar-archive-plugin,
  engrampa,
  fonts-cantarell,
- mugshot
+ mugshot,
+ menulibre
 Breaks: light-locker, xscreensaver
 Description: Parrot interface metapackage
  parrot-xfce desktop contains dependencies for
