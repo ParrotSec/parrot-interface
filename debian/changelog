@@ -1,3 +1,18 @@
+parrot-interface (4.11.1) rolling; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * Remove redshift
+  * Fix wrong name of fonts-cantarell
+  * Add mugshot, the profile manager for whisker's menu of xfce4
+  * Update deb standard to 4.5.1
+  * Change section to metapackages (fix warn msg)
+  * Add menulibre (application editor) for xfce
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Bump new package version.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 21 Mar 2021 23:51:01 +0100
+
 parrot-interface (4.11) rolling-testing; urgency=medium
 
   * Fix bash.academy link in firefox bookmarks.
