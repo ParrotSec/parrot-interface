@@ -99,6 +99,7 @@ Depends: parrot-interface-common,
  fonts-cantarell,
  mugshot,
  menulibre
+Recommends: atril
 Breaks: light-locker, xscreensaver
 Description: Parrot interface metapackage
  parrot-xfce desktop contains dependencies for
