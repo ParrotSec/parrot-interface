@@ -84,7 +84,7 @@ Depends: parrot-interface-common,
  xfce4-taskmanager,
  xfce4-systemload-plugin,
  mousepad,
- gpicview,
+ ristretto,
  network-manager-gnome,
  network-manager-openvpn-gnome,
  network-manager-ssh-gnome,
@@ -99,6 +99,7 @@ Depends: parrot-interface-common,
  fonts-cantarell,
  mugshot,
  menulibre
+Recommends: atril
 Breaks: light-locker, xscreensaver
 Description: Parrot interface metapackage
  parrot-xfce desktop contains dependencies for
