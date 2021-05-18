@@ -22,7 +22,7 @@ Description: Parrot interface metapackage
 Package: parrot-interface-common
 Architecture: all
 Depends: xinit, xorg, xdg-user-dirs, xdg-user-dirs-gtk, xserver-xorg-input-all, xserver-xorg-input-multitouch, xserver-xorg-input-synaptics, parrot-wallpapers, parrot-themes, parrot-menu, parrot-skel, onboard, dasher
-Recommends: bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, gdebi, geany, gparted, firefox-esr | firefox, libnotify-send, lightdm-parrot | sddm | gdm3, synaptic, xboard, pulseaudio, alsa-base, alsa-tools, alsa-utils, qbittorrent, vlc, parrot-updater
+Recommends: bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, gdebi, geany, gparted, firefox-esr | firefox, libnotify-send, lightdm-parrot | sddm | gdm3, synaptic, xboard, pulseaudio, alsa-base, alsa-tools, alsa-utils, qbittorrent, vlc, parrot-updater,
  webext-ublock-origin,
  chromium-ublock-origin,
  webext-https-everywhere,
