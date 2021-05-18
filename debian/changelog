@@ -2,6 +2,7 @@ parrot-interface (4.11.2) rolling; urgency=medium
 
   * Improve firefox privacy settings.
   * Add opensnitch.
+  * Add cpupower-gui.
 
  -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 18 May 2021 21:17:44 +0200
 
