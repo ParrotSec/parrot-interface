@@ -1,19 +1,36 @@
 {
   "policies": {
+    "DisableAppUpdate": true,
     "DisplayBookmarksToolbar": true,
     "NoDefaultBookmarks": true,
     "OverrideFirstRunPage": "",
-    "OverridePostUpdatePage": "https://start.parrotsec.org",
+    "OverridePostUpdatePage": "",
     "Homepage": {
       "URL": "https://start.parrotsec.org",
       "Locked": false,
       "StartPage": "homepage"
     },
+    "SearchEngines": {
+      "Default": "DuckDuckGo",
+      "PreventInstalls": true,
+    },
+    "SearchSuggestEnabled": false,
     "DisableTelemetry": true,
+    "CaptivePortal": false,
     "Cookies": {
       "Default": true,
       "AcceptThirdParty": "never",
       "RejectTracker": true,
+    },
+    "DNSOverHTTPS": {
+      "Enabled": false
+    },
+    "UserMessaging": {
+      "WhatsNew": false,
+      "ExtensionRecommendations": false,
+      "FeatureRecommendations": false,
+      "UrlbarInterventions": false,
+      "SkipOnboarding": true,
     },
     "DisableFeedbackCommands": true,
     "DisableFirefoxStudies": true,
@@ -46,7 +63,6 @@
     "network.IDN_show_punycode": true,
     "security.ssl.errorReporting.enabled": false,
     "PromptForDownloadLocation": true,
-    "SearchSuggestEnabled": false,
     "SupportMenu": {
       "Title": "Parrot Support",
       "URL": "https://comunity.parrotsec.org",

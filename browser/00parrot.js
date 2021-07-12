@@ -26,21 +26,27 @@ lockPref("toolkit.telemetry.shutdownPingSender.enabled", false);
 lockPref("toolkit.telemetry.unified", false);
 lockPref("toolkit.telemetry.updatePing.enabled", false);
 lockPref("browser.shell.checkDefaultBrowser", false);
-pref("browser.startup.firstrunSkipsHomepage", false);
+lockPref("app.normandy.enabled", false);
+lockPref("datareporting.policy.firstRunURL". "");
+pref("browser.startup.firstrunSkipsHomepage", true);
 pref("browser.startup.homepage", "https://start.parrot.sh");
-pref("startup.homepage_welcome_url", "https://docs.parrotsec.org/donate");
-pref("browser.newtabpage.activity-stream.default.sites", "https://www.parrotsec.org/,https://crypt.parrot.sh,https://community.parrotsec.org,https://www.hackthebox.eu/,https://riot.im/app/,https://librem.one/,https://nextcloud.com/signup/,https://www.linode.com/?r=2b6d749d3cb301e41bdbec5fc40e50c4316f7c66");
+pref("startup.homepage_welcome_url", "https://www.parrotsec.org/donate");
+pref("browser.newtabpage.activity-stream.default.sites", "https://www.parrotsec.org/,https://crypt.parrot.sh,https://community.parrotsec.org,https://www.hackthebox.eu/,https://riot.im/app/");
 pref("browser.newtabpage.pinned", "[{\"url\":\"https://crypt.parrot.sh\",\"label\":\"CryptPad\",\"searchTopSite\":true}]");
 pref("browser.search.hiddenOneOffs", "Bing,Amazon.com,eBay,Twitter");
 pref("browser.search.suggest.enabled", false);
 pref("browser.urlbar.placeholderName", "DuckDuckGo");
-pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.havePinned", "google");
-pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.searchEngines", "google");
+pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.havePinned", "DuckDuckGo");
+pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.searchEngines", "DuckDuckGo");
 pref("privacy.trackingprotection.socialtracking.enabled", true);
+pref("privacy.trackingprotection.pbmode.enabled", true);
 pref("privacy.trackingprotection.origin_telemetry.enabled", true);
 pref("privacy.trackingprotection.enabled", true);
+pref("privacy.trackingprotection.cryptomining.enabled", true);
 pref("privacy.resistFingerprinting", true);
 pref("privacy.donottrackheader.enabled", true);
+pref("browser.startup.blankWindow", true);
+pref("browser.startup.firstrunSkipsHomepage", false);
 // Don't show 'know your rights' on first run
 pref("browser.rights.3.shown", true);
 // Don't show WhatsNew on first run after every update
@@ -60,5 +66,8 @@ pref("network.proxy.socks", "127.0.0.1");
 pref("network.proxy.socks_port", 9050);
 pref("network.proxy.type", 2);
 // set default search engine
+lockPref("browser.search.isUS", false);
+pref("browser.search.hiddenOneOffs", "Google,Amazon.com,Bing");
 pref("browser.search.defaultenginename", "DuckDuckGo");
-
+pref("browser.search.official", false);
+pref("browser.search.update", false);
