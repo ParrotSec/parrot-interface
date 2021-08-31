@@ -27,7 +27,7 @@ lockPref("toolkit.telemetry.unified", false);
 lockPref("toolkit.telemetry.updatePing.enabled", false);
 lockPref("browser.shell.checkDefaultBrowser", false);
 lockPref("app.normandy.enabled", false);
-lockPref("datareporting.policy.firstRunURL". "");
+lockPref("datareporting.policy.firstRunURL", "");
 pref("browser.startup.firstrunSkipsHomepage", true);
 pref("browser.startup.homepage", "https://start.parrot.sh");
 pref("startup.homepage_welcome_url", "https://www.parrotsec.org/donate");
