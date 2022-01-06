@@ -1,3 +1,9 @@
+parrot-interface (5.0.3) lts-updates; urgency=medium
+
+  * Remove deprecated dependencies.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 06 Jan 2022 18:10:41 +0100
+
 parrot-interface (5.0.2) lts-updates; urgency=medium
 
   * Update firefox launchers.
