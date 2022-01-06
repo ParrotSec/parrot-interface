@@ -1,6 +1,7 @@
 parrot-interface (5.0.4) lts-updates; urgency=medium
 
   * Use new parrot-core instead of old parrot-skel.
+  * Remove privacy-badger and https-everywhere.
 
  -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 06 Jan 2022 20:10:33 +0100
 
