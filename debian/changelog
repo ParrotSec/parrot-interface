@@ -1,3 +1,9 @@
+parrot-interface (5.0.6) lts-updates; urgency=medium
+
+  * Include HacTheBox login theme.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 08 Jan 2022 19:45:51 +0100
+
 parrot-interface (5.0.5) lts-updates; urgency=medium
 
   * Update firefox profile.
