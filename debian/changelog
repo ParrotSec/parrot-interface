@@ -1,3 +1,9 @@
+parrot-interface (5.0.7) lts-updates; urgency=medium
+
+  * Include htb-alt login picture.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 08 Jan 2022 19:54:17 +0100
+
 parrot-interface (5.0.6) lts-updates; urgency=medium
 
   * Include HacTheBox login theme.
