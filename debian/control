@@ -2,7 +2,6 @@ Source: parrot-interface
 Priority: optional
 Maintainer: Parrot Dev Team <team@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
-           Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>,
            Nong Hoang "Dmknght" Tu <dmknght@parrotsec.org>
 Standards-Version: 4.5.1
 Section: metapackages
@@ -13,8 +12,8 @@ Homepage: https://www.parrotsec.org/
 
 Package: parrot-interface
 Architecture: all
-Depends: xinit, xorg, parrot-interface-common, parrot-mate | parrot-interface-stub | parrot-kde | parrot-xfce | parrot-gnome
-Suggests: parrot-interface-full
+Depends: xinit, xorg, plymouth, plymouth-themes, desktop-base, parrot-core, parrot-interface-common, parrot-desktop-mate | parrot-desktop-stub | parrot-desktop-kde | parrot-desktop-xfce | parrot-desktop-i3 | parrot-desktop-gnome
+Suggests: parrot-interface-home, parrot-interface-full
 Description: Parrot interface metapackage
  metapackage that installs the graphic interface
 
@@ -22,7 +21,7 @@ Description: Parrot interface metapackage
 Package: parrot-interface-common
 Architecture: all
 Depends: xinit, xorg, xdg-user-dirs, xdg-user-dirs-gtk, xserver-xorg-input-all, xserver-xorg-input-multitouch, xserver-xorg-input-synaptics, parrot-wallpapers, parrot-themes, maia-icon-theme, parrot-menu, parrot-core (>= 5.0.0)
-Recommends: bleachbit, bluetooth, bluez, blueman, dconf-editor, desktop-base, gdebi, geany, gparted, firefox-esr, libnotify-bin, lightdm-parrot | sddm | gdm3, synaptic, xboard, pulseaudio, qbittorrent, vlc, parrot-updater, onboard, dasher,
+Recommends: bleachbit, bluetooth, bluez, blueman, dconf-editor, gdebi, geany, gparted, firefox-esr, libnotify-bin, parrot-displaymanager | sddm | gdm3, synaptic, xboard, pulseaudio, qbittorrent, vlc, parrot-updater, onboard, dasher,
  webext-ublock-origin,
  chromium-ublock-origin,
  libatk-adaptor,
@@ -32,10 +31,10 @@ Description: Parrot interface metapackage
  metapackage that installs the basic tools for the Parrot OS environment.
 
 
-Package: parrot-interface-full
+Package: parrot-interface-home
 Architecture: all
 Depends: parrot-interface-common
-Recommends: gpa, element-desktop, libreoffice-writer, libreoffice-calc, libreoffice-impress, libreoffice-draw, brasero, dvd+rw-tools, udftools, system-config-printer, remmina, cups, vlc, mpv, electrum, zulucrypt, gimp, cheese, encryptpad, gufw, opensnitch, cpupower-gui
+Recommends: libreoffice-writer, libreoffice-calc, libreoffice-impress, libreoffice-draw, brasero, dvd+rw-tools, udftools, system-config-printer, remmina, cups, vlc, mpv, gimp, cheese, gufw, opensnitch, cpupower-gui
 Description: Parrot FULL Interface metapackage
  metapackage that installs ALL the user applications required in a standard
  home computer as photo manager, music manager, video editor, email client,
@@ -49,7 +48,7 @@ Description: Extra desktop user programs.
  image viewers, office, chat clients, ...
 
 
-Package: parrot-gnome
+Package: parrot-desktop-gnome
 Architecture: all
 Depends: parrot-interface-common, gnome-core, gedit, gnome-brave-icon-theme, gnome-shell-extensions, gnome-shell-extension-proxyswitcher, gnome-shell-extension-dashtodock, gnome-shell-extension-easyscreencast, gnome-tweak-tool, nautilus-wipe, nautilus-gtkhash, gnome-orca, file-roller, gnome-calculator
 Recommends: gdm3
@@ -57,7 +56,7 @@ Description: GNOME based Parrot desktop
  This metapackage installs a minimalistic GNOME desktop on Parrot Security OS.
 
 
-Package: parrot-kde
+Package: parrot-desktop-kde
 Architecture: all
 Depends: parrot-interface-common,
  kde-standard,
@@ -69,7 +68,7 @@ Description: KDE based Parrot desktop
  This metapackage installs a minimalistic KDE desktop on Parrot Security OS.
 
 
-Package: parrot-xfce
+Package: parrot-desktop-xfce
 Architecture: all
 Depends: parrot-interface-common,
  xfce4,
@@ -115,7 +114,7 @@ Description: Parrot interface metapackage
  We block it from installation.
 
 
-Package: parrot-mate
+Package: parrot-desktop-mate
 Architecture: all
 Depends: mate-core, parrot-interface-common
 Recommends: atril, breeze-cursor-theme, caja-actions, caja-gksu, caka-gtkhash, caja-image-converter, caja-open-terminal, caja-sendto, caja-share, caja-xattr-tags, caja, engrampa, eom, gnome-system-tools, mate-applets, mate-applet-brisk-menu, mate-applet-topmenu, mate-calc, mate-common, mate-control-center, mate-dock-applet, mate-indicator-applet, mate-media, mate-menu, mate-netspeed, mate-notification-daemon, mate-polkit-bin, mate-power-manager, mate-screensaver, mate-sensors-applet, mate-sensors-applet-nvidia, mate-system-monitor, mate-system-tools, mate-tweak, gtk3-engines-breeze, mate-utils, mozo, network-manager-gnome, network-manager-openvpn-gnome, network-manager-ssh-gnome, network-manager-openvpn, network-manager-fortisslvpn-gnome, network-manager-l2tp-gnome, network-manager-openconnect-gnome, network-manager-pptp-gnome, network-manager-vpnc-gnome, pluma
@@ -124,7 +123,7 @@ Description: Parrot interface metapackage
  metapackage that installs the graphic interface.
 
 
-Package: parrot-interface-stub
+Package: parrot-desktop-stub
 Architecture: all
 Description: stub/empty package for parrot-interface
  This is a stub/empty package that, if installed, allows the
@@ -132,10 +131,33 @@ Description: stub/empty package for parrot-interface
  the removal of parrot-interface and parrot-interface-common
 
 
-Package: parrot-i3
+Package: parrot-desktop-i3
 Architecture: all
 Depends: i3, feh, polybar, fonts-cantarell, fonts-font-awesome
 Description: Meta package for i3 Window Manager
  This package is metapackage for i3 Window Manager
  on Parrot OS. It installs polybar, feh, font 
  cantarell, font Awesome5 to user's system.
+
+Package: parrot-displaymanager
+Architecture: all
+Depends: lightdm, slick-greeter
+Replaces: lightdm, lightdm-gtk-greeter, slick-greeter, lightdm-parrot
+Provides: lightdm-parrot
+Description: Parrot configs for lightdm
+ This package provides the lightdm custom settings
+ for Parrot OS.
+
+
+Package: parrot-zsh-profiles
+Architecture: all
+Depends: zsh
+Recommends: zsh-autocomplete, zsh-syntax-highlighting, zsh-autosuggestions
+Section: metapackages
+Priority: optional
+Homepage: https://www.parrotsec.org
+Description: Parrot ZSH configuration
+ This is Parrot Security,
+ a security focused GNU/Linux distribution.
+ .
+ This metapackage provides the default plugin for Parrot ZSH shell.

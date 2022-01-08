@@ -1,3 +1,14 @@
+parrot-interface (5.0.5) lts-updates; urgency=medium
+
+  * Update firefox profile.
+  * Re-organize desktop metapackages.
+  * Add display manager settings.
+  * Import zsh metapackage from parrot-tools.
+  * Make installation more lightweight.
+  * Add missing plymouth dependency.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 08 Jan 2022 19:37:52 +0100
+
 parrot-interface (5.0.4) lts-updates; urgency=medium
 
   * Use new parrot-core instead of old parrot-skel.
