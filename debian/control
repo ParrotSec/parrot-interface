@@ -72,7 +72,6 @@ Package: parrot-desktop-xfce
 Architecture: all
 Depends: parrot-interface-common,
  xfce4,
- xfce4-screensaver,
  xfce4-terminal,
  xfce4-screenshooter,
  xfce4-whiskermenu-plugin,
@@ -83,8 +82,9 @@ Depends: parrot-interface-common,
  xfce4-power-manager-plugins,
  mousepad,
  ristretto,
+ thunar,
  network-manager-gnome,
- network-manager-openvpn-gnome,
+Recommends: network-manager-openvpn-gnome,
  network-manager-ssh-gnome,
  network-manager-fortisslvpn-gnome,
  network-manager-l2tp-gnome,
@@ -92,12 +92,13 @@ Depends: parrot-interface-common,
  network-manager-pptp-gnome,
  network-manager-vpnc-gnome,
  gtk2-engines-murrine,
+ xfce4-screensaver,
  thunar-archive-plugin,
  engrampa,
  fonts-cantarell,
  mugshot,
- menulibre
-Recommends: atril
+ menulibre,
+ atril
 Breaks: light-locker, xscreensaver
 Description: Parrot interface metapackage
  parrot-xfce desktop contains dependencies for
