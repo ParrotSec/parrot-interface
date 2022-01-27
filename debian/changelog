@@ -1,3 +1,9 @@
+parrot-interface (5.0.9) parrot-updates; urgency=medium
+
+  * Receive xvkbd dependency from parrot-core.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 28 Jan 2022 00:17:40 +0100
+
 parrot-interface (5.0.8) parrot-updates; urgency=medium
 
   * Update xfce metapackage.
