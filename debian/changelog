@@ -1,3 +1,9 @@
+parrot-interface (5.0.10) parrot-updates; urgency=medium
+
+  * Don't install mate desktop if upgrading from the 4.x metapackages.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 28 Jan 2022 14:25:34 +0100
+
 parrot-interface (5.0.9) parrot-updates; urgency=medium
 
   * Receive xvkbd dependency from parrot-core.

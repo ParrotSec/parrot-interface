@@ -12,7 +12,7 @@ Homepage: https://www.parrotsec.org/
 
 Package: parrot-interface
 Architecture: all
-Depends: xinit, xorg, plymouth, plymouth-themes, desktop-base, parrot-core, parrot-interface-common, parrot-desktop-mate | parrot-desktop-stub | parrot-desktop-kde | parrot-desktop-xfce | parrot-desktop-i3 | parrot-desktop-gnome
+Depends: xinit, xorg, plymouth, plymouth-themes, desktop-base, parrot-core, parrot-interface-common, parrot-desktop-mate | parrot-desktop-stub | parrot-desktop-kde | parrot-desktop-xfce | parrot-desktop-i3 | parrot-desktop-gnome | parrot-kde | parrot-xfce
 Suggests: parrot-interface-home, parrot-interface-full
 Description: Parrot interface metapackage
  metapackage that installs the graphic interface
