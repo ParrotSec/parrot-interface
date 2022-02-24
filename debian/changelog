@@ -1,3 +1,9 @@
+parrot-interface (5.0.11) parrot-updates; urgency=medium
+
+  * Make mate, kde and xfce depend on parrot-displaymanager.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 24 Feb 2022 22:25:23 +0100
+
 parrot-interface (5.0.10) parrot-updates; urgency=medium
 
   * Don't install mate desktop if upgrading from the 4.x metapackages.
