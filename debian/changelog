@@ -1,3 +1,9 @@
+parrot-interface (5.1.0) parrot-updates; urgency=medium
+
+  * Update firefox bookmarks.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 22 Aug 2022 13:46:56 +0200
+
 parrot-interface (5.0.11) parrot-updates; urgency=medium
 
   * Make mate, kde and xfce depend on parrot-displaymanager.

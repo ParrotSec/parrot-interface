@@ -65,7 +65,7 @@
     "PromptForDownloadLocation": true,
     "SupportMenu": {
       "Title": "Parrot Support",
-      "URL": "https://comunity.parrotsec.org",
+      "URL": "https://community.parrotsec.org",
       "AccessKey": "S"
     }
 }
