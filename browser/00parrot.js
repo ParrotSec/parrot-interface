@@ -71,3 +71,6 @@ pref("browser.search.hiddenOneOffs", "Google,Amazon.com,Bing");
 pref("browser.search.defaultenginename", "DuckDuckGo");
 pref("browser.search.official", false);
 pref("browser.search.update", false);
+
+// Disable URL trim so protocol is forced to show
+pref("browser.urlbar.trimURLs", false);
