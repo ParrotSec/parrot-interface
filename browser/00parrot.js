@@ -74,3 +74,5 @@ pref("browser.search.update", false);
 
 // Disable URL trim so protocol is forced to show
 pref("browser.urlbar.trimURLs", false);
+// Hide title bar to save some space
+pref("browser.tabs.drawInTitlebar", true);
