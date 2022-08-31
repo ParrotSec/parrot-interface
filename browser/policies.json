@@ -12,7 +12,7 @@
     },
     "SearchEngines": {
       "Default": "DuckDuckGo",
-      "PreventInstalls": true,
+      "PreventInstalls": true
     },
     "SearchSuggestEnabled": false,
     "DisableTelemetry": true,
@@ -20,7 +20,7 @@
     "Cookies": {
       "Default": true,
       "AcceptThirdParty": "never",
-      "RejectTracker": true,
+      "RejectTracker": true
     },
     "DNSOverHTTPS": {
       "Enabled": false
@@ -30,7 +30,7 @@
       "ExtensionRecommendations": false,
       "FeatureRecommendations": false,
       "UrlbarInterventions": false,
-      "SkipOnboarding": true,
+      "SkipOnboarding": true
     },
     "DisableFeedbackCommands": true,
     "DisableFirefoxStudies": true,
@@ -39,7 +39,7 @@
     "EnableTrackingProtection": {
       "Value": true,
       "Cryptomining": true,
-      "Fingerprinting": true,
+      "Fingerprinting": true
     },
     "FirefoxHome": {
       "Search": true,
@@ -68,4 +68,5 @@
       "URL": "https://community.parrotsec.org",
       "AccessKey": "S"
     }
+  }
 }
