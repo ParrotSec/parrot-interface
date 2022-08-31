@@ -35,7 +35,7 @@ pref("browser.newtabpage.activity-stream.default.sites", "https://www.parrotsec.
 pref("browser.newtabpage.pinned", "[{\"url\":\"https://crypt.parrot.sh\",\"label\":\"CryptPad\",\"searchTopSite\":true}]");
 pref("browser.search.hiddenOneOffs", "Bing,Amazon.com,eBay,Twitter");
 pref("browser.search.suggest.enabled", false);
-pref("browser.urlbar.placeholderName", "DuckDuckGo");
+pref("browser.urlbar.placeholderName", "DuckDuckGo"); // FIXME: this option doesnt work anymore. default search is google
 pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.havePinned", "DuckDuckGo");
 pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.searchEngines", "DuckDuckGo");
 pref("privacy.trackingprotection.socialtracking.enabled", true);
@@ -76,3 +76,5 @@ pref("browser.search.update", false);
 pref("browser.urlbar.trimURLs", false);
 // Hide title bar to save some space
 pref("browser.tabs.drawInTitlebar", true);
+// Set privacy protection to maximum
+pref("browser.contentblocking.category", "strict");
