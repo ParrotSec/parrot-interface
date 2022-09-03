@@ -38,6 +38,8 @@ lockPref("datareporting.healthreport.uploadEnabled", false);
 lockPref("network.captive-portal-service.enabled", false);
 // Disable all data upload (Telemetry and FHR)
 lockPref("datareporting.policy.dataSubmissionEnabled", false);
+// Disable firefox monitors online / offline status
+lockPref("network.manage-offline-status", false);
 
 /*
   Privacy and tracking protection settings
@@ -53,7 +55,19 @@ pref("privacy.trackingprotection.enabled", true);
 pref("privacy.trackingprotection.cryptomining.enabled", true);
 pref("privacy.resistFingerprinting", true);
 pref("privacy.donottrackheader.enabled", true);
+// Disable Geo info by default. License MIT @pyllyukko
 pref("geo.enabled", false);
+// Disable netinfo via DOM. Possibly protect user from Javascript websites. License MIT @pyllyukko
+pref("dom.netinfo.enabled", false);
+// Disable gamepad api to prevent USB enumeration. License MIT @pyllyukko. https://trac.torproject.org/projects/tor/ticket/13023
+pref("dom.gamepad.enabled", false);
+// Disable GeoIP lookup to set search engine region. License MIT @pyllyukko. https://trac.torproject.org/projects/tor/ticket/16254
+// pref("browser.search.countryCode", "US"); It isn't in latest firefox-esr anymore
+pref("browser.search.region", "US");
+// pref("browser.search.geoip.url", ""); It isn't in latest firefox-esr anymore
+// Send DNS requuest through SOCKS when SOCKS proxy is in use. This might fix the complains about DNS leak when test with firefox
+// License MIT @pyllyukko https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers
+pref("network.proxy.socks_remote_dns", true);
 
 pref("browser.startup.firstrunSkipsHomepage", true);
 pref("browser.startup.homepage", "https://start.parrot.sh");
