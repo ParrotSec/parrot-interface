@@ -137,6 +137,8 @@ pref("browser.tabs.drawInTitlebar", true);
 pref("browser.startup.homepage_override.mstone", "ignore");
 // Don't show 'know your rights' on first run
 pref("browser.rights.3.shown", true);
+// Customize toolbar.
+pref("browser.uiCustomization.state", {"placements":{"widget-overflow-fixed-list":[],"nav-bar":["back-button","forward-button","stop-reload-button","urlbar-container","save-to-pocket-button","privatebrowsing-button","library-button","downloads-button","fxa-toolbar-menu-button","ublock0_raymondhill_net-browser-action","developer-button"],"toolbar-menubar":["menubar-items"],"TabsToolbar":["tabbrowser-tabs","new-tab-button","alltabs-button"],"PersonalToolbar":["personal-bookmarks"]},"seen":["save-to-pocket-button","developer-button","ublock0_raymondhill_net-browser-action"],"dirtyAreaCache":["nav-bar"],"currentVersion":17,"newElementCount":5});
 // Set startup page
 pref("browser.startup.firstrunSkipsHomepage", true);
 pref("browser.startup.homepage", "https://start.parrot.sh");
@@ -150,6 +152,10 @@ pref("browser.startup.firstrunSkipsHomepage", false);
 // Disable pocket suggestion at startup.
 lockPref("browser.messaging-system.whatsNewPanel.enabled", false);
 // pref("extensions.pocket.enabled", false); // Disable because it's not correct settings I was looking for. User might need it
+
+/*
+  Customized new tab page. We disabled activities.
+*/
 pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false);
 pref("extensions.pocket.onSaveRecs", false);
 pref("extensions.pocket.showHome", false);
@@ -184,4 +190,3 @@ pref("browser.newtabpage.activity-stream.section.highlights.includeVisited", fal
 pref("browser.newtabpage.activity-stream.showSearch", false);
 lockPref("browser.newtabpage.activity-stream.showSponsored", false);
 lockPref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
-// TODO research from here https://github.com/pyllyukko/user.js/blob/master/user.js#L918
