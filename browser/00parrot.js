@@ -93,11 +93,11 @@ pref("privacy.userContext.enabled", true);
 /*
   Some interesting settings that might break UX
   License MIT @pyllyukko
+*/
 // Disable video stats to reduce fingerprinting
 pref("media.video_stats.enabled", false);
 // Don't use document specified fonts to prevent installed font enumeration
-pref("browser.display.use_document_fonts", 0);
-*/
+// pref("browser.display.use_document_fonts", 0);
 
 // Don't ask to install the Flash plugin
 pref("plugins.notifyMissingFlash", false);
