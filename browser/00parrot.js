@@ -119,8 +119,6 @@ pref("network.proxy.type", 2);
 // Set default search engine and privacy settings for it
 lockPref("browser.search.isUS", false);
 pref("browser.search.hiddenOneOffs", "Google,Amazon.com,Bing");
-// Try sorting the search engine to make firefox uses duckduckgo by default
-pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.havePinned", "DuckDuckGo,amazon,google");
 pref("browser.search.defaultenginename", "DuckDuckGo");
 pref("browser.search.official", false);
 pref("browser.search.update", false);
