@@ -53,7 +53,7 @@ pref("privacy.trackingprotection.enabled", true);
 pref("privacy.trackingprotection.cryptomining.enabled", true);
 pref("privacy.resistFingerprinting", true);
 pref("privacy.donottrackheader.enabled", true);
-
+pref("geo.enabled", false);
 
 pref("browser.startup.firstrunSkipsHomepage", true);
 pref("browser.startup.homepage", "https://start.parrot.sh");
