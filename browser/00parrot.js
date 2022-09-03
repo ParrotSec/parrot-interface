@@ -65,9 +65,6 @@ pref("dom.gamepad.enabled", false);
 // pref("browser.search.countryCode", "US"); It isn't in latest firefox-esr anymore
 pref("browser.search.region", "US");
 // pref("browser.search.geoip.url", ""); It isn't in latest firefox-esr anymore
-// Send DNS requuest through SOCKS when SOCKS proxy is in use. This might fix the complains about DNS leak when test with firefox
-// License MIT @pyllyukko https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers
-pref("network.proxy.socks_remote_dns", true);
 
 pref("browser.startup.firstrunSkipsHomepage", true);
 pref("browser.startup.homepage", "https://start.parrot.sh");
@@ -86,6 +83,9 @@ pref("browser.startup.firstrunSkipsHomepage", false);
 pref("plugins.notifyMissingFlash", false);
 
 // allow onion domains
+// Send DNS requuest through SOCKS when SOCKS proxy is in use. This might fix the complains about DNS leak when test with firefox
+// License MIT @pyllyukko https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers
+pref("network.proxy.socks_remote_dns", true);
 pref("network.dns.blockDotOnion", false);
 // set proxy settings
 pref("network.proxy.autoconfig_url", "file:///etc/anonsurf/onion.pac");
