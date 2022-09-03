@@ -48,7 +48,7 @@ lockPref("network.manage-offline-status", false);
 /*
   Privacy and tracking protection settings
 */
-// FIXME: all protection options are replacable by level strict (enabled by default by firefox)
+// FIXME: browser.contentblocking.category isn't used by firefox
 // Set privacy protection to maximum
 pref("browser.contentblocking.category", "strict");
 // Force enable all other tracking protection features
@@ -87,21 +87,10 @@ pref("media.video_stats.enabled", false);
 pref("browser.display.use_document_fonts", 0);
 */
 
-pref("browser.startup.firstrunSkipsHomepage", true);
-pref("browser.startup.homepage", "https://start.parrot.sh");
-pref("startup.homepage_welcome_url", "https://www.parrotsec.org/donate");
-pref("browser.newtabpage.activity-stream.default.sites", "https://www.parrotsec.org/,https://crypt.parrot.sh,https://community.parrotsec.org,https://www.hackthebox.eu/,https://riot.im/app/");
-pref("browser.newtabpage.pinned", "[{\"url\":\"https://crypt.parrot.sh\",\"label\":\"CryptPad\",\"searchTopSite\":true}]");
-pref("browser.urlbar.placeholderName", "DuckDuckGo"); // FIXME: this option doesnt work anymore. default search is google
-pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.havePinned", "DuckDuckGo");
-pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.searchEngines", "DuckDuckGo");
-pref("browser.startup.blankWindow", true);
-pref("browser.startup.firstrunSkipsHomepage", false);
-
 // Don't ask to install the Flash plugin
 pref("plugins.notifyMissingFlash", false);
 
-// allow onion domains
+// Allow onion domains
 // Send DNS requuest through SOCKS when SOCKS proxy is in use. This might fix the complains about DNS leak when test with firefox
 // License MIT @pyllyukko https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers
 pref("network.proxy.socks_remote_dns", true);
@@ -111,7 +100,7 @@ pref("network.dns.disablePrefetch", true);
 pref("network.dns.disablePrefetchFromHTTPS", true);
 // Disable the predictive service (Necko)
 pref("network.predictor.enabled", false);
-// set proxy settings
+// Set proxy settings
 pref("network.proxy.autoconfig_url", "file:///etc/anonsurf/onion.pac");
 pref("network.proxy.socks", "127.0.0.1");
 pref("network.proxy.socks_port", 9050);
@@ -124,6 +113,9 @@ pref("browser.search.official", false);
 pref("browser.search.update", false);
 pref("browser.search.hiddenOneOffs", "Bing,Amazon.com,eBay,Twitter");
 pref("browser.search.suggest.enabled", false);
+pref("browser.urlbar.placeholderName", "DuckDuckGo"); // FIXME: this option doesnt work anymore. default search is google
+pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.havePinned", "DuckDuckGo");
+pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.searchEngines", "DuckDuckGo");
 // Do not suggest when type in URL bar, which sends data to search engine in first place. License: MIT @pyllyukko
 pref("browser.urlbar.suggest.searches", false);
 // When using the location bar, don't suggest URLs from browsing history. License: MIT @pyllyukko
@@ -140,5 +132,12 @@ pref("browser.tabs.drawInTitlebar", true);
 pref("browser.startup.homepage_override.mstone", "ignore");
 // Don't show 'know your rights' on first run
 pref("browser.rights.3.shown", true);
-
+// Set startup page
+pref("browser.startup.firstrunSkipsHomepage", true);
+pref("browser.startup.homepage", "https://start.parrot.sh");
+pref("startup.homepage_welcome_url", "https://www.parrotsec.org/donate");
+pref("browser.newtabpage.activity-stream.default.sites", "https://www.parrotsec.org/,https://crypt.parrot.sh,https://community.parrotsec.org,https://www.hackthebox.eu/,https://riot.im/app/");
+pref("browser.newtabpage.pinned", "[{\"url\":\"https://crypt.parrot.sh\",\"label\":\"CryptPad\",\"searchTopSite\":true}]");
+pref("browser.startup.blankWindow", true);
+pref("browser.startup.firstrunSkipsHomepage", false);
 // TODO research from here https://github.com/pyllyukko/user.js/blob/master/user.js#L918
