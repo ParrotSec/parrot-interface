@@ -84,6 +84,7 @@ pref("dom.gamepad.enabled", false);
 // Disable GeoIP lookup to set search engine region. License MIT @pyllyukko. https://trac.torproject.org/projects/tor/ticket/16254
 // pref("browser.search.countryCode", "US"); It isn't in latest firefox-esr anymore
 pref("browser.search.region", "US");
+lockPref("browser.region.update.enabled", false);
 lockPref("browser.region.update.region", "");
 // pref("browser.search.geoip.url", ""); It isn't in latest firefox-esr anymore
 // Enable contextual identity Containers. License MIT @pyllyukko
