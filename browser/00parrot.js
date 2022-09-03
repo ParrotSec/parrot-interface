@@ -145,10 +145,42 @@ pref("browser.newtabpage.activity-stream.default.sites", "https://www.parrotsec.
 pref("browser.newtabpage.pinned", "[{\"url\":\"https://crypt.parrot.sh\",\"label\":\"CryptPad\",\"searchTopSite\":true}]");
 pref("browser.startup.blankWindow", true);
 pref("browser.startup.firstrunSkipsHomepage", false);
-// Disable pocket suggestion at startup
-pref("extensions.pocket.enabled", false);
+// Disable pocket suggestion at startup.
+lockPref("browser.messaging-system.whatsNewPanel.enabled", false);
+// pref("extensions.pocket.enabled", false); // Disable because it's not correct settings I was looking for. User might need it
+// For some reason, firefox doesn't set new page as blank page. It's Firefox's home by default. So we disable new page monitor settings
 pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false);
 pref("extensions.pocket.onSaveRecs", false);
 pref("extensions.pocket.showHome", false);
 pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.section.highlights.includePocket", false);
+lockPref("browser.newtabpage.activity-stream.feeds.snippets", false);
+pref("browser.newtabpage.activity-stream.asrouter.useRemoteL10n", false);
+pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
+pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
+pref("browser.newtabpage.activity-stream.discoverystream.enabled", false);
+pref("browser.newtabpage.activity-stream.discoverystream.isCollectionDismissible", false);
+pref("browser.newtabpage.activity-stream.discoverystream.spocs.personalized", false);
+pref("browser.newtabpage.activity-stream.feeds.aboutpreferences", false);
+pref("browser.newtabpage.activity-stream.feeds.discoverystreamfeed", false);
+pref("browser.newtabpage.activity-stream.feeds.favicon", false);
+pref("browser.newtabpage.activity-stream.feeds.newtabinit", false);
+pref("browser.newtabpage.activity-stream.feeds.places", false);
+pref("browser.newtabpage.activity-stream.feeds.prefs", false);
+pref("browser.newtabpage.activity-stream.feeds.recommendationproviderswitcher", false);
+lockPref("browser.newtabpage.activity-stream.feeds.section.highlights", false);
+lockPref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
+pref("browser.newtabpage.activity-stream.feeds.sections", false);
+pref("browser.newtabpage.activity-stream.feeds.system.topsites", false);
+pref("browser.newtabpage.activity-stream.feeds.system.topstories", false);
+pref("browser.newtabpage.activity-stream.feeds.systemtick", false);
+pref("browser.newtabpage.activity-stream.feeds.topsites", false);
+pref("browser.newtabpage.activity-stream.improvesearch.handoffToAwesomebar", false);
+pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts", false);
+pref("browser.newtabpage.activity-stream.newNewtabExperience.enabled", false);
+pref("browser.newtabpage.activity-stream.section.highlights.includeBookmarks", false);
+pref("browser.newtabpage.activity-stream.section.highlights.includeDownloads", false);
+pref("browser.newtabpage.activity-stream.section.highlights.includeVisited", false);
+pref("browser.newtabpage.activity-stream.showSearch", false);
+lockPref("browser.newtabpage.activity-stream.showSponsored", false);
+lockPref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
 // TODO research from here https://github.com/pyllyukko/user.js/blob/master/user.js#L918
