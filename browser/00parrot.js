@@ -46,8 +46,16 @@ lockPref("network.captive-portal-service.enabled", false);
 lockPref("datareporting.policy.dataSubmissionEnabled", false);
 // Disable firefox monitors online / offline status
 lockPref("network.manage-offline-status", false);
+
+/*
+  Settings for extension to not send data to firefox server automatically
+*/
 // Disable add-on information. https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections
 pref("extensions.getAddons.cache.enabled", false)
+// Remove recommended add-ons
+// https://support.mozilla.org/bm/questions/1264852
+pref("extensions.htmlaboutaddons.inline-options.enabled", false);
+pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 
 /*
   Privacy and tracking protection settings
@@ -137,7 +145,7 @@ pref("browser.tabs.drawInTitlebar", true);
 pref("browser.startup.homepage_override.mstone", "ignore");
 // Dark theme for devtools
 pref("devtools.theme", "dark");
-// Force firefox to use dark theme
+// Force firefox to use dark theme. FIXME: firefox doesn't use this by default
 pref("browser.theme.toolbar-theme", 0);
 // Don't show 'know your rights' on first run
 pref("browser.rights.3.shown", true);
@@ -194,3 +202,4 @@ pref("browser.newtabpage.activity-stream.section.highlights.includeVisited", fal
 pref("browser.newtabpage.activity-stream.showSearch", false);
 lockPref("browser.newtabpage.activity-stream.showSponsored", false);
 lockPref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
+// TODO do not allow plugin to start landing page
