@@ -98,7 +98,7 @@ pref("plugins.notifyMissingFlash", false);
 // Send DNS requuest through SOCKS when SOCKS proxy is in use. This might fix the complains about DNS leak when test with firefox
 // License MIT @pyllyukko https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers
 pref("network.proxy.socks_remote_dns", true);
-pref("network.dns.blockDotOnion", false);
+pref("network.dns.blockDotOnion", true);
 // Disable DNS prefectching. License MIT @pyllyukko
 pref("network.dns.disablePrefetch", true);
 pref("network.dns.disablePrefetchFromHTTPS", true);
@@ -137,7 +137,7 @@ pref("browser.tabs.drawInTitlebar", true);
 pref("browser.startup.homepage_override.mstone", "ignore");
 // Don't show 'know your rights' on first run
 pref("browser.rights.3.shown", true);
-// Customize toolbar.
+// Customize toolbar. FIXME: firefox doesn't use it
 pref("browser.uiCustomization.state", {"placements":{"widget-overflow-fixed-list":[],"nav-bar":["back-button","forward-button","stop-reload-button","urlbar-container","save-to-pocket-button","privatebrowsing-button","library-button","downloads-button","fxa-toolbar-menu-button","ublock0_raymondhill_net-browser-action","developer-button"],"toolbar-menubar":["menubar-items"],"TabsToolbar":["tabbrowser-tabs","new-tab-button","alltabs-button"],"PersonalToolbar":["personal-bookmarks"]},"seen":["save-to-pocket-button","developer-button","ublock0_raymondhill_net-browser-action"],"dirtyAreaCache":["nav-bar"],"currentVersion":17,"newElementCount":5});
 // Set startup page
 pref("browser.startup.firstrunSkipsHomepage", true);
