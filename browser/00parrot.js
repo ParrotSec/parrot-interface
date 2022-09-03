@@ -18,7 +18,9 @@ lockPref("browser.ping-centre.telemetry", false);
 lockPref("browser.urlbar.eventTelemetry.enabled", false);
 lockPref("security.app_menu.recordEventTelemetry", false);
 lockPref("security.identitypopup.recordEventTelemetry", false);
+lockPref("security.certerrors.recordEventTelemetry", false);
 lockPref("security.protectionspopup.recordEventTelemetry", false);
+lockPref("security.xfocsp.errorReporting.enabled", false);
 lockPref("toolkit.telemetry.archive.enabled", false);
 lockPref("toolkit.telemetry.bhrPing.enabled", false);
 lockPref("toolkit.telemetry.ecosystemtelemetry.enabled", false);
@@ -29,6 +31,8 @@ lockPref("toolkit.telemetry.shutdownPingSender.enabled", false);
 lockPref("toolkit.telemetry.unified", false);
 lockPref("toolkit.telemetry.updatePing.enabled", false);
 lockPref("toolkit.telemetry.pioneer-new-studies-available", false);
+lockPref("toolkit.telemetry.cachedClientID", 0);
+lockPref("services.sync.telemetry.maxPayloadCount", 0);
 // Disable firefox checking default browser
 lockPref("browser.shell.checkDefaultBrowser", false);
 lockPref("app.normandy.enabled", false);
