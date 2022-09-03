@@ -30,6 +30,8 @@ lockPref("toolkit.telemetry.unified", false);
 lockPref("toolkit.telemetry.updatePing.enabled", false);
 lockPref("browser.shell.checkDefaultBrowser", false);
 lockPref("app.normandy.enabled", false);
+// Disable firefox captive portal detection. License MIT @pyllyukko
+pref("network.captive-portal-service.enabled", false);
 // Disable health reporter
 lockPref("datareporting.policy.firstRunURL", "");
 lockPref("datareporting.healthreport.service.enabled", false);
@@ -55,11 +57,15 @@ pref("privacy.trackingprotection.enabled", true);
 pref("privacy.trackingprotection.cryptomining.enabled", true);
 pref("privacy.resistFingerprinting", true);
 pref("privacy.donottrackheader.enabled", true);
+// Enable first-party isolation. License: MIT @pyllyukko
+// NOTICE: First-party isolation breaks Microsoft Teams
+// NOTICE: First-party isolation causes HTTP basic auth to ask for credentials for every new tab
+pref("privacy.firstparty.isolate", true);
 // Disable Geo info by default. License MIT @pyllyukko
 pref("geo.enabled", false);
 // Disable netinfo via DOM. Possibly protect user from Javascript websites. License MIT @pyllyukko
 pref("dom.netinfo.enabled", false);
-// Disable gamepad api to prevent USB enumeration. userContextLicense MIT @pyllyukko. https://trac.torproject.org/projects/tor/ticket/13023
+// Disable gamepad api to prevent USB enumeration. License MIT @pyllyukko. https://trac.torproject.org/projects/tor/ticket/13023
 pref("dom.gamepad.enabled", false);
 // Disable GeoIP lookup to set search engine region. License MIT @pyllyukko. https://trac.torproject.org/projects/tor/ticket/16254
 // pref("browser.search.countryCode", "US"); It isn't in latest firefox-esr anymore
@@ -84,8 +90,6 @@ pref("browser.startup.homepage", "https://start.parrot.sh");
 pref("startup.homepage_welcome_url", "https://www.parrotsec.org/donate");
 pref("browser.newtabpage.activity-stream.default.sites", "https://www.parrotsec.org/,https://crypt.parrot.sh,https://community.parrotsec.org,https://www.hackthebox.eu/,https://riot.im/app/");
 pref("browser.newtabpage.pinned", "[{\"url\":\"https://crypt.parrot.sh\",\"label\":\"CryptPad\",\"searchTopSite\":true}]");
-pref("browser.search.hiddenOneOffs", "Bing,Amazon.com,eBay,Twitter");
-pref("browser.search.suggest.enabled", false);
 pref("browser.urlbar.placeholderName", "DuckDuckGo"); // FIXME: this option doesnt work anymore. default search is google
 pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.havePinned", "DuckDuckGo");
 pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.searchEngines", "DuckDuckGo");
@@ -100,17 +104,28 @@ pref("plugins.notifyMissingFlash", false);
 // License MIT @pyllyukko https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers
 pref("network.proxy.socks_remote_dns", true);
 pref("network.dns.blockDotOnion", false);
+// Disable DNS prefectching. License MIT @pyllyukko
+pref("network.dns.disablePrefetch", true);
+pref("network.dns.disablePrefetchFromHTTPS", true);
+// Disable the predictive service (Necko)
+pref("network.predictor.enabled", false);
 // set proxy settings
 pref("network.proxy.autoconfig_url", "file:///etc/anonsurf/onion.pac");
 pref("network.proxy.socks", "127.0.0.1");
 pref("network.proxy.socks_port", 9050);
 pref("network.proxy.type", 2);
-// set default search engine
+// Set default search engine and privacy settings for it
 lockPref("browser.search.isUS", false);
 pref("browser.search.hiddenOneOffs", "Google,Amazon.com,Bing");
 pref("browser.search.defaultenginename", "DuckDuckGo");
 pref("browser.search.official", false);
 pref("browser.search.update", false);
+pref("browser.search.hiddenOneOffs", "Bing,Amazon.com,eBay,Twitter");
+pref("browser.search.suggest.enabled", false);
+// Do not suggest when type in URL bar, which sends data to search engine in first place. License: MIT @pyllyukko
+pref("browser.urlbar.suggest.searches", false);
+// When using the location bar, don't suggest URLs from browsing history. License: MIT @pyllyukko
+pref("browser.urlbar.suggest.history", false);
 
 /*
   Customize layout
@@ -124,4 +139,4 @@ pref("browser.startup.homepage_override.mstone", "ignore");
 // Don't show 'know your rights' on first run
 pref("browser.rights.3.shown", true);
 
-// TODO research from here https://github.com/pyllyukko/user.js/blob/master/user.js#L643
+// TODO research from here https://github.com/pyllyukko/user.js/blob/master/user.js#L918
