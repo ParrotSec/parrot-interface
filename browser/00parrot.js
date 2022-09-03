@@ -36,8 +36,6 @@ lockPref("services.sync.telemetry.maxPayloadCount", 0);
 // Disable firefox checking default browser
 lockPref("browser.shell.checkDefaultBrowser", false);
 lockPref("app.normandy.enabled", false);
-// Disable firefox captive portal detection. License MIT @pyllyukko
-pref("network.captive-portal-service.enabled", false);
 // Disable health reporter
 lockPref("datareporting.policy.firstRunURL", "");
 lockPref("datareporting.healthreport.service.enabled", false);
@@ -48,6 +46,8 @@ lockPref("network.captive-portal-service.enabled", false);
 lockPref("datareporting.policy.dataSubmissionEnabled", false);
 // Disable firefox monitors online / offline status
 lockPref("network.manage-offline-status", false);
+// Disable add-on information. https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections
+pref("extensions.getAddons.cache.enabled", false)
 
 /*
   Privacy and tracking protection settings
