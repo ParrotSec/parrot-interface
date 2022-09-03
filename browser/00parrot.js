@@ -87,6 +87,12 @@ pref("browser.search.region", "US");
 // pref("browser.search.geoip.url", ""); It isn't in latest firefox-esr anymore
 // Enable contextual identity Containers. License MIT @pyllyukko
 pref("privacy.userContext.enabled", true);
+// Disable Firefox's content block monitor report
+pref("browser.contentblocking.report.monitor.enabled", false);
+// Disable Firefox show mobile app report
+pref("browser.contentblocking.report.show_mobile_app", false);
+// Disable Firefox report VPN enabled
+pref("browser.contentblocking.report.vpn.enabled", false);
 // Disable remote debugging (Disabled by default). License MIT @pyllyukko
 // pref("devtools.debugger.remote-enabled", false);
 // pref("devtools.debugger.force-local", true);
