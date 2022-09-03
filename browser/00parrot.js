@@ -28,6 +28,8 @@ lockPref("toolkit.telemetry.server", "");
 lockPref("toolkit.telemetry.shutdownPingSender.enabled", false);
 lockPref("toolkit.telemetry.unified", false);
 lockPref("toolkit.telemetry.updatePing.enabled", false);
+// TODO there are some telemetry settings like last check main search. try to disable them
+// Disable firefox checking default browser
 lockPref("browser.shell.checkDefaultBrowser", false);
 lockPref("app.normandy.enabled", false);
 // Disable firefox captive portal detection. License MIT @pyllyukko
@@ -117,6 +119,8 @@ pref("network.proxy.type", 2);
 // Set default search engine and privacy settings for it
 lockPref("browser.search.isUS", false);
 pref("browser.search.hiddenOneOffs", "Google,Amazon.com,Bing");
+// Try sorting the search engine to make firefox uses duckduckgo by default
+pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.havePinned", "DuckDuckGo,amazon,google");
 pref("browser.search.defaultenginename", "DuckDuckGo");
 pref("browser.search.official", false);
 pref("browser.search.update", false);
