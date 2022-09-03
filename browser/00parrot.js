@@ -106,16 +106,17 @@ pref("network.proxy.socks", "127.0.0.1");
 pref("network.proxy.socks_port", 9050);
 pref("network.proxy.type", 2);
 // Set default search engine and privacy settings for it
-lockPref("browser.search.isUS", false);
 pref("browser.search.hiddenOneOffs", "Google,Amazon.com,Bing");
 pref("browser.search.defaultenginename", "DuckDuckGo");
-pref("browser.search.official", false);
-pref("browser.search.update", false);
-pref("browser.search.hiddenOneOffs", "Bing,Amazon.com,eBay,Twitter");
-pref("browser.search.suggest.enabled", false);
 pref("browser.urlbar.placeholderName", "DuckDuckGo"); // FIXME: this option doesnt work anymore. default search is google
+pref("browser.search.hiddenOneOffs", "Bing,Amazon.com,eBay,Twitter");
 pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.havePinned", "DuckDuckGo");
 pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.searchEngines", "DuckDuckGo");
+// Improve search's privacy
+lockPref("browser.search.isUS", false);
+pref("browser.search.official", false);
+pref("browser.search.update", false);
+pref("browser.search.suggest.enabled", false);
 // Do not suggest when type in URL bar, which sends data to search engine in first place. License: MIT @pyllyukko
 pref("browser.urlbar.suggest.searches", false);
 // When using the location bar, don't suggest URLs from browsing history. License: MIT @pyllyukko
