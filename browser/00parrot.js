@@ -144,11 +144,12 @@ pref("startup.homepage_welcome_url", "https://www.parrotsec.org/donate");
 pref("browser.newtabpage.activity-stream.default.sites", "https://www.parrotsec.org/,https://crypt.parrot.sh,https://community.parrotsec.org,https://www.hackthebox.eu/,https://riot.im/app/");
 pref("browser.newtabpage.pinned", "[{\"url\":\"https://crypt.parrot.sh\",\"label\":\"CryptPad\",\"searchTopSite\":true}]");
 pref("browser.startup.blankWindow", true);
+// Disable firefox's homepage. We start blank page only
+pref("browser.newtabpage.enabled", false);
 pref("browser.startup.firstrunSkipsHomepage", false);
 // Disable pocket suggestion at startup.
 lockPref("browser.messaging-system.whatsNewPanel.enabled", false);
 // pref("extensions.pocket.enabled", false); // Disable because it's not correct settings I was looking for. User might need it
-// For some reason, firefox doesn't set new page as blank page. It's Firefox's home by default. So we disable new page monitor settings
 pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false);
 pref("extensions.pocket.onSaveRecs", false);
 pref("extensions.pocket.showHome", false);
