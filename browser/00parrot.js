@@ -28,7 +28,7 @@ lockPref("toolkit.telemetry.server", "");
 lockPref("toolkit.telemetry.shutdownPingSender.enabled", false);
 lockPref("toolkit.telemetry.unified", false);
 lockPref("toolkit.telemetry.updatePing.enabled", false);
-// TODO there are some telemetry settings like last check main search. try to disable them
+lockPref("toolkit.telemetry.pioneer-new-studies-available", false);
 // Disable firefox checking default browser
 lockPref("browser.shell.checkDefaultBrowser", false);
 lockPref("app.normandy.enabled", false);
