@@ -135,6 +135,10 @@ lockPref("browser.urlbar.trimURLs", false);
 pref("browser.tabs.drawInTitlebar", true);
 // Don't show WhatsNew on first run after every update
 pref("browser.startup.homepage_override.mstone", "ignore");
+// Dark theme for devtools
+pref("devtools.theme", "dark");
+// Force firefox to use dark theme
+pref("browser.theme.toolbar-theme", 0);
 // Don't show 'know your rights' on first run
 pref("browser.rights.3.shown", true);
 // Customize toolbar. FIXME: firefox doesn't use it
