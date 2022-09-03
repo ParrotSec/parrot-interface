@@ -145,4 +145,10 @@ pref("browser.newtabpage.activity-stream.default.sites", "https://www.parrotsec.
 pref("browser.newtabpage.pinned", "[{\"url\":\"https://crypt.parrot.sh\",\"label\":\"CryptPad\",\"searchTopSite\":true}]");
 pref("browser.startup.blankWindow", true);
 pref("browser.startup.firstrunSkipsHomepage", false);
+// Disable pocket suggestion at startup
+pref("extensions.pocket.enabled", false);
+pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false);
+pref("extensions.pocket.onSaveRecs", false);
+pref("extensions.pocket.showHome", false);
+pref("services.sync.prefs.sync.browser.newtabpage.activity-stream.section.highlights.includePocket", false);
 // TODO research from here https://github.com/pyllyukko/user.js/blob/master/user.js#L918
