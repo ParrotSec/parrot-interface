@@ -30,8 +30,8 @@ lockPref("toolkit.telemetry.unified", false);
 lockPref("toolkit.telemetry.updatePing.enabled", false);
 lockPref("browser.shell.checkDefaultBrowser", false);
 lockPref("app.normandy.enabled", false);
-lockPref("datareporting.policy.firstRunURL", "");
 // Disable health reporter
+lockPref("datareporting.policy.firstRunURL", "");
 lockPref("datareporting.healthreport.service.enabled", false);
 lockPref("datareporting.healthreport.uploadEnabled", false);
 // Disable network connectivity test
@@ -59,12 +59,25 @@ pref("privacy.donottrackheader.enabled", true);
 pref("geo.enabled", false);
 // Disable netinfo via DOM. Possibly protect user from Javascript websites. License MIT @pyllyukko
 pref("dom.netinfo.enabled", false);
-// Disable gamepad api to prevent USB enumeration. License MIT @pyllyukko. https://trac.torproject.org/projects/tor/ticket/13023
+// Disable gamepad api to prevent USB enumeration. userContextLicense MIT @pyllyukko. https://trac.torproject.org/projects/tor/ticket/13023
 pref("dom.gamepad.enabled", false);
 // Disable GeoIP lookup to set search engine region. License MIT @pyllyukko. https://trac.torproject.org/projects/tor/ticket/16254
 // pref("browser.search.countryCode", "US"); It isn't in latest firefox-esr anymore
 pref("browser.search.region", "US");
 // pref("browser.search.geoip.url", ""); It isn't in latest firefox-esr anymore
+// Enable contextual identity Containers. License MIT @pyllyukko
+pref("privacy.userContext.enabled", true);
+// Disable remote debugging (Disabled by default). License MIT @pyllyukko
+// pref("devtools.debugger.remote-enabled", false);
+// pref("devtools.debugger.force-local", true);
+/*
+  Some interesting settings that might break UX
+  License MIT @pyllyukko
+// Disable video stats to reduce fingerprinting
+pref("media.video_stats.enabled", false);
+// Don't use document specified fonts to prevent installed font enumeration
+pref("browser.display.use_document_fonts", 0);
+*/
 
 pref("browser.startup.firstrunSkipsHomepage", true);
 pref("browser.startup.homepage", "https://start.parrot.sh");
@@ -99,16 +112,16 @@ pref("browser.search.defaultenginename", "DuckDuckGo");
 pref("browser.search.official", false);
 pref("browser.search.update", false);
 
-
 /*
   Customize layout
 */
-// FIXME: maybe pref must be replaced by user_pref
 // Disable URL trim so protocol is forced to show
 lockPref("browser.urlbar.trimURLs", false);
 // Hide title bar to save some space
 pref("browser.tabs.drawInTitlebar", true);
 // Don't show WhatsNew on first run after every update
-pref("browser.startup.homepage_override.mstone","ignore");
+pref("browser.startup.homepage_override.mstone", "ignore");
 // Don't show 'know your rights' on first run
 pref("browser.rights.3.shown", true);
+
+// TODO research from here https://github.com/pyllyukko/user.js/blob/master/user.js#L643
