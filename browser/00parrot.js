@@ -51,10 +51,10 @@ lockPref("network.manage-offline-status", false);
   Settings for extension to not send data to firefox server automatically
 */
 // Disable add-on information. https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections
-pref("extensions.getAddons.cache.enabled", false)
+pref("extensions.getAddons.cache.enabled", false);
 // Remove recommended add-ons
 // https://support.mozilla.org/bm/questions/1264852
-lockPref("extensions.htmlaboutaddons.inline-options.enabled", false);
+lockPref("extensions.htmlaboutaddons.inline-options.enabled", false); // FIXME: this option doesn't use by firefox
 lockPref("extensions.htmlaboutaddons.recommendations.enabled", false);
 
 /*
