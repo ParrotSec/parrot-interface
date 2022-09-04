@@ -81,6 +81,8 @@ pref("geo.enabled", false);
 pref("dom.netinfo.enabled", false);
 // Disable gamepad api to prevent USB enumeration. License MIT @pyllyukko. https://trac.torproject.org/projects/tor/ticket/13023
 pref("dom.gamepad.enabled", false);
+// Prevent leaking locale / date format License MIT @pyllyukko
+pref("javascript.use_us_english_locale", true);
 // Disable GeoIP lookup to set search engine region. License MIT @pyllyukko. https://trac.torproject.org/projects/tor/ticket/16254
 // pref("browser.search.countryCode", "US"); It isn't in latest firefox-esr anymore
 pref("browser.search.region", "US");
@@ -95,6 +97,9 @@ pref("browser.contentblocking.report.monitor.enabled", false);
 pref("browser.contentblocking.report.show_mobile_app", false);
 // Disable Firefox report VPN enabled
 pref("browser.contentblocking.report.vpn.enabled", false);
+// TODO think about media.webvtt.regions.enabled
+// Do not expose info when WebGL is enabled. License MIT @pyllyukko
+pref("webgl.enable-debug-renderer-info", false);
 // Disable remote debugging (Disabled by default). License MIT @pyllyukko
 // pref("devtools.debugger.remote-enabled", false);
 // pref("devtools.debugger.force-local", true);
