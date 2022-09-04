@@ -176,8 +176,6 @@ pref("browser.newtabpage.enabled", false);
 pref("browser.startup.firstrunSkipsHomepage", false);
 // Disable pocket suggestion at startup.
 lockPref("browser.messaging-system.whatsNewPanel.enabled", false);
-// Do not display Import Bookmark button
-pref("browser.bookmarks.addedImportButton", false);
 // pref("extensions.pocket.enabled", false); // Disable because it's not correct settings I was looking for. User might need it
 
 /*
