@@ -148,6 +148,16 @@ pref("browser.urlbar.suggest.searches", false);
 pref("browser.urlbar.suggest.history", false);
 
 /*
+  WebRTC fingerprint. License: MIT @pyllyukko
+  TODO will it affect jitsi or any meeting platforms?
+*/
+
+pref("media.navigator.enabled", false);
+pref("media.navigator.video.enabled", false);
+pref("media.getusermedia.screensharing.enabled", false);
+pref("media.getusermedia.audiocapture.enabled", false);
+
+/*
   Customize layout
 */
 // Disable URL trim so protocol is forced to show
