@@ -1,3 +1,54 @@
+parrot-interface (5.1.1) parrot-updates; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * Fix json syntax error
+  * Fix JS syntax
+  * Add option to disable URL trim
+  * Hide title bar
+  * Increase default privacy
+  * Regroup settings
+  * Disable geo by default
+  * Add some privacy settings
+  * Add preferences
+  * Move sock dns settings to dns block
+  * Improve settting grouping
+  * Add more enchanced settings
+  * Add search engine settings, force google to bottom
+  * remove setting that doesn't change the search engine
+  * Improve grouping
+  * improve setting groups
+  * Add toolkit.telemetry.pioneer-new-studies-available
+  * Add more telemetry settings
+  * Add pocket settings
+  * Add newtabpage settings
+  * Add settings to force blank page
+  * Try customize UI
+  * Fix wrong network.dns.blockDotOnion value
+  * Add disable add-on config and remove duplicate setting
+  * Force firefox to use dark theme
+  * Disable recommended add-ons
+  * Force disable extension recommend to false
+  * Fix a syntax error
+  * Fix the ui setting
+  * Enable media.video_stats.enabled
+  * Disable some content blocking report options
+  * Enable font enumeration setting
+  * Add option browser.region.update.region
+  * Disable update region
+  * Add some java script settings
+  * add browser.bookmarks.addedImportButton
+  * Set customized ui as default pref
+  * remove browser.bookmarks.addedImportButton which is a wrong setting
+  * remove defpref for uiCustomization which firefox doesnt use
+  * Add webrtc settings
+  * Comment webrtc settings
+  * Update startup page domain to https://start.parrotsec.org
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * add osint category
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 07 Sep 2022 00:52:22 +0200
+
 parrot-interface (5.1.0) parrot-updates; urgency=medium
 
   * Update firefox bookmarks.
