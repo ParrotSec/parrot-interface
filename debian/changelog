@@ -12,7 +12,7 @@ parrot-interface (5.1.1) parrot-updates; urgency=medium
   * Add preferences
   * Move sock dns settings to dns block
   * Improve settting grouping
-  * Add more enchanced settings
+  * Add more enhanced settings
   * Add search engine settings, force google to bottom
   * remove setting that doesn't change the search engine
   * Improve grouping
@@ -39,7 +39,7 @@ parrot-interface (5.1.1) parrot-updates; urgency=medium
   * add browser.bookmarks.addedImportButton
   * Set customized ui as default pref
   * remove browser.bookmarks.addedImportButton which is a wrong setting
-  * remove defpref for uiCustomization which firefox doesnt use
+  * remove defpref for uiCustomization which firefox doesn't use
   * Add webrtc settings
   * Comment webrtc settings
   * Update startup page domain to https://start.parrotsec.org
