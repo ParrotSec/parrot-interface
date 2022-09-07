@@ -11,7 +11,7 @@ parrot-interface (5.1.1) parrot-updates; urgency=medium
   * Add some privacy settings
   * Add preferences
   * Move sock dns settings to dns block
-  * Improve settting grouping
+  * Improve setting grouping
   * Add more enhanced settings
   * Add search engine settings, force google to bottom
   * remove setting that doesn't change the search engine
