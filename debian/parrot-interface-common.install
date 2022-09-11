@@ -1,6 +1,5 @@
 etc/xdg/xfce4/terminal/*
 usr/share/parrot-defaults/*
-usr/share/applications/*
 browser/00parrot.js etc/firefox-esr/
 browser/00parrot.js etc/firefox/
 browser/firefox.js etc/firefox-esr/
