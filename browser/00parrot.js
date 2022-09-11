@@ -141,7 +141,7 @@ pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.se
 lockPref("browser.search.isUS", false);
 pref("browser.search.official", false);
 pref("browser.search.update", false);
-pref("browser.search.suggest.enabled", false);
+// pref("browser.search.suggest.enabled", false);
 // Do not suggest when type in URL bar, which sends data to search engine in first place. License: MIT @pyllyukko
 pref("browser.urlbar.suggest.searches", false);
 // When using the location bar, don't suggest URLs from browsing history. License: MIT @pyllyukko
