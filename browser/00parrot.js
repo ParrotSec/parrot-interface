@@ -81,7 +81,7 @@ pref("privacy.donottrackheader.enabled", true);
   4. Cross-site tracking cookies - Include social media cookies
 */
 pref("network.cookie.cookieBehavior", 5); // FIXME firefox doesn't use this option
-// Private Browser mode. 
+// Private Browser mode.
 pref("network.cookie.cookieBehavior.pbmode", 5);
 // Enable first-party isolation. License: MIT @pyllyukko
 // NOTICE: First-party isolation breaks Microsoft Teams
@@ -149,6 +149,7 @@ pref("browser.urlbar.placeholderName", "DuckDuckGo");
 pref("browser.search.hiddenOneOffs", "Bing,Amazon.com,eBay,Twitter");
 pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.havePinned", "DuckDuckGo");
 pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.searchEngines", "DuckDuckGo");
+pref("browser.policies.runOncePerModification.setDefaultSearchEngine", "DuckDuckGo")
 // Improve search's privacy
 lockPref("browser.search.isUS", false);
 pref("browser.search.official", false);
