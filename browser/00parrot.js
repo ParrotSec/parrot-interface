@@ -54,8 +54,8 @@ lockPref("network.manage-offline-status", false);
 pref("extensions.getAddons.cache.enabled", false);
 // Remove recommended add-ons
 // https://support.mozilla.org/bm/questions/1264852
-lockPref("extensions.htmlaboutaddons.inline-options.enabled", false); // FIXME: this option doesn't use by firefox
-lockPref("extensions.htmlaboutaddons.recommendations.enabled", false);
+pref("extensions.htmlaboutaddons.inline-options.enabled", false); // FIXME: this option doesn't use by firefox
+pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 
 /*
   Privacy and tracking protection settings
