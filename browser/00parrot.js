@@ -133,7 +133,7 @@ pref("network.proxy.type", 2);
 // Set default search engine and privacy settings for it
 pref("browser.search.hiddenOneOffs", "Google,Amazon.com,Bing");
 pref("browser.search.defaultenginename", "DuckDuckGo");
-pref("browser.urlbar.placeholderName", "DuckDuckGo"); // FIXME: this option doesnt work anymore. default search is google
+pref("browser.urlbar.placeholderName", "DuckDuckGo");
 pref("browser.search.hiddenOneOffs", "Bing,Amazon.com,eBay,Twitter");
 pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.havePinned", "DuckDuckGo");
 pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.searchEngines", "DuckDuckGo");
