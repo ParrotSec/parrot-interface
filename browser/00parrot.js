@@ -59,10 +59,10 @@ lockPref("extensions.htmlaboutaddons.recommendations.enabled", false);
 
 /*
   Privacy and tracking protection settings
+  https://wiki.mozilla.org/Security/Tracking_protection
 */
-// FIXME: browser.contentblocking.category isn't used by firefox
-// Set privacy protection to maximum
-pref("browser.contentblocking.category", "strict");
+// Set privacy protection to maximum. In lastest test, Firefox shows Custom.
+// pref("browser.contentblocking.category", "strict");
 // Force enable all other tracking protection features
 pref("privacy.trackingprotection.socialtracking.enabled", true);
 pref("privacy.trackingprotection.pbmode.enabled", true);
@@ -71,6 +71,16 @@ pref("privacy.trackingprotection.enabled", true);
 pref("privacy.trackingprotection.cryptomining.enabled", true);
 pref("privacy.resistFingerprinting", true);
 pref("privacy.donottrackheader.enabled", true);
+/*
+  Set cookie protection in Privacy Custom mode
+  network.cookie.cookieBehavior
+  0. Disable this option
+  1. All Third-party cookies
+  2. All cookies
+  3. Cookies from unvisited websites
+  4. Cross-site tracking cookies - Include social media cookies
+*/
+pref("network.cookie.cookieBehavior", 4)
 // Enable first-party isolation. License: MIT @pyllyukko
 // NOTICE: First-party isolation breaks Microsoft Teams
 // NOTICE: First-party isolation causes HTTP basic auth to ask for credentials for every new tab
