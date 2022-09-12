@@ -180,7 +180,7 @@ pref("browser.tabs.drawInTitlebar", true);
 pref("browser.startup.homepage_override.mstone", "ignore");
 // Dark theme for devtools
 pref("devtools.theme", "dark");
-// Force firefox to use dark theme. FIXME: firefox doesn't use this by default
+// Force firefox to use dark theme.
 pref("browser.theme.toolbar-theme", 0);
 pref("extensions.activeThemeID", "firefox-compact-dark@mozilla.org");
 // Don't show 'know your rights' on first run
