@@ -78,7 +78,7 @@ pref("privacy.firstparty.isolate", true);
 // Disable Geo info by default. License MIT @pyllyukko
 // pref("geo.enabled", false);
 // Disable netinfo via DOM. Possibly protect user from Javascript websites. License MIT @pyllyukko
-pref("dom.netinfo.enabled", false);
+// pref("dom.netinfo.enabled", false);
 // Disable gamepad api to prevent USB enumeration. License MIT @pyllyukko. https://trac.torproject.org/projects/tor/ticket/13023
 pref("dom.gamepad.enabled", false);
 // Prevent leaking locale / date format License MIT @pyllyukko
