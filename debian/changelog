@@ -1,3 +1,47 @@
+parrot-interface (5.1.3) parrot-updates; urgency=medium
+
+  * Rebuild package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 12 Sep 2022 16:24:28 +0200
+
+parrot-interface (5.1.2) parrot-updates; urgency=medium
+
+  * New structure. Test with parrot and htb in folder
+  * Add vuln db bookmark
+  * Fix spelling error in changelog
+  * Update section folderID for all bookmark addrs
+  * Fix typo in changelog
+  * Fix wrong up-case name of folderId
+  * Try icon with hardcoded base64 data
+  * fix wrong item id in parrot bookmark addrs
+  * Test for sub dir
+  * Fix url of parrot icon
+  * Add flight tracking
+  * Fix name of airportia
+  * Update section name to iconData to use base64 image
+  * Test new structure for sub folder
+  * Add cam links
+  * Move sub folders in osint to main folder
+  * Swap position of land and sea vs live cam
+  * Complete OSINT bookmark
+  * Fix missing folderId for bookmark addrs
+  * Fix up-case of folderId
+  * Fix wrong section "title" of folder Search Engine
+  * Fix up-case in name
+  * Fix packetStorm name
+  * Add privacy and security folder
+  * Add programming to resources
+  * Add linux bookrmarks
+  * Move launchers to parrot-menu
+  * Add bookmark for pentest and change folders
+  * Remove installation of old launchers
+  * Fix autocompletion on search bar
+  * Replace old v2 torhiddenwiki with onionlinks v3
+  * Add more bookmark to learning resources
+  * Enable suggest history again
+
+ -- Nong Hoang Tu <dmknght@parrotsec.org>  Mon, 12 Sep 2022 16:23:38 +0200
+
 parrot-interface (5.1.1) parrot-updates; urgency=medium
 
   [ Nong Hoang Tu ]
