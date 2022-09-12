@@ -80,7 +80,9 @@ pref("privacy.donottrackheader.enabled", true);
   3. Cookies from unvisited websites
   4. Cross-site tracking cookies - Include social media cookies
 */
-pref("network.cookie.cookieBehavior", 4)
+pref("network.cookie.cookieBehavior", 4);
+// Private Browser mode. Set 1 by default
+// pref("network.cookie.cookieBehavior.pbmode", 1);
 // Enable first-party isolation. License: MIT @pyllyukko
 // NOTICE: First-party isolation breaks Microsoft Teams
 // NOTICE: First-party isolation causes HTTP basic auth to ask for credentials for every new tab
