@@ -62,7 +62,7 @@ pref("extensions.htmlaboutaddons.recommendations.enabled", false);
   https://wiki.mozilla.org/Security/Tracking_protection
 */
 // Set privacy protection to maximum. In lastest test, Firefox shows Custom.
-// pref("browser.contentblocking.category", "strict");
+pref("browser.contentblocking.category", "strict");
 // Force enable all other tracking protection features
 pref("privacy.trackingprotection.socialtracking.enabled", true);
 pref("privacy.trackingprotection.pbmode.enabled", true);
@@ -80,9 +80,9 @@ pref("privacy.donottrackheader.enabled", true);
   3. Cookies from unvisited websites
   4. Cross-site tracking cookies - Include social media cookies
 */
-pref("network.cookie.cookieBehavior", 4); // FIXME firefox doesn't use this option
-// Private Browser mode. Set 1 by default
-// pref("network.cookie.cookieBehavior.pbmode", 1);
+pref("network.cookie.cookieBehavior", 5); // FIXME firefox doesn't use this option
+// Private Browser mode. 
+pref("network.cookie.cookieBehavior.pbmode", 5);
 // Enable first-party isolation. License: MIT @pyllyukko
 // NOTICE: First-party isolation breaks Microsoft Teams
 // NOTICE: First-party isolation causes HTTP basic auth to ask for credentials for every new tab
