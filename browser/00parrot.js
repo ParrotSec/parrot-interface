@@ -80,7 +80,7 @@ pref("privacy.donottrackheader.enabled", true);
   3. Cookies from unvisited websites
   4. Cross-site tracking cookies - Include social media cookies
 */
-pref("network.cookie.cookieBehavior", 4);
+pref("network.cookie.cookieBehavior", 4); // FIXME firefox doesn't use this option
 // Private Browser mode. Set 1 by default
 // pref("network.cookie.cookieBehavior.pbmode", 1);
 // Enable first-party isolation. License: MIT @pyllyukko
@@ -182,6 +182,7 @@ pref("browser.startup.homepage_override.mstone", "ignore");
 pref("devtools.theme", "dark");
 // Force firefox to use dark theme. FIXME: firefox doesn't use this by default
 pref("browser.theme.toolbar-theme", 0);
+pref("extensions.activeThemeID", "firefox-compact-dark@mozilla.org");
 // Don't show 'know your rights' on first run
 pref("browser.rights.3.shown", true);
 pref("browser.uiCustomization.state", "{\"placements\":{\"widget-overflow-fixed-list\":[],\"nav-bar\":[\"back-button\",\"forward-button\",\"stop-reload-button\",\"urlbar-container\",\"save-to-pocket-button\",\"privatebrowsing-button\",\"library-button\",\"downloads-button\",\"fxa-toolbar-menu-button\",\"ublock0_raymondhill_net-browser-action\",\"developer-button\"],\"toolbar-menubar\":[\"menubar-items\"],\"TabsToolbar\":[\"tabbrowser-tabs\",\"new-tab-button\",\"alltabs-button\"],\"PersonalToolbar\":[\"personal-bookmarks\"]},\"seen\":[\"save-to-pocket-button\",\"developer-button\",\"ublock0_raymondhill_net-browser-action\"],\"dirtyAreaCache\":[\"nav-bar\"],\"currentVersion\":17,\"newElementCount\":5}");
