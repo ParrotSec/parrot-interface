@@ -1,3 +1,30 @@
+parrot-interface (5.1.5) parrot-updates; urgency=medium
+
+  * Do not disable geo.enabled.
+  * Do not force disable netinfo in dom
+  * Remove fixme in search engine. FIrefox iwas using duckduckgo when tested
+  * Remove fixme about toolbar. Didn't happen in latest test
+  * Add network.cookie.cookieBehavior
+  * do not lock extension settings
+  * Add description for pbmode of cookie and fix a syntax err
+  * Try to use dark theme by extension setting
+  * Remove fixme. Dark theme done
+  * try strict for privacy again
+  * Add browser policy setting to use duckduckgo as search engine
+  * remove fixme. worked in latest test
+  * Remove icons in bookmark
+  * Update License
+
+ -- Nong Hoang Tu <dmknght@parrotsec.org>  Sat, 17 Sep 2022 14:06:18 +0200
+
+parrot-interface (5.1.4) parrot-updates; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * Do not disable geo.enabled.
+  * Do not force disable netinfo in dom
+
+ -- Nong Hoang Tu <dmknght@parrotsec.org>  Mon, 12 Sep 2022 16:42:15 +0200
+
 parrot-interface (5.1.3) parrot-updates; urgency=medium
 
   * Rebuild package.
