@@ -57,7 +57,7 @@ pref("extensions.getAddons.cache.enabled", false);
 pref("extensions.htmlaboutaddons.inline-options.enabled", false);
 pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 // Block extension's landing page https://support.mozilla.org/en-US/questions/1296613
-pref("browser.aboutwelcome.enabled", false);
+pref("extensions.postDownloadThirdPartyPrompt", false);
 
 /*
   Privacy and tracking protection settings
