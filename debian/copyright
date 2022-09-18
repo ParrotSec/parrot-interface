@@ -19,6 +19,11 @@ Files:
 Copyright: 2022 Nong Hoang Tu <dmknght@parrotsec.org>
 License: GPL-3.0+
 
+Files:
+  browser/distribution.ini
+Copyright: 2022 Rakesh Chowdhury <rc202402@gmail.com>
+License: GPL-3.0+
+
 License: GPL-3.0+
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
