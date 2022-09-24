@@ -1,3 +1,13 @@
+parrot-interface (5.1.6) parrot-updates; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * Try blocking extension landing page
+  * try extensions.postDownloadThirdPartyPrompt to disable landing page
+  * Remove wrong extension settings
+  * Add name of contributor to license
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 23 Sep 2022 00:16:51 +0200
+
 parrot-interface (5.1.5) parrot-updates; urgency=medium
 
   * Do not disable geo.enabled.
