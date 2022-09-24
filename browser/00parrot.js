@@ -150,7 +150,7 @@ pref("browser.urlbar.placeholderName", "DuckDuckGo");
 pref("browser.search.hiddenOneOffs", "Bing,Amazon.com,eBay,Twitter");
 pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.havePinned", "DuckDuckGo");
 pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.searchEngines", "DuckDuckGo");
-pref("browser.policies.runOncePerModification.setDefaultSearchEngine", "DuckDuckGo")
+pref("browser.policies.runOncePerModification.setDefaultSearchEngine", "DuckDuckGo");
 // Improve search's privacy
 lockPref("browser.search.isUS", false);
 pref("browser.search.official", false);
