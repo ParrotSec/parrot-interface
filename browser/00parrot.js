@@ -178,6 +178,7 @@ pref("browser.urlbar.suggest.searches", false);
 lockPref("browser.urlbar.trimURLs", false);
 // Hide title bar to save some space
 pref("browser.tabs.drawInTitlebar", true);
+defaultPref("browser.tabs.inTitlebar", 1);
 // Don't show WhatsNew on first run after every update
 pref("browser.startup.homepage_override.mstone", "ignore");
 // Dark theme for devtools
