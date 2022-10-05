@@ -1,0 +1,10 @@
+browser/00parrot.js etc/firefox-esr/
+browser/00parrot.js etc/firefox/
+browser/firefox.js etc/firefox-esr/
+browser/firefox.js etc/firefox/
+browser/00parrot.js usr/share/firefox-esr/browser/defaults/preferences/
+browser/00parrot.js usr/share/firefox/browser/defaults/preferences/
+browser/distribution.ini usr/share/firefox-esr/distribution/
+browser/distribution.ini usr/share/firefox/distribution/
+browser/policies.json usr/share/firefox-esr/distribution/
+browser/policies.json usr/share/firefox/distribution/
