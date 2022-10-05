@@ -164,3 +164,10 @@ Description: Parrot ZSH configuration
  a security focused GNU/Linux distribution.
  .
  This metapackage provides the default plugin for Parrot ZSH shell.
+
+Package: parrot-firefox-profiles
+Architecture: all
+Section: metapackages
+Priority: optional
+Description: Parrot Firefox profiles
+  A meta package that contains default custom profile for Firefox-ESR
