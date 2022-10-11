@@ -177,7 +177,7 @@ pref("browser.urlbar.suggest.searches", false);
 // Disable URL trim so protocol is forced to show
 lockPref("browser.urlbar.trimURLs", false);
 // Hide title bar to save some space
-defaultPref("browser.tabs.inTitlebar", 1);
+pref("browser.tabs.inTitlebar", 1);
 // Don't show WhatsNew on first run after every update
 pref("browser.startup.homepage_override.mstone", "ignore");
 // Dark theme for devtools
