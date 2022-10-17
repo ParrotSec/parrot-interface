@@ -57,11 +57,6 @@
       "Default": false,
       "Locked": false
     },
-    "dom.disable_window_move_resize": true,
-    "extensions.getAddons.showPane": false,
-    "extensions.htmlaboutaddons.recommendations.enabled": false,
-    "network.IDN_show_punycode": true,
-    "security.ssl.errorReporting.enabled": false,
     "PromptForDownloadLocation": true,
     "SupportMenu": {
       "Title": "Parrot Support",
