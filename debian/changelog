@@ -1,3 +1,30 @@
+parrot-interface (5.1.7) parrot-updates; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * Fix missing ; in code
+  * Update title bar preference for firefox 102.3.0
+  * Remove old option that's not used anymore
+  * add s3cur3th1ssh1t blog to bookmark
+  * Ignore files in .idea
+  * Create parrot-firefox-profiles package
+  * Better bash syntax
+  * Create new firefox-profiles installation
+  * Add parrot firefox profiles to depends of parrot-interface-common
+  * Fix the link to use direct url
+  * Reverse url of parrot doc
+  * Improve bookmark bar
+  * Add home to toolbar
+  * Change titlebar to pref instead of defaultPref
+  * Do not show start page. Use home button instead
+  * Add more bookmarks
+  * More firefox bookmark
+  * Remove old dropped settings
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Rebuild package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 17 Oct 2022 13:55:02 +0200
+
 parrot-interface (5.1.6) parrot-updates; urgency=medium
 
   [ Nong Hoang Tu ]
