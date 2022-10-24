@@ -121,7 +121,9 @@ pref("webgl.enable-debug-renderer-info", false);
 // Disable video stats to reduce fingerprinting
 pref("media.video_stats.enabled", false);
 // Don't use document specified fonts to prevent installed font enumeration
-pref("browser.display.use_document_fonts", 0);
+// Disable because it made google meet (and possibly some other websites) have font problem
+// Fix for users: change value to 1
+// pref("browser.display.use_document_fonts", 0);
 
 // Don't ask to install the Flash plugin
 pref("plugins.notifyMissingFlash", false);
