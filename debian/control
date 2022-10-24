@@ -169,5 +169,6 @@ Package: parrot-firefox-profiles
 Architecture: all
 Section: metapackages
 Priority: optional
+Breaks: parrot-interface-common (<= 5.1.7)
 Description: Parrot Firefox profiles
   A meta package that contains default custom profile for Firefox-ESR
