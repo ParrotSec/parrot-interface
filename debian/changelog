@@ -1,3 +1,9 @@
+parrot-interface (6.0.1) lory-updates; urgency=medium
+
+  * Replace xserver-xorg-input-multitouch with mtrack.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 06 Jan 2024 04:38:53 +0100
+
 parrot-interface (6.0) lory; urgency=medium
 
   * Update browser landing page.
