@@ -1,3 +1,9 @@
+parrot-interface (6.0.3) lory-updates; urgency=medium
+
+  * Include pipewire-libcamera.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 06 Feb 2024 16:58:39 +0100
+
 parrot-interface (6.0.2) lory-updates; urgency=medium
 
   * Use pipewire by default.
