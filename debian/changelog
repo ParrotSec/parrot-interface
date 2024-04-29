@@ -1,3 +1,9 @@
+parrot-interface (6.1) lory; urgency=medium
+
+  * remove broken gnome dependencies.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 29 Apr 2024 19:27:52 +0200
+
 parrot-interface (6.0.4) lory-updates; urgency=medium
 
   * Include rar and unrar.
