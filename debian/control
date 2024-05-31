@@ -41,7 +41,7 @@ Recommends: bleachbit,
 	libspa-0.2-bluetooth | pulseaudio,
 	pipewire-libcamera | pulseaudio,
 	qbittorrent, vlc, parrot-updater, onboard, dasher, xvkbd,
-	rar, unrar
+	rar, unrar,
  webext-ublock-origin,
  chromium-ublock-origin,
  libatk-adaptor,

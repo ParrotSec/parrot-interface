@@ -1,3 +1,9 @@
+parrot-interface (6.1.2) lory-updates; urgency=medium
+
+  * Typo in debian/control.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 01 Jun 2024 00:13:29 +0200
+
 parrot-interface (6.1.1) lory-updates; urgency=medium
 
   * Update all gnome dependencies.
