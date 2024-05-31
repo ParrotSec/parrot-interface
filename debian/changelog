@@ -1,3 +1,10 @@
+parrot-interface (6.1.1) lory-updates; urgency=medium
+
+  * Update all gnome dependencies.
+  * Move opensnitch to suggests.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 01 Jun 2024 00:10:35 +0200
+
 parrot-interface (6.1) lory; urgency=medium
 
   * remove broken gnome dependencies.

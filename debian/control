@@ -54,7 +54,8 @@ Description: Parrot interface metapackage
 Package: parrot-interface-home
 Architecture: all
 Depends: parrot-interface-common
-Recommends: libreoffice-writer, libreoffice-calc, libreoffice-impress, libreoffice-draw, brasero, dvd+rw-tools, udftools, system-config-printer, remmina, cups, vlc, mpv, gimp, cheese, gufw, opensnitch, cpupower-gui
+Recommends: libreoffice-writer, libreoffice-calc, libreoffice-impress, libreoffice-draw, brasero, dvd+rw-tools, udftools, system-config-printer, remmina, cups, vlc, mpv, gimp, cheese, gufw, cpupower-gui
+Suggests: opensnitch
 Description: Parrot FULL Interface metapackage
  metapackage that installs ALL the user applications required in a standard
  home computer as photo manager, music manager, video editor, email client,
@@ -79,9 +80,11 @@ Depends: parrot-interface-common, gnome-core, gedit,
     gnome-shell-extension-dash-to-panel,
     gnome-shell-extension-easyscreencast,
     gnome-shell-extension-manager,
+    gnome-shell-extension-no-annoyance,
     gnome-shell-extension-prefs,
-    gnome-shell-extension-system-monitor,    
-    gnome-tweaks, nautilus-wipe, nautilus-gtkhash, gnome-orca, file-roller, gnome-calculator
+    gnome-shell-extension-system-monitor,   
+    gnome-shell-extension-tiling-assistant,
+    gnome-tweaks, nautilus-extension-gnome-terminal, file-roller, gnome-calculator
 Recommends: gdm3
 Description: GNOME based Parrot desktopi
  This metapackage installs a minimalistic GNOME desktop on Parrot Security OS.
