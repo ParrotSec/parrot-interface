@@ -1,3 +1,9 @@
+parrot-interface (6.1.3) lory-updates; urgency=medium
+
+  * Update browser extensions.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 04 Jun 2024 04:29:43 +0200
+
 parrot-interface (6.1.2) lory-updates; urgency=medium
 
   * Typo in debian/control.

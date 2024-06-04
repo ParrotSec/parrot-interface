@@ -42,9 +42,9 @@ Recommends: bleachbit,
 	pipewire-libcamera | pulseaudio,
 	qbittorrent, vlc, parrot-updater, onboard, dasher, xvkbd,
 	rar, unrar,
- webext-ublock-origin,
- chromium-ublock-origin,
- libatk-adaptor,
+	webext-ublock-origin-firefox,
+	webext-ublock-origin-chromium,
+	libatk-adaptor,
 Suggests: parrot-interface-full
 Replaces: firefox-esr, firefox, iceweasel
 Description: Parrot interface metapackage
@@ -203,6 +203,7 @@ Package: parrot-firefox-profiles
 Architecture: all
 Section: metapackages
 Priority: optional
+Recommends: webext-form-history-control, webext-ublock-origin-firefox, webext-foxyproxy, webext-privacy-badger,
 Breaks: parrot-interface-common (<= 5.1.7)
 Description: Parrot Firefox profiles
   A meta package that contains default custom profile for Firefox-ESR
