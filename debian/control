@@ -29,7 +29,7 @@ Recommends: bleachbit,
 	gdebi,
 	geany,
 	gparted,
-	firefox-esr| firefox,
+	firefox | firefox-esr,
 	libnotify-bin,
 	parrot-displaymanager | sddm | gdm3,
 	synaptic,
@@ -203,7 +203,7 @@ Package: parrot-firefox-profiles
 Architecture: all
 Section: metapackages
 Priority: optional
-Recommends: webext-form-history-control, webext-ublock-origin-firefox, webext-foxyproxy, webext-privacy-badger,
+Recommends: webext-form-history-control, webext-ublock-origin-firefox, webext-foxyproxy
 Breaks: parrot-interface-common (<= 5.1.7)
 Description: Parrot Firefox profiles
-  A meta package that contains default custom profile for Firefox-ESR
+  A meta package that contains default custom profile for Firefox

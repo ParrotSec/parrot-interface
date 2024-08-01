@@ -1,3 +1,10 @@
+parrot-interface (6.2.0) lory; urgency=medium
+
+  * Use firefox instead of firefox-esr.
+  * Update firefox configs.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 01 Aug 2024 17:55:53 +0200
+
 parrot-interface (6.1.3) lory-updates; urgency=medium
 
   * Update browser extensions.
