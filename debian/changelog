@@ -1,3 +1,9 @@
+parrot-interface (6.2.1) lory; urgency=medium
+
+  * Use update-alternatives to provide /usr/bin/firefox
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 01 Aug 2024 18:24:51 +0200
+
 parrot-interface (6.2.0) lory; urgency=medium
 
   * Use firefox instead of firefox-esr.

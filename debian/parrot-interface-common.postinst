@@ -1,2 +1,11 @@
 #!/bin/bash
 chmod 775 /usr/share/parrot-defaults/postgresql_reduce_shared_buffers || true
+
+# Install firefox alias
+if [ "$(which firefox.real)" ]; then
+    update-alternatives --install /usr/bin/firefox firefox /usr/bin/firefox.real 60
+fi
+
+if [ "$(which firefox-esr)" ]; then
+    update-alternatives --install /usr/bin/firefox firefox /usr/bin/firefox-esr 50
+fi
