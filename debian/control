@@ -204,6 +204,7 @@ Architecture: all
 Section: metapackages
 Priority: optional
 Recommends: webext-form-history-control, webext-ublock-origin-firefox, webext-foxyproxy
+Replaces: firefox, firefox-esr
 Breaks: parrot-interface-common (<= 5.1.7)
 Description: Parrot Firefox profiles
   A meta package that contains default custom profile for Firefox

@@ -1,3 +1,9 @@
+parrot-interface (6.2.2) lory-updates; urgency=medium
+
+  * Make parrot-firefox-profiles replace firefox configs.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 11 Sep 2024 15:13:27 +0200
+
 parrot-interface (6.2.1) lory; urgency=medium
 
   * Use update-alternatives to provide /usr/bin/firefox
