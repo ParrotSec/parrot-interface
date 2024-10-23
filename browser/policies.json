@@ -43,7 +43,7 @@
     },
     "FirefoxHome": {
       "Search": true,
-      "TopSites": true,
+      "TopSites": false,
       "Highlights": false,
       "Pocket": false,
       "Snippets": false,

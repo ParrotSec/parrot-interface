@@ -1,3 +1,9 @@
+parrot-interface (6.2.3) lory-updates; urgency=medium
+
+  * Revert to firefox-esr.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 23 Oct 2024 15:03:11 +0200
+
 parrot-interface (6.2.2) lory-updates; urgency=medium
 
   * Make parrot-firefox-profiles replace firefox configs.
