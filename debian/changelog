@@ -1,3 +1,10 @@
+parrot-interface (6.4.0) lory; urgency=medium
+
+  * Update version mentioned in firefox configuration.
+  * Review desktop metapackages.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 27 Jun 2025 11:42:50 +0200
+
 parrot-interface (6.2.3) lory-updates; urgency=medium
 
   * Revert to firefox-esr.
