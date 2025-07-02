@@ -8,3 +8,5 @@ browser/distribution.ini usr/share/firefox-esr/distribution/
 browser/distribution.ini usr/share/firefox/distribution/
 browser/policies.json usr/share/firefox-esr/distribution/
 browser/policies.json usr/share/firefox/distribution/
+browser/policies.json etc/firefox-esr/policies/
+browser/policies.json etc/firefox/policies/

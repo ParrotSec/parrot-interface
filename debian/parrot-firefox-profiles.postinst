@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -d /usr/lib/firefox/ ]; then
+    cat /usr/share/firefox/distribution/distribution.ini > /usr/lib/firefox/distribution/distribution.ini
+fi
+
+if [ -d /usr/lib/firefox-esr/ ]; then
+    cat /usr/share/firefox-esr/distribution/distribution.ini > /usr/lib/firefox-esr/distribution/distribution.ini
+fi
