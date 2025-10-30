@@ -12,7 +12,7 @@ Homepage: https://www.parrotsec.org/
 
 Package: parrot-interface
 Architecture: all
-Depends: xinit, xorg, plymouth, plymouth-themes, desktop-base, parrot-core, parrot-interface-common, parrot-desktop-mate | parrot-desktop-stub | parrot-desktop-kde | parrot-desktop-xfce | parrot-desktop-i3 | parrot-desktop-gnome | parrot-kde | parrot-xfce
+Depends: plymouth, plymouth-themes, desktop-base, parrot-core, parrot-interface-common, parrot-desktop-mate | parrot-desktop-stub | parrot-desktop-kde | parrot-desktop-xfce | parrot-desktop-i3 | parrot-desktop-gnome | parrot-kde | parrot-xfce
 Suggests: parrot-interface-home, parrot-interface-full
 Description: Parrot interface metapackage
  metapackage that installs the graphic interface
@@ -20,7 +20,7 @@ Description: Parrot interface metapackage
 
 Package: parrot-interface-common
 Architecture: all
-Depends: xinit, xorg, xdg-user-dirs, xdg-user-dirs-gtk, xserver-xorg-input-all, xserver-xorg-input-mtrack, xserver-xorg-input-synaptics, xserver-xorg-input-mutouch, parrot-wallpapers, parrot-themes, maia-icon-theme, parrot-menu, parrot-core (>= 5.0.0), parrot-firefox-profiles
+Depends: xdg-user-dirs, xdg-user-dirs-gtk, parrot-wallpapers, parrot-themes, maia-icon-theme, parrot-menu, parrot-core (>= 5.0.0), parrot-firefox-profiles
 Recommends: bleachbit,
 	bluetooth,
 	bluez,

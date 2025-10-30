@@ -1,3 +1,10 @@
+parrot-interface (7.0.0) echo; urgency=medium
+
+  * Drop xorg dependency (let the DEs take care of it).
+  * Update firefox profile version.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 30 Oct 2025 11:31:31 +0100
+
 parrot-interface (6.4.0) lory; urgency=medium
 
   * Update version mentioned in firefox configuration.
