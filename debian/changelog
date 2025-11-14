@@ -1,9 +1,15 @@
-parrot-interface (6.4.1) lory-updates; urgency=medium
+parrot-interface (7.0.1) echo; urgency=medium
 
-  * Add trigger to update firefox configuration whenever firefox gets updated.
-  * Update lightdm config.
+  * Merge with 6.4.1 branch.
 
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 02 Jul 2025 15:01:08 +0200
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Nov 2025 02:44:29 +0100
+
+parrot-interface (7.0.0) echo; urgency=medium
+
+  * Drop xorg dependency (let the DEs take care of it).
+  * Update firefox profile version.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 30 Oct 2025 11:31:31 +0100
 
 parrot-interface (6.4.0) lory; urgency=medium
 
