@@ -12,7 +12,7 @@ Homepage: https://www.parrotsec.org/
 
 Package: parrot-interface
 Architecture: all
-Depends: plymouth, plymouth-themes, desktop-base, parrot-core, parrot-interface-common, parrot-desktop-mate | parrot-desktop-stub | parrot-desktop-kde | parrot-desktop-xfce | parrot-desktop-i3 | parrot-desktop-gnome | parrot-kde | parrot-xfce
+Depends: plymouth, plymouth-themes, desktop-base, parrot-core, parrot-interface-common, parrot-desktop-kde | parrot-desktop-stub | parrot-desktop-xfce | parrot-desktop-mate | parrot-desktop-i3 | parrot-desktop-gnome | parrot-kde | parrot-xfce
 Suggests: parrot-interface-home, parrot-interface-full
 Description: Parrot interface metapackage
  metapackage that installs the graphic interface
@@ -22,9 +22,6 @@ Package: parrot-interface-common
 Architecture: all
 Depends: xdg-user-dirs, xdg-user-dirs-gtk, parrot-wallpapers, parrot-themes, maia-icon-theme, parrot-menu, parrot-core (>= 5.0.0), parrot-firefox-profiles
 Recommends: bleachbit,
-	bluetooth,
-	bluez,
-	blueman,
 	dconf-editor,
 	gdebi,
 	geany,
@@ -40,7 +37,7 @@ Recommends: bleachbit,
 	pipewire-pulse | pulseaudio,
 	libspa-0.2-bluetooth | pulseaudio,
 	pipewire-libcamera | pulseaudio,
-	qbittorrent, vlc, parrot-updater, onboard, dasher, xvkbd,
+	qbittorrent, vlc, parrot-updater, onboard, dasher,
 	rar, unrar,
 	webext-ublock-origin-firefox,
 	webext-ublock-origin-chromium,

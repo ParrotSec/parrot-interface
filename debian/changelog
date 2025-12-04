@@ -1,3 +1,9 @@
+parrot-interface (7.0.2) echo; urgency=medium
+
+  * Drop unused dependencies.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 04 Dec 2025 08:56:38 +0100
+
 parrot-interface (7.0.1) echo; urgency=medium
 
   * Merge with 6.4.1 branch.
