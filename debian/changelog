@@ -1,3 +1,16 @@
+parrot-interface (7.1.0) echo; urgency=medium
+
+  * Bump firefox profiles version to 7.1
+  * Include missing easter egg files.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 02 Jan 2026 17:22:51 +0100
+
+parrot-interface (7.0.3) echo; urgency=medium
+
+  * Include missing ee files.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 19 Dec 2025 16:58:36 +0100
+
 parrot-interface (7.0.2) echo; urgency=medium
 
   * Drop unused dependencies.
