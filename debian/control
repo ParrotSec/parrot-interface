@@ -94,7 +94,8 @@ Depends: parrot-interface-common,
  kde-plasma-desktop,
  kde-spectacle,
  plasma-nm,
- parrot-displaymanager
+ parrot-displaymanager,
+ okular
 Suggests: lightdm-parrot
 Description: KDE based Parrot desktop
  This metapackage installs a minimalistic KDE desktop on Parrot Security OS.
@@ -150,7 +151,7 @@ Description: Parrot interface metapackage
 
 Package: parrot-desktop-mate
 Architecture: all
-Depends: mate-core, parrot-interface-common, parrot-displaymanager
+Depends: mate-core, parrot-interface-common, parrot-displaymanager, maia-icon-theme
 Recommends: atril, breeze-cursor-theme, caja-actions, caja-gksu, caka-gtkhash, caja-image-converter, caja-open-terminal, caja-sendto, caja-share, caja-xattr-tags, caja, engrampa, eom, gnome-system-tools, mate-applets, mate-applet-brisk-menu, mate-applet-topmenu, mate-calc, mate-common, mate-control-center, mate-dock-applet, mate-indicator-applet, mate-media, mate-menu, mate-netspeed, mate-notification-daemon, mate-polkit-bin, mate-power-manager, mate-screensaver, mate-sensors-applet, mate-sensors-applet-nvidia, mate-system-monitor, mate-system-tools, mate-tweak, gtk3-engines-breeze, mate-utils, mozo, network-manager-gnome, network-manager-openvpn-gnome, network-manager-ssh-gnome, network-manager-openvpn, network-manager-fortisslvpn-gnome, network-manager-l2tp-gnome, network-manager-openconnect-gnome, network-manager-pptp-gnome, network-manager-vpnc-gnome, pluma
 Suggests: parrot-interface-full
 Description: Parrot interface metapackage

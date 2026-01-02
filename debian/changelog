@@ -1,3 +1,10 @@
+parrot-interface (7.1.1) echo; urgency=medium
+
+  * Fix empty firefox distribution.ini
+  * Add maia-icon-theme to mate
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 02 Jan 2026 18:37:09 +0100
+
 parrot-interface (7.1.0) echo; urgency=medium
 
   * Bump firefox profiles version to 7.1

@@ -5,5 +5,6 @@ if [ -d /usr/lib/firefox/ ]; then
 fi
 
 if [ -d /usr/lib/firefox-esr/ ]; then
-    cat /usr/share/firefox-esr/distribution/distribution.ini > /usr/lib/firefox-esr/distribution/distribution.ini
+    cat /usr/share/firefox/distribution/distribution.ini > /usr/share/firefox-esr/distribution/distribution.ini
+    cat /usr/share/firefox/distribution/distribution.ini > /usr/lib/firefox-esr/distribution/distribution.ini
 fi
