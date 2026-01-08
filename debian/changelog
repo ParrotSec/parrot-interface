@@ -1,3 +1,10 @@
+parrot-interface (7.1.2) echo; urgency=medium
+
+  * Install ee into the proper folder
+  * make ara-icon-theme default for mate
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 08 Jan 2026 23:54:57 +0100
+
 parrot-interface (7.1.1) echo; urgency=medium
 
   * Fix empty firefox distribution.ini

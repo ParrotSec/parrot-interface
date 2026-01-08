@@ -1,4 +1,4 @@
 etc/xdg/xfce4/terminal/*
 usr/share/parrot-defaults/*
-ee/not-an-easter-egg.txt etc/skel/Documents/
+ee/not-an-easter-egg.txt /usr/lib/parrot-skel/etc/skel/Documents/
 ee/init.key opt/
