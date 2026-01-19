@@ -1,3 +1,9 @@
+parrot-interface (7.1.3) echo; urgency=medium
+
+  * Add lxqt metapackage
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 19 Jan 2026 20:09:42 +0100
+
 parrot-interface (7.1.2) echo; urgency=medium
 
   * Install ee into the proper folder
