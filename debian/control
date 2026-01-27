@@ -181,7 +181,7 @@ Description: Meta package for i3 Window Manager
 
 Package: parrot-displaymanager
 Architecture: all
-Depends: lightdm, slick-greeter
+Depends: lightdm | sddm | gdm3, slick-greeter | sddm | gdm3
 Replaces: lightdm, lightdm-gtk-greeter, slick-greeter, lightdm-parrot
 Provides: lightdm-parrot
 Description: Parrot configs for lightdm
