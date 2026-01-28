@@ -149,7 +149,7 @@ Description: Parrot interface metapackage
 
 Package: parrot-desktop-lxqt
 Architecture: all
-Depends: parrot-interface-common, lxqt-core, parrot-core (>= 7.1.7),
+Depends: parrot-interface-common, lxqt-core, network-manager-applet, parrot-core (>= 7.1.7),
 Recommends: parrot-displaymanager
 Description: LXQT based Parrot desktop
  This metapackage installs a lightweight desktop with LXQT on Parrot Security OS.

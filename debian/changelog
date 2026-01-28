@@ -1,3 +1,9 @@
+parrot-interface (7.1.6) echo; urgency=medium
+
+  * Add network-manager-applet to lxqt
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 28 Jan 2026 03:05:10 +0100
+
 parrot-interface (7.1.5) echo; urgency=medium
 
   * Add geany themes.
