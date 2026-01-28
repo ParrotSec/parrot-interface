@@ -1,3 +1,9 @@
+parrot-interface (7.1.7) echo; urgency=medium
+
+  * update firefox landing page
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 28 Jan 2026 03:42:32 +0100
+
 parrot-interface (7.1.6) echo; urgency=medium
 
   * Add network-manager-applet to lxqt
