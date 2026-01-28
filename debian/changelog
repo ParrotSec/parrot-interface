@@ -1,3 +1,9 @@
+parrot-interface (7.1.8) echo; urgency=medium
+
+  * rebuild with geany themes
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 28 Jan 2026 04:26:31 +0100
+
 parrot-interface (7.1.7) echo; urgency=medium
 
   * update firefox landing page
