@@ -1,3 +1,9 @@
+parrot-interface (7.2.0) echo; urgency=medium
+
+  * Prepare for parrot 7.2
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 14 Apr 2026 13:55:04 +0200
+
 parrot-interface (7.1.8) echo; urgency=medium
 
   * rebuild with geany themes
