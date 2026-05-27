@@ -70,7 +70,6 @@ Architecture: all
 Depends: parrot-interface-common, gnome-core, gedit,
     gnome-shell-extension-appindicator,
     gnome-shell-extension-arc-menu,
-    gnome-shell-extension-bluetooth-quick-connect,
     gnome-shell-extension-caffeine,
     gnome-shell-extension-dashtodock,
     gnome-shell-extension-dash-to-panel,
