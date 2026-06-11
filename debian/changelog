@@ -1,10 +1,17 @@
+parrot-interface (7.3.0) echo; urgency=medium
+
+  * Update parrot branding version in firefox.
+  * bump version for parrot 7.3
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 11 Jun 2026 12:26:37 +0200
+
 parrot-interface (7.2.1) echo; urgency=medium
 
   [Steev Klimaszewski]
+  
   * Remove dependency that no longer exists in Debian
 
- -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Wed, 27 May 2026
- 11:18:04 +0200
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Wed, 27 May 2026 11:18:04 +0200
 
 parrot-interface (7.2.0) echo; urgency=medium
 
