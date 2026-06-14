@@ -1,3 +1,9 @@
+parrot-interface (7.3.3) echo; urgency=medium
+
+  * remove string delimiters from featured apps url
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 14 Jun 2026 21:31:18 +0200
+
 parrot-interface (7.3.2) echo; urgency=medium
 
   * Add featured apps url for plasma discover
