@@ -1,3 +1,9 @@
+parrot-interface (7.3.1) echo; urgency=medium
+
+  * Move gnome extensions to recommends field.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 14 Jun 2026 17:10:52 +0200
+
 parrot-interface (7.3.0) echo; urgency=medium
 
   * Update parrot branding version in firefox.
