@@ -9,3 +9,11 @@ fi
 if [ "$(which firefox-esr)" ]; then
     update-alternatives --install /usr/bin/firefox firefox /usr/bin/firefox-esr 50
 fi
+
+if [ -f /usr/share/applications/org.kde.discover.notifier.desktop ]; then
+    rm /usr/share/applications/org.kde.discover.notifier.desktop
+fi
+
+if [ -f /etc/xdg/autostart/org.kde.discover.notifier.desktop ]; then
+    rm /etc/xdg/autostart/org.kde.discover.notifier.desktop
+fi

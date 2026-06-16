@@ -1,3 +1,10 @@
+parrot-interface (7.3.4) echo; urgency=medium
+
+  * Add interest in plasma-discover notifier
+  * add postinst code to delete plasma-discover notifier autostart launcher
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 16 Jun 2026 15:50:18 +0200
+
 parrot-interface (7.3.3) echo; urgency=medium
 
   * remove string delimiters from featured apps url
