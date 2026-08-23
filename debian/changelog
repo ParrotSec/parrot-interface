@@ -1,3 +1,10 @@
+parrot-interface (7.4.0) echo; urgency=medium
+
+  * Update firefox profile.
+  * Prepare for Parrot 7.4
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 23 Aug 2026 16:14:53 +0200
+
 parrot-interface (7.3.4) echo; urgency=medium
 
   * Add interest in plasma-discover notifier
