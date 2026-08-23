@@ -6,7 +6,7 @@
     "OverrideFirstRunPage": "",
     "OverridePostUpdatePage": "",
     "Homepage": {
-      "URL": "https://start.parrotsec.org/?v=7.3",
+      "URL": "https://start.parrotsec.org/?v=7.4",
       "Locked": false,
       "StartPage": "homepage"
     },
