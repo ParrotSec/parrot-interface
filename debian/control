@@ -93,7 +93,8 @@ Depends: parrot-interface-common,
  kde-spectacle,
  plasma-nm,
  parrot-displaymanager,
- okular
+ okular,
+ echo-themes-kde
 Suggests: lightdm-parrot
 Description: KDE based Parrot desktop
  This metapackage installs a minimalistic KDE desktop on Parrot Security OS.
@@ -148,7 +149,7 @@ Description: Parrot interface metapackage
 
 Package: parrot-desktop-lxqt
 Architecture: all
-Depends: parrot-interface-common, lxqt-core, network-manager-applet, parrot-core (>= 7.1.7),
+Depends: parrot-interface-common, lxqt-core, network-manager-applet, parrot-core (>= 7.1.7), echo-themes-lxqt,
 Recommends: parrot-displaymanager
 Description: LXQT based Parrot desktop
  This metapackage installs a lightweight desktop with LXQT on Parrot Security OS.

@@ -1,3 +1,14 @@
+parrot-interface (7.4.1) echo; urgency=medium
+
+  * Depend on echo-themes-kde in parrot-desktop-kde: after the echo-
+    themes sub-package split the KDE assets (look-and-feel, Sweet-Mars
+    window decoration, Echo colors, Kvantum, SDDM theme) live in echo-
+    themes-kde and were silently dropped from upgraded KDE systems.
+  * Depend on echo-themes-lxqt in parrot-desktop-lxqt so the Echo LXQt
+    panel theme is installed on LXQt systems.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 25 Sep 2026 13:39:14 +0200
+
 parrot-interface (7.4.0) echo; urgency=medium
 
   * Update firefox profile.
