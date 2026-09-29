@@ -1,3 +1,9 @@
+parrot-interface (7.4.2) echo; urgency=medium
+
+  * Rebuild package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 29 Sep 2026 14:36:40 +0200
+
 parrot-interface (7.4.1) echo; urgency=medium
 
   * Depend on echo-themes-kde in parrot-desktop-kde: after the echo-
