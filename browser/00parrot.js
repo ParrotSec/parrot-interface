@@ -31,7 +31,7 @@ lockPref("toolkit.telemetry.shutdownPingSender.enabled", false);
 lockPref("toolkit.telemetry.unified", false);
 lockPref("toolkit.telemetry.updatePing.enabled", false);
 lockPref("toolkit.telemetry.pioneer-new-studies-available", false);
-lockPref("toolkit.telemetry.cachedClientID", 0);
+lockPref("toolkit.telemetry.cachedClientID", "0");
 lockPref("services.sync.telemetry.maxPayloadCount", 0);
 // Disable firefox checking default browser
 lockPref("browser.shell.checkDefaultBrowser", false);

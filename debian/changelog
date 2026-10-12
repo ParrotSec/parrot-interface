@@ -1,3 +1,9 @@
+parrot-interface (7.4.3) echo; urgency=medium
+
+  * Fix firefox crash at shutdown.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 12 Oct 2026 15:46:57 +0200
+
 parrot-interface (7.4.2) echo; urgency=medium
 
   * Rebuild package.
