@@ -2,7 +2,7 @@ Source: parrot-interface
 Priority: optional
 Maintainer: Parrot Dev Team <team@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
-           Nong Hoang "Dmknght" Tu <dmknght@parrotsec.org>
+           Dario "danterolle" Camonita <danterolle@parrotsec.org>
 Standards-Version: 4.5.1
 Section: metapackages
 Build-Depends: debhelper (>= 12)
@@ -103,8 +103,8 @@ Description: KDE based Parrot desktop
 Package: parrot-desktop-xfce
 Architecture: all
 Depends: parrot-interface-common,
- parrot-core (>= 7.4.2),
- echo-themes-xfce (>= 1.3+parrot7),
+ parrot-core (>= 7.4.3),
+ echo-themes-xfce (>= 1.3+parrot8),
  xfce4,
  xfce4-terminal,
  xfce4-screenshooter,
@@ -114,12 +114,15 @@ Depends: parrot-interface-common,
  xfce4-taskmanager,
  xfce4-systemload-plugin,
  xfce4-power-manager-plugins,
+ xfce4-notifyd,
  mousepad,
  ristretto,
  thunar,
  network-manager-gnome,
  parrot-displaymanager
-Recommends: network-manager-openvpn-gnome,
+Recommends: codium,
+ blueman,
+ network-manager-openvpn-gnome,
  network-manager-ssh-gnome,
  network-manager-fortisslvpn-gnome,
  network-manager-l2tp-gnome,
@@ -143,7 +146,7 @@ Description: Parrot interface metapackage
  screenshot, text editor, image viewer,
  network manager, system monitor.
  .
- Plugins: weather, places, whisker menu.
+ Plugins: places, whisker menu, notifications and power management.
  "light-locker" and "xscreensaver" package
  causes a bug that user can't type password
  to unlock screen.
