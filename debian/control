@@ -103,6 +103,8 @@ Description: KDE based Parrot desktop
 Package: parrot-desktop-xfce
 Architecture: all
 Depends: parrot-interface-common,
+ parrot-core (>= 7.4.2),
+ echo-themes-xfce (>= 1.3+parrot7),
  xfce4,
  xfce4-terminal,
  xfce4-screenshooter,
@@ -149,10 +151,16 @@ Description: Parrot interface metapackage
 
 Package: parrot-desktop-lxqt
 Architecture: all
-Depends: parrot-interface-common, lxqt-core, network-manager-applet, parrot-core (>= 7.1.7), echo-themes-lxqt,
+Depends:
+ parrot-interface-common,
+ lxqt-core,
+ network-manager-applet,
+ parrot-core (>= 7.4.2),
+ echo-themes-lxqt (>= 1.3+parrot7)
 Recommends: parrot-displaymanager
 Description: LXQT based Parrot desktop
- This metapackage installs a lightweight desktop with LXQT on Parrot Security OS.
+ This metapackage installs a lightweight desktop with LXQT on Parrot
+ Security OS.
 
 Package: parrot-desktop-mate
 Architecture: all
