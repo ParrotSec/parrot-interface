@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Parrot Cyberpunk (Hyprland)
+Comment=A guided Wayland desktop
+Exec=/usr/bin/cyberpunk-session
+TryExec=/usr/bin/cyberpunk-session
+Type=Application
+DesktopNames=Hyprland;

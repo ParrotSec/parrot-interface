@@ -1,0 +1,8 @@
+#!/bin/sh
+# LightDM invokes session-wrapper with the selected desktop's Exec command.
+# Wayland sessions must not go through Debian's X11-only Xsession hooks.
+# Preserve their normal behavior if a user selects an added X11 desktop.
+if [ "${XDG_SESSION_TYPE:-}" = x11 ]; then
+    exec /etc/X11/Xsession "$@"
+fi
+exec "$@"

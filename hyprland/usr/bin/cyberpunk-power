@@ -1,0 +1,34 @@
+#!/bin/bash
+set -euo pipefail
+if grep -qw 'boot=live' /proc/cmdline; then
+    # Live users have no guaranteed known password. Make the unlocked resume
+    # explicit and ask for confirmation; never suspend behind a dead-end lock.
+    choice=$(printf '%s\n' 'Suspend (unlocked)' 'Log out' 'Restart' 'Shut down' | \
+        fuzzel --dmenu --prompt 'Live session > ') || exit 0
+else
+    choice=$(printf '%s\n' 'Lock' 'Suspend' 'Log out' 'Restart' 'Shut down' | \
+        fuzzel --dmenu --prompt 'Session > ') || exit 0
+fi
+case "$choice" in
+    Lock) exec cyberpunk-lock ;;
+    'Suspend (unlocked)')
+        answer=$(printf '%s\n' 'Cancel' 'Suspend (unlocked)' | \
+            fuzzel --dmenu --prompt 'Live desktop will be accessible on resume > ') || exit 0
+        [ "$answer" = 'Suspend (unlocked)' ] || exit 0
+        exec /usr/bin/systemctl suspend
+        ;;
+    Suspend)
+        # Only installed accounts can enter this branch. Fail closed if PAM's
+        # locker cannot acquire the lock before requesting suspend.
+        cyberpunk-lock && exec /usr/bin/systemctl suspend
+        ;;
+    'Log out'|'Restart'|'Shut down')
+        answer=$(printf '%s\n' 'Cancel' "$choice" | fuzzel --dmenu --prompt 'Unsaved work will be lost > ') || exit 0
+        [ "$answer" = "$choice" ] || exit 0
+        case "$choice" in
+            'Log out') exec hyprctl dispatch 'hl.dsp.exit()' ;;
+            Restart) exec /usr/bin/systemctl reboot ;;
+            'Shut down') exec /usr/bin/systemctl poweroff ;;
+        esac
+        ;;
+esac

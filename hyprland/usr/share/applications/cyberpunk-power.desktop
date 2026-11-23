@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Cyberpunk Session
+Comment=Lock, suspend, log out, restart or shut down
+Exec=/usr/bin/cyberpunk-power
+Icon=system-shutdown
+Terminal=false
+Categories=System;
+Keywords=power;logout;lock;suspend;

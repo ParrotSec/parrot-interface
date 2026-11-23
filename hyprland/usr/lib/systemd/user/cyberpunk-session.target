@@ -1,0 +1,8 @@
+[Unit]
+Description=Parrot Cyberpunk graphical session
+BindsTo=graphical-session.target
+Wants=graphical-session-pre.target
+After=graphical-session-pre.target
+Wants=cyberpunk-desktop@panel.service cyberpunk-desktop@wallpaper.service
+Wants=cyberpunk-desktop@idle.service cyberpunk-desktop@network.service
+Wants=cyberpunk-desktop@bluetooth.service cyberpunk-desktop@polkit.service

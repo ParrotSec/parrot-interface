@@ -1,0 +1,8 @@
+hyprland/usr/bin/* usr/bin/
+hyprland/usr/lib/cyberpunk/* usr/lib/cyberpunk/
+hyprland/usr/lib/systemd/user/* usr/lib/systemd/user/
+hyprland/usr/share/wayland-sessions/* usr/share/wayland-sessions/
+hyprland/usr/share/applications/* usr/share/applications/
+hyprland/usr/share/xdg-desktop-portal/* usr/share/xdg-desktop-portal/
+hyprland/usr/share/doc/cyberpunk/* usr/share/doc/cyberpunk/
+hyprland/etc/xdg/* etc/xdg/

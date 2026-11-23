@@ -1,0 +1,11 @@
+[Unit]
+Description=Cyberpunk desktop component: %i
+PartOf=cyberpunk-session.target
+After=graphical-session.target
+ConditionEnvironment=WAYLAND_DISPLAY
+
+[Service]
+ExecStart=/usr/lib/cyberpunk/autostart %i
+Restart=on-failure
+RestartSec=2
+TimeoutStopSec=5

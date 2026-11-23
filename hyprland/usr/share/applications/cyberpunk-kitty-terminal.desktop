@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Kitty (Cyberpunk terminal)
+Exec=/usr/bin/kitty
+TryExec=/usr/bin/kitty
+Icon=kitty
+Terminal=false
+NoDisplay=true
+Categories=System;TerminalEmulator;
+X-TerminalArgExec=-e

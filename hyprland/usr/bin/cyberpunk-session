@@ -1,0 +1,90 @@
+#!/bin/bash
+# Called by LightDM, or directly from a local logind-managed TTY.
+set -Eeuo pipefail
+umask 077
+if [ "$(id -u)" -eq 0 ]; then
+    echo 'Start the Cyberpunk session as a regular user, never as root.' >&2
+    exit 1
+fi
+: "${XDG_RUNTIME_DIR:?A PAM/logind login with XDG_RUNTIME_DIR is required}"
+if [ ! -S "$XDG_RUNTIME_DIR/bus" ]; then
+    echo 'No systemd user D-Bus. Check dbus-user-session and pam_systemd.' >&2
+    exit 1
+fi
+# The per-user D-Bus/systemd environment cannot represent two GUI sessions.
+exec 9>"$XDG_RUNTIME_DIR/cyberpunk-session.lock"
+flock -n 9 || { echo 'The Cyberpunk session is already running for this user.' >&2; exit 1; }
+
+if [ ! -x /usr/bin/Hyprland ]; then
+    echo 'The Hyprland compositor is missing; install parrot-desktop-hyprland.' >&2
+    exit 1
+fi
+export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
+export XDG_STATE_HOME="${XDG_STATE_HOME:-$HOME/.local/state}"
+export XDG_DATA_HOME="${XDG_DATA_HOME:-$HOME/.local/share}"
+export XDG_CACHE_HOME="${XDG_CACHE_HOME:-$HOME/.cache}"
+mkdir -p "$XDG_CONFIG_HOME/hypr" "$XDG_STATE_HOME/cyberpunk" "$XDG_DATA_HOME" "$XDG_CACHE_HOME"
+# The compositor, idle and panel configuration is managed system-wide in
+# /etc/xdg. Only the personal override is created here when it is missing.
+if [ ! -e "$XDG_CONFIG_HOME/hypr/local.lua" ] && [ ! -L "$XDG_CONFIG_HOME/hypr/local.lua" ]; then
+    printf '%s\n' \
+        '-- Your overrides live here. Changes reload automatically.' \
+        '-- See `hyprctl monitors` for display names, and Super+F1 for the guide.' \
+        > "$XDG_CONFIG_HOME/hypr/local.lua"
+fi
+
+# Keep the previous session's log; useful when a display manager returns to login.
+if [ -f "$XDG_STATE_HOME/cyberpunk/session.log" ]; then
+    mv -f "$XDG_STATE_HOME/cyberpunk/session.log" "$XDG_STATE_HOME/cyberpunk/session.previous.log"
+fi
+exec >>"$XDG_STATE_HOME/cyberpunk/session.log" 2>&1
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
+export XDG_DATA_DIRS="$XDG_DATA_HOME:/usr/local/share:/usr/share"
+export XDG_CONFIG_DIRS="${XDG_CONFIG_DIRS:-/etc/xdg}"
+export DBUS_SESSION_BUS_ADDRESS="unix:path=$XDG_RUNTIME_DIR/bus"
+export XDG_CURRENT_DESKTOP=Hyprland
+export XDG_SESSION_DESKTOP=cyberpunk
+export XDG_SESSION_TYPE=wayland
+export XCURSOR_THEME=Adwaita XCURSOR_SIZE=24
+export HYPRCURSOR_THEME=Adwaita HYPRCURSOR_SIZE=24
+export QT_QPA_PLATFORM='wayland;xcb'
+export MOZ_ENABLE_WAYLAND=1
+# No LD_LIBRARY_PATH, GBM_BACKEND or proprietary GPU hacks: the session uses
+# the distribution's Mesa and libglvnd exactly like any other desktop.
+
+# Honor the layout chosen at install time rather than assuming US.
+if [ -r /etc/default/keyboard ]; then
+    . /etc/default/keyboard
+fi
+export CYBERPUNK_KB_LAYOUT="${XKBLAYOUT:-us}" CYBERPUNK_KB_VARIANT="${XKBVARIANT:-}"
+export CYBERPUNK_KB_OPTIONS="${XKBOPTIONS:-}"
+xdg-user-dirs-update
+
+compositor=
+cleanup() {
+    trap - EXIT HUP INT TERM
+    if [ -n "$compositor" ] && kill -0 "$compositor" 2>/dev/null; then
+        kill -TERM "$compositor" 2>/dev/null || true
+        wait "$compositor" 2>/dev/null || true
+    fi
+    systemctl --user stop cyberpunk-session.target \
+        xdg-desktop-portal.service xdg-desktop-portal-hyprland.service \
+        xdg-desktop-portal-gtk.service graphical-session.target || true
+    dbus-update-activation-environment --systemd \
+        WAYLAND_DISPLAY= DISPLAY= HYPRLAND_INSTANCE_SIGNATURE= \
+        XDG_CURRENT_DESKTOP= XDG_SESSION_DESKTOP= XDG_SESSION_TYPE= || true
+    systemctl --user unset-environment WAYLAND_DISPLAY DISPLAY \
+        HYPRLAND_INSTANCE_SIGNATURE XDG_CURRENT_DESKTOP XDG_SESSION_DESKTOP XDG_SESSION_TYPE || true
+}
+trap cleanup EXIT
+trap 'exit 129' HUP
+trap 'exit 130' INT
+trap 'exit 143' TERM
+# Only this supervisor holds the session lock, not surviving browser children.
+# Hyprland reads $XDG_CONFIG_HOME/hypr/hyprland.lua, then /etc/xdg/hypr/.
+/usr/bin/Hyprland 9>&- &
+compositor=$!
+status=0
+wait "$compositor" || status=$?
+compositor=
+exit "$status"

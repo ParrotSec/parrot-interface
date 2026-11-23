@@ -1,0 +1,30 @@
+#!/bin/sh
+# Authenticate against Parrot's PAM stack, not a desktop-specific wrapper.
+set -eu
+: "${XDG_RUNTIME_DIR:?A logind user session is required}"
+
+# A live autologin does not establish an unlock password the user knows. Never
+# create a session lock there, even if a stale idle config or shortcut calls us.
+# Installed systems have a real account password and use PAM normally.
+if grep -qw 'boot=live' /proc/cmdline; then
+    /usr/bin/notify-send 'Lock unavailable on live media' \
+        'A live session cannot be safely locked without a known password.' || true
+    exit 1
+fi
+
+# Serialize idle, loginctl and power-menu requests. Query the compositor's lock
+# state, not just a process name: a running locker may not yet own the lock.
+exec 9>"$XDG_RUNTIME_DIR/cyberpunk-lock.lock"
+flock 9
+state=$(/usr/bin/hyprctl locked)
+case "$state" in
+    true) exit 0 ;;
+    false) ;;
+    *) echo "Cyberpunk: unable to determine the compositor's lock state." >&2; exit 1 ;;
+esac
+
+# GTKlock's --daemonize waits until ext-session-lock reports the session locked
+# before returning. Thus suspend cannot race ahead of the actual lock.
+# GTKlock provides a visible password field and uses /etc/pam.d/gtklock.
+exec /usr/bin/gtklock --daemonize \
+    --background /usr/share/backgrounds/parrot-cyberpunk.jpg 9>&-

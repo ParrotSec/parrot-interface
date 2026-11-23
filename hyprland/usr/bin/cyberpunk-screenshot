@@ -1,0 +1,19 @@
+#!/bin/bash
+set -euo pipefail
+umask 077
+geometry=()
+case "${1:-area}" in
+    area)
+        selection=$(slurp) || exit 0
+        geometry=(-g "$selection")
+        ;;
+    full) ;;
+    *) echo 'Usage: cyberpunk-screenshot [area|full]' >&2; exit 2 ;;
+esac
+pictures=$(/usr/bin/xdg-user-dir PICTURES)
+directory="${pictures:-$HOME/Pictures}/Screenshots"
+mkdir -p "$directory"
+file="$directory/$(date +%Y-%m-%d_%H-%M-%S-%N).png"
+grim "${geometry[@]}" "$file"
+wl-copy --type image/png < "$file"
+notify-send 'Screenshot saved and copied' "$file"

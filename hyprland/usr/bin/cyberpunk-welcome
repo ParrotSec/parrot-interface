@@ -1,0 +1,3 @@
+#!/bin/sh
+# Local, offline documentation; no first-login network fetches or telemetry.
+exec /usr/bin/xdg-open /usr/share/doc/cyberpunk/welcome.html

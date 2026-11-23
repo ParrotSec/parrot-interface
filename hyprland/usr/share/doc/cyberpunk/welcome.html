@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parrot Cyberpunk — quick start</title>
+<style>
+:root { color-scheme: dark; font-family: system-ui, sans-serif; background: #080d12; color: #e6edf2; }
+body { max-width: 860px; margin: 2rem auto; padding: 0 1.25rem 2rem; line-height: 1.55; }
+h1 { margin-bottom: .3rem; font-size: 2rem; color: #f4ed36; }
+h2 { font-size: 1.15rem; margin-top: 1.6rem; color: #52d8e6; }
+p { margin: .65rem 0; }
+a { color: #52d8e6; }
+kbd, code { font-size: .9em; background: #19242d; padding: .12rem .35rem; border-radius: 3px; }
+table { width: 100%; border-collapse: collapse; }
+td, th { text-align: left; padding: .4rem .55rem; border-bottom: 1px solid #25313b; }
+.columns { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+@media (max-width: 680px) { .columns { grid-template-columns: 1fr; gap: 0; } }
+</style>
+</head>
+<body>
+<main>
+<h1>Parrot Cyberpunk</h1>
+<p><strong>Super</strong> is the Windows or Command key. Reopen this guide with <kbd>Super+F1</kbd> or the panel's <strong>?</strong> button.</p>
+<div class="columns">
+<section>
+<h2>Get around</h2>
+<p><strong>Apps</strong> opens the application menu. Browse <strong>Parrot Security</strong> and its nested tool categories; Back returns to the previous level. Use <strong>Search</strong> or Super+Space to find a program by name. Workspace numbers switch desktops; Ctrl+Alt+Left/Right moves through the four desktops. App icons focus windows; right-click an app icon to close it.</p>
+<p>Windows tile automatically. Hold <kbd>Super</kbd> and left-drag a window to drop it at a new position in the layout, or right-drag to resize it.</p>
+<p>Use the <strong>network tray icon</strong> to join Wi-Fi. Click the <strong>volume</strong> indicator for sound settings; scroll over it to adjust volume.</p>
+<p><strong>Settings</strong> includes Bluetooth and displays. The <strong>power button</strong> opens session and shutdown controls.</p>
+<h2>Make it yours</h2>
+<p><strong>Settings → Desktop configuration</strong> opens <code>~/.config/hypr/local.lua</code>. Examples cover keyboard layout, display scaling and animations. Save with <kbd>Ctrl+O</kbd>, then Enter; exit with <kbd>Ctrl+X</kbd>. Changes reload automatically.</p>
+<h2>More applications</h2>
+<p>Install additional software with Parrot's APT tools, for example <code>sudo apt install PACKAGE</code>.</p>
+
+<p>To install Parrot to disk, open its installer from <strong>Apps</strong>.</p>
+</section>
+<section>
+<h2>Useful shortcuts</h2>
+<table>
+<thead><tr><th>Shortcut</th><th>Action</th></tr></thead>
+<tbody>
+<tr><td>Super+D / Super+Space</td><td>Browse / search applications</td></tr>
+<tr><td>Super+T / Alt+T</td><td>Terminal</td></tr>
+<tr><td>Super+E / Super+B</td><td>Files / Firefox</td></tr>
+<tr><td>Alt+Tab</td><td>Switch windows</td></tr>
+<tr><td>Super+Q</td><td>Close window</td></tr>
+<tr><td>Super+F / Super+V</td><td>Fullscreen / floating</td></tr>
+<tr><td>Ctrl+Alt+Left / Right</td><td>Previous / next desktop</td></tr>
+<tr><td>Shift+Ctrl+Alt+Left / Right</td><td>Move active window to previous/next desktop</td></tr>
+<tr><td>Print / Shift+Print</td><td>Capture region / all displays</td></tr>
+<tr><td>Super+L</td><td>Lock (installed system)</td></tr>
+<tr><td>Ctrl+Alt+Delete</td><td>Power menu</td></tr>
+</tbody>
+</table>
+<p>Screenshots are saved in <strong>Pictures/Screenshots</strong> and copied to the clipboard. Esc cancels selection.</p>
+<p><a href="README.md">Text guide and customization paths</a></p>
+</section>
+</div>
+</main>
+</body>
+</html>

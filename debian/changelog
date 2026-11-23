@@ -1,3 +1,14 @@
+parrot-interface (7.5.1) echo; urgency=medium
+
+  * Add the parrot-desktop-hyprland metapackage.
+  * Ship the Cyberpunk session entry, its helper commands, the systemd
+    user units and the portal preferences with the desktop that needs
+    them.
+  * Require Waybar 0.16 or newer for the shipped panel configuration.
+  * Depend on btop and nano for the panel and settings actions.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 23 Nov 2026 01:00:56 +0100
+
 parrot-interface (7.5.0) echo; urgency=medium
 
   * Bump version for upcoming parrot 7.5 release.

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Welcome to Parrot Cyberpunk
+Comment=Learn the desktop, shortcuts and customization
+Exec=/usr/bin/cyberpunk-welcome
+Icon=help-browser
+Terminal=false
+Categories=Documentation;Utility;
+Keywords=help;hyprland;shortcuts;welcome;

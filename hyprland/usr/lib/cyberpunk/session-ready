@@ -1,0 +1,27 @@
+#!/bin/bash
+# Hyprland's hyprland.start event runs this AFTER it creates the display sockets.
+set -Eeuo pipefail
+: "${WAYLAND_DISPLAY:?}" "${HYPRLAND_INSTANCE_SIGNATURE:?}"
+export DISPLAY="${DISPLAY:-}"
+# Clear any frontend/backend activated too early by a login greeter or app.
+systemctl --user stop xdg-desktop-portal.service \
+    xdg-desktop-portal-hyprland.service xdg-desktop-portal-gtk.service
+dbus-update-activation-environment --systemd \
+    PATH XDG_DATA_DIRS XDG_CONFIG_DIRS XDG_CONFIG_HOME XDG_STATE_HOME \
+    XDG_DATA_HOME XDG_CACHE_HOME XDG_CURRENT_DESKTOP XDG_SESSION_DESKTOP \
+    XDG_SESSION_TYPE XDG_RUNTIME_DIR WAYLAND_DISPLAY DISPLAY \
+    HYPRLAND_INSTANCE_SIGNATURE XCURSOR_THEME XCURSOR_SIZE \
+    HYPRCURSOR_THEME HYPRCURSOR_SIZE QT_QPA_PLATFORM MOZ_ENABLE_WAYLAND
+systemctl --user start cyberpunk-session.target
+if ! systemctl --user start xdg-desktop-portal-hyprland.service \
+    xdg-desktop-portal-gtk.service xdg-desktop-portal.service; then
+    echo 'Cyberpunk: portal startup failed; inspect journalctl --user -b.' >&2
+    notify-send --urgency=critical 'Desktop integration needs attention' \
+        'File dialogs or screen sharing may not work. Save your work and try logging out and back in.' || true
+fi
+# Show the offline guide once per user, and only again if it failed to open.
+state_home="${XDG_STATE_HOME:-$HOME/.local/state}/cyberpunk"
+mkdir -p "$state_home"
+if [ ! -e "$state_home/welcome-seen" ]; then
+    /usr/bin/cyberpunk-welcome && touch "$state_home/welcome-seen"
+fi

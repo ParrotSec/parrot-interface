@@ -1,0 +1,45 @@
+#!/bin/sh
+# One desktop component per systemd instance; started by cyberpunk-session.target.
+set -eu
+config_home=${XDG_CONFIG_HOME:-$HOME/.config}
+config_path() {
+    # User files are explicit overrides; otherwise use the system-wide default.
+    # Do not silently hide a broken user symlink with a fallback.
+    if [ -e "$config_home/$1" ] || [ -L "$config_home/$1" ]; then
+        printf '%s\n' "$config_home/$1"
+    else
+        printf '%s\n' "/etc/xdg/$1"
+    fi
+}
+case "${1:-}" in
+    panel)
+        panel_config=$(config_path waybar/config.jsonc)
+        # Also honor Waybar's traditional extension-less user config filename.
+        if [ ! -e "$config_home/waybar/config.jsonc" ] && [ ! -L "$config_home/waybar/config.jsonc" ] &&
+           { [ -e "$config_home/waybar/config" ] || [ -L "$config_home/waybar/config" ]; }; then
+            panel_config="$config_home/waybar/config"
+        fi
+        exec /usr/bin/waybar --config "$panel_config" --style "$(config_path waybar/style.css)"
+        ;;
+    wallpaper) exec /usr/bin/swaybg -i /usr/share/backgrounds/parrot-cyberpunk.jpg -m fill ;;
+    idle)
+        # No manual DPMS/locker in live sessions: it can hide an unusable
+        # password lock after suspend. Installed sessions retain idle locking.
+        if grep -qw 'boot=live' /proc/cmdline; then
+            exit 0
+        fi
+        exec /usr/bin/hypridle -c "$(config_path hypr/hypridle.conf)"
+        ;;
+    network) exec /usr/bin/nm-applet --indicator ;;
+    bluetooth) exec /usr/bin/blueman-applet ;;
+    polkit)
+        # The agent lives in a multiarch lib directory; never hardcode the triplet.
+        for agent in /usr/lib/*/libexec/polkit-kde-authentication-agent-1 \
+                     /usr/lib/*/polkit-kde-authentication-agent-1; do
+            [ -x "$agent" ] && exec "$agent"
+        done
+        echo 'Cyberpunk: no polkit authentication agent found.' >&2
+        exit 1
+        ;;
+    *) echo "Unknown Cyberpunk desktop component: ${1:-}" >&2; exit 2 ;;
+esac

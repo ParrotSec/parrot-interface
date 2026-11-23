@@ -1,0 +1,13 @@
+#!/bin/bash
+set -euo pipefail
+choice=$(printf '%s\n' 'Network' 'Sound' 'Bluetooth' 'Displays' 'Files' \
+    'Desktop configuration' 'Getting started' | fuzzel --dmenu --prompt 'Settings > ') || exit 0
+case "$choice" in
+    Network) exec /usr/bin/nm-connection-editor ;;
+    Sound) exec /usr/bin/pavucontrol ;;
+    Bluetooth) exec /usr/bin/blueman-manager ;;
+    Displays) exec /usr/bin/wdisplays ;;
+    Files) exec /usr/bin/thunar ;;
+    'Desktop configuration') exec /usr/bin/kitty /usr/bin/nano "${XDG_CONFIG_HOME:-$HOME/.config}/hypr/local.lua" ;;
+    'Getting started') exec cyberpunk-welcome ;;
+esac

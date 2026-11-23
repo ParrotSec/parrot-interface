@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Cyberpunk Settings
+Comment=Network, sound, Bluetooth, displays and desktop configuration
+Exec=/usr/bin/cyberpunk-control
+Icon=preferences-system
+Terminal=false
+Categories=Settings;
+Keywords=wifi;volume;monitor;keyboard;
