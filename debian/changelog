@@ -1,3 +1,10 @@
+parrot-interface (7.5.6) echo; urgency=medium
+
+  * Stop starting the panel and idle daemon from cyberpunk-
+    session.target; the Hyprland configuration starts them.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 24 Nov 2026 16:40:03 +0100
+
 parrot-interface (7.5.5) echo; urgency=medium
 
   * Use packaged Waybar and Hypridle configurations when user and

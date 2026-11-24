@@ -1,5 +1,6 @@
 #!/bin/sh
-# One desktop component per systemd instance; started by cyberpunk-session.target.
+# One desktop component per systemd instance; panel and idle are also invoked
+# directly by the Hyprland startup configuration.
 set -eu
 config_home=${XDG_CONFIG_HOME:-$HOME/.config}
 config_path() {
