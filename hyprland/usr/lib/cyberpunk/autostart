@@ -3,23 +3,28 @@
 set -eu
 config_home=${XDG_CONFIG_HOME:-$HOME/.config}
 config_path() {
-    # User files are explicit overrides; otherwise use the system-wide default.
-    # Do not silently hide a broken user symlink with a fallback.
+    # User files are explicit overrides; otherwise prefer the system-wide
+    # default and finally the packaged fallback supplied as the second argument.
+    # Do not silently hide a broken user or system symlink with a fallback.
     if [ -e "$config_home/$1" ] || [ -L "$config_home/$1" ]; then
         printf '%s\n' "$config_home/$1"
+    elif [ -e "/etc/xdg/$1" ] || [ -L "/etc/xdg/$1" ]; then
+        printf '%s\n' "/etc/xdg/$1"
+    elif [ -n "${2:-}" ]; then
+        printf '%s\n' "$2"
     else
         printf '%s\n' "/etc/xdg/$1"
     fi
 }
 case "${1:-}" in
     panel)
-        panel_config=$(config_path waybar/config.jsonc)
+        panel_config=$(config_path waybar/config.jsonc /usr/share/waybar/config.jsonc)
         # Also honor Waybar's traditional extension-less user config filename.
         if [ ! -e "$config_home/waybar/config.jsonc" ] && [ ! -L "$config_home/waybar/config.jsonc" ] &&
            { [ -e "$config_home/waybar/config" ] || [ -L "$config_home/waybar/config" ]; }; then
             panel_config="$config_home/waybar/config"
         fi
-        exec /usr/bin/waybar --config "$panel_config" --style "$(config_path waybar/style.css)"
+        exec /usr/bin/waybar --config "$panel_config" --style "$(config_path waybar/style.css /usr/share/waybar/style.css)"
         ;;
     wallpaper) exec /usr/bin/swaybg -i /usr/share/backgrounds/parrot-cyberpunk.jpg -m fill ;;
     idle)
@@ -28,7 +33,7 @@ case "${1:-}" in
         if grep -qw 'boot=live' /proc/cmdline; then
             exit 0
         fi
-        exec /usr/bin/hypridle -c "$(config_path hypr/hypridle.conf)"
+        exec /usr/bin/hypridle -c "$(config_path hypr/hypridle.conf /usr/share/hypr/hypridle.conf)"
         ;;
     network) exec /usr/bin/nm-applet --indicator ;;
     bluetooth) exec /usr/bin/blueman-applet ;;

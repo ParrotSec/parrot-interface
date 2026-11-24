@@ -188,16 +188,16 @@ Description: Meta package for i3 Window Manager
 
 Package: parrot-desktop-hyprland
 Architecture: all
-Depends: parrot-core (>= 7.5.4),
- hyprland (>= 0.57.0),
+Depends: parrot-core (>= 7.5.7),
+ hyprland (>= 0.57.2+ds-1parrot8),
  hypridle,
  xdg-desktop-portal,
  xdg-desktop-portal-gtk,
  xdg-desktop-portal-hyprland,
  xwayland,
- waybar (>= 0.16.0),
+ waybar (>= 0.16.0-0parrot3),
  kitty,
- fuzzel,
+ fuzzel (>= 1.12.0+ds-1parrot3),
  mako-notifier,
  swaybg,
  grim,
