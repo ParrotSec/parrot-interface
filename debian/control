@@ -22,8 +22,6 @@ Package: parrot-interface-common
 Architecture: all
 Depends: xdg-user-dirs, xdg-user-dirs-gtk, parrot-wallpapers, parrot-themes, parrot-menu, parrot-core (>= 5.0.0), parrot-firefox-profiles
 Recommends: bleachbit,
-	gdebi,
-	geany,
 	firefox-esr | firefox,
 	libnotify-bin,
 	parrot-displaymanager | sddm | gdm3,
@@ -35,10 +33,8 @@ Recommends: bleachbit,
 	pipewire-pulse | pulseaudio,
 	libspa-0.2-bluetooth | pulseaudio,
 	pipewire-libcamera | pulseaudio,
-	qbittorrent, vlc, parrot-updater, onboard, dasher,
-	rar, unrar,
+	qbittorrent, vlc, parrot-updater, dasher,
 	webext-ublock-origin-firefox,
-	webext-ublock-origin-chromium,
 	libatk-adaptor,
 Suggests: parrot-interface-full
 Replaces: firefox-esr, firefox, iceweasel
@@ -192,8 +188,7 @@ Description: Meta package for i3 Window Manager
 
 Package: parrot-desktop-hyprland
 Architecture: all
-Depends: parrot-interface-common,
- parrot-core (>= 7.5.4),
+Depends: parrot-core (>= 7.5.4),
  hyprland (>= 0.57.0),
  hypridle,
  xdg-desktop-portal,
@@ -210,8 +205,8 @@ Depends: parrot-interface-common,
  wl-clipboard,
  wdisplays,
  gtklock,
- polkit-kde-agent-1,
  xdg-terminal-exec,
+ xdg-user-dirs,
  cyberpunk-apps,
  network-manager,
  network-manager-gnome,
@@ -219,25 +214,32 @@ Depends: parrot-interface-common,
  bluez,
  pipewire-audio,
  pavucontrol,
+ parrot-wallpapers,
+ swayimg | ristretto,
  brightnessctl,
  playerctl,
  btop,
- nano,
  thunar,
  tumbler,
+ ristretto,
+ xarchiver,
+ thunar-archive-plugin,
+ 7zip,
+ bzip2,
+ unzip,
+ zip,
+ xz-utils,
+ celluloid | vlc | parole,
  gvfs,
  gvfs-backends,
- file-roller,
  firefox-esr,
+ parrot-firefox-profiles,
  libnotify-bin,
  desktop-base,
  papirus-icon-theme,
  fonts-noto-core,
  fonts-jetbrains-mono,
  parrot-displaymanager
-Recommends: network-manager-openvpn-gnome,
- network-manager-ssh-gnome
-Suggests: lightdm-parrot
 Description: Hyprland based Parrot desktop
  This metapackage installs a complete, preconfigured Hyprland desktop on
  Parrot Security OS.
@@ -247,11 +249,6 @@ Description: Hyprland based Parrot desktop
  applications the desktop's key bindings and defaults refer to. The
  desktop configuration is shipped system-wide under /etc/xdg by
  parrot-core, so every user gets a working session out of the box and can
- override it from their own home directory.
- .
- The session entry, the helper commands and the systemd user units that
- assemble the session are provided by this package alone: nothing is
- installed on systems that use another desktop.
 
 Package: parrot-displaymanager
 Architecture: all
