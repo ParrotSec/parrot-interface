@@ -1,3 +1,9 @@
+parrot-interface (7.5.2) echo; urgency=medium
+
+  * Recommends zed over codium 
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 24 Nov 2026 01:45:52 +0100
+
 parrot-interface (7.5.1) echo; urgency=medium
 
   * Add the parrot-desktop-hyprland metapackage.

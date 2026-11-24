@@ -120,7 +120,7 @@ Depends: parrot-interface-common,
  thunar,
  network-manager-gnome,
  parrot-displaymanager
-Recommends: codium,
+Recommends: zed | codium,
  blueman,
  network-manager-openvpn-gnome,
  network-manager-ssh-gnome,
