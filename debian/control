@@ -240,6 +240,7 @@ Depends: parrot-core (>= 7.5.4),
  fonts-noto-core,
  fonts-jetbrains-mono,
  parrot-displaymanager
+Replaces: hyprland
 Description: Hyprland based Parrot desktop
  This metapackage installs a complete, preconfigured Hyprland desktop on
  Parrot Security OS.

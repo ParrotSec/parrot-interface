@@ -1,3 +1,9 @@
+parrot-interface (7.5.4) echo; urgency=medium
+
+  * Replace hyprland config. 
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 24 Nov 2026 05:27:08 +0100
+
 parrot-interface (7.5.3) echo; urgency=medium
 
   * Update hyprland metapackage.
