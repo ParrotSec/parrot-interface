@@ -58,6 +58,8 @@ the `hl.monitor(...)` example in `local.lua`; `hyprctl monitors` lists display n
   `~/.config/hypr/hypridle.conf`. Timeout values are in seconds; the default
   is lock after 10 minutes, display off after 15 minutes and suspend after
   30 minutes. Saving restarts Hypridle automatically.
+- **Lock and power:** **Settings → Lock and power** opens the session menu
+  for locking, suspending, logging out, restarting or shutting down.
 - **Panel:** copy the files you want to change from `/etc/xdg/waybar/`
   into `~/.config/waybar/`, then edit them. Log out and back in to apply changes.
 

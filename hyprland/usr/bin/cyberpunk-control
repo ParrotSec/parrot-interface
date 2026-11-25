@@ -1,7 +1,8 @@
 #!/bin/bash
 set -euo pipefail
-choice=$(printf '%s\n' 'Network' 'Sound' 'Bluetooth' 'Displays' 'Wallpaper' 'Idle timers' 'Files' \
-    'Desktop configuration' 'Getting started' | fuzzel --dmenu --prompt 'Settings > ') || exit 0
+choice=$(printf '%s\n' 'Network' 'Sound' 'Bluetooth' 'Displays' 'Wallpaper' 'Idle timers' \
+    'Lock and power' 'Files' 'Desktop configuration' 'Getting started' | \
+    fuzzel --dmenu --prompt 'Settings > ') || exit 0
 case "$choice" in
     Network) exec /usr/bin/nm-connection-editor ;;
     Sound) exec /usr/bin/pavucontrol ;;
@@ -29,6 +30,7 @@ case "$choice" in
             /usr/bin/setsid /usr/lib/cyberpunk/autostart idle >/dev/null 2>&1 &
         fi
         ;;
+    'Lock and power') exec /usr/bin/cyberpunk-power ;;
     Files) exec /usr/bin/thunar ;;
     'Desktop configuration') exec /usr/bin/kitty /usr/bin/nano "${XDG_CONFIG_HOME:-$HOME/.config}/hypr/local.lua" ;;
     'Getting started') exec cyberpunk-welcome ;;
