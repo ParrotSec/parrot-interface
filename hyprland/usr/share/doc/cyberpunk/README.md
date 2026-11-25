@@ -50,6 +50,10 @@ the `hl.monitor(...)` example in `local.lua`; `hyprctl monitors` lists display n
 
 - **Terminal:** `~/.config/kitty/kitty.conf`
 - **Launcher:** `~/.config/fuzzel/fuzzel.ini`
+- **Wallpaper:** **Settings → Wallpaper** creates and opens
+  `~/.config/hypr/hyprpaper.conf`. Change the `path` or `fit_mode` values;
+  saving restarts Hyprpaper automatically. `hyprctl monitors` lists monitor
+  names for per-monitor blocks.
 - **Panel:** copy the files you want to change from `/etc/xdg/waybar/`
   into `~/.config/waybar/`, then edit them. Log out and back in to apply changes.
 

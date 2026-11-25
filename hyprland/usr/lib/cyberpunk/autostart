@@ -1,6 +1,7 @@
 #!/bin/sh
 # One desktop component per systemd instance; panel and idle are also invoked
-# directly by the Hyprland startup configuration.
+# directly by the Hyprland startup configuration. Wallpaper starts Hyprpaper
+# directly, which reads the user or system configuration.
 set -eu
 config_home=${XDG_CONFIG_HOME:-$HOME/.config}
 config_path() {
@@ -27,7 +28,7 @@ case "${1:-}" in
         fi
         exec /usr/bin/waybar --config "$panel_config" --style "$(config_path waybar/style.css /usr/share/waybar/style.css)"
         ;;
-    wallpaper) exec /usr/bin/swaybg -i /usr/share/backgrounds/parrot-cyberpunk.jpg -m fill ;;
+    wallpaper) exec /usr/bin/hyprpaper ;;
     idle)
         # No manual DPMS/locker in live sessions: it can hide an unusable
         # password lock after suspend. Installed sessions retain idle locking.

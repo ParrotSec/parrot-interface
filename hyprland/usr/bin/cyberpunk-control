@@ -1,12 +1,23 @@
 #!/bin/bash
 set -euo pipefail
-choice=$(printf '%s\n' 'Network' 'Sound' 'Bluetooth' 'Displays' 'Files' \
+choice=$(printf '%s\n' 'Network' 'Sound' 'Bluetooth' 'Displays' 'Wallpaper' 'Files' \
     'Desktop configuration' 'Getting started' | fuzzel --dmenu --prompt 'Settings > ') || exit 0
 case "$choice" in
     Network) exec /usr/bin/nm-connection-editor ;;
     Sound) exec /usr/bin/pavucontrol ;;
     Bluetooth) exec /usr/bin/blueman-manager ;;
     Displays) exec /usr/bin/wdisplays ;;
+    Wallpaper)
+        config="${XDG_CONFIG_HOME:-$HOME/.config}/hypr/hyprpaper.conf"
+        if [ ! -e "$config" ]; then
+            /usr/bin/install -Dm644 /etc/xdg/hypr/hyprpaper.conf "$config"
+        fi
+        if /usr/bin/kitty /usr/bin/nano "$config"; then
+            /usr/bin/systemctl --user stop hyprpaper.service >/dev/null 2>&1 || true
+            /usr/bin/pkill -x hyprpaper >/dev/null 2>&1 || true
+            /usr/bin/setsid /usr/bin/hyprpaper >/dev/null 2>&1 &
+        fi
+        ;;
     Files) exec /usr/bin/thunar ;;
     'Desktop configuration') exec /usr/bin/kitty /usr/bin/nano "${XDG_CONFIG_HOME:-$HOME/.config}/hypr/local.lua" ;;
     'Getting started') exec cyberpunk-welcome ;;

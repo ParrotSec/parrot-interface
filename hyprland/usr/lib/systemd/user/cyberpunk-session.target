@@ -3,8 +3,7 @@ Description=Parrot Cyberpunk graphical session
 BindsTo=graphical-session.target
 Wants=graphical-session-pre.target
 After=graphical-session-pre.target
-# Waybar and Hypridle are started by the Hyprland configuration, not here.
-Wants=cyberpunk-desktop@wallpaper.service
+# Hyprpaper, Waybar and Hypridle are started by the Hyprland configuration.
 Wants=cyberpunk-desktop@network.service
 Wants=cyberpunk-desktop@bluetooth.service
 Wants=cyberpunk-desktop@polkit.service
