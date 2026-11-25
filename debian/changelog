@@ -1,3 +1,10 @@
+parrot-interface (7.5.9) echo; urgency=medium
+
+  * Add an Idle timers settings entry and restart Hypridle after timer
+    changes.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 26 Nov 2026 00:31:14 +0100
+
 parrot-interface (7.5.8) echo; urgency=medium
 
   * Replace the fixed swaybg wallpaper with Hyprpaper, start it from the

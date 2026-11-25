@@ -54,6 +54,10 @@ the `hl.monitor(...)` example in `local.lua`; `hyprctl monitors` lists display n
   `~/.config/hypr/hyprpaper.conf`. Change the `path` or `fit_mode` values;
   saving restarts Hyprpaper automatically. `hyprctl monitors` lists monitor
   names for per-monitor blocks.
+- **Idle timers:** **Settings → Idle timers** creates and opens
+  `~/.config/hypr/hypridle.conf`. Timeout values are in seconds; the default
+  is lock after 10 minutes, display off after 15 minutes and suspend after
+  30 minutes. Saving restarts Hypridle automatically.
 - **Panel:** copy the files you want to change from `/etc/xdg/waybar/`
   into `~/.config/waybar/`, then edit them. Log out and back in to apply changes.
 

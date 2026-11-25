@@ -1,6 +1,6 @@
 #!/bin/bash
 set -euo pipefail
-choice=$(printf '%s\n' 'Network' 'Sound' 'Bluetooth' 'Displays' 'Wallpaper' 'Files' \
+choice=$(printf '%s\n' 'Network' 'Sound' 'Bluetooth' 'Displays' 'Wallpaper' 'Idle timers' 'Files' \
     'Desktop configuration' 'Getting started' | fuzzel --dmenu --prompt 'Settings > ') || exit 0
 case "$choice" in
     Network) exec /usr/bin/nm-connection-editor ;;
@@ -16,6 +16,17 @@ case "$choice" in
             /usr/bin/systemctl --user stop hyprpaper.service >/dev/null 2>&1 || true
             /usr/bin/pkill -x hyprpaper >/dev/null 2>&1 || true
             /usr/bin/setsid /usr/bin/hyprpaper >/dev/null 2>&1 &
+        fi
+        ;;
+    'Idle timers')
+        config="${XDG_CONFIG_HOME:-$HOME/.config}/hypr/hypridle.conf"
+        if [ ! -e "$config" ]; then
+            /usr/bin/install -Dm644 /etc/xdg/hypr/hypridle.conf "$config"
+        fi
+        if /usr/bin/kitty /usr/bin/nano "$config"; then
+            /usr/bin/systemctl --user stop hypridle.service >/dev/null 2>&1 || true
+            /usr/bin/pkill -x hypridle >/dev/null 2>&1 || true
+            /usr/bin/setsid /usr/lib/cyberpunk/autostart idle >/dev/null 2>&1 &
         fi
         ;;
     Files) exec /usr/bin/thunar ;;
