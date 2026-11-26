@@ -35,6 +35,12 @@ case "${1:-}" in
         if grep -qw 'boot=live' /proc/cmdline; then
             exit 0
         fi
+        settings="${XDG_CONFIG_HOME:-$HOME/.config}/hypr/hypridle.settings"
+        if [ -f "$settings" ]; then
+            if idle_config=$(/usr/lib/cyberpunk/hypridle-config); then
+                exec /usr/bin/hypridle -c "$idle_config"
+            fi
+        fi
         exec /usr/bin/hypridle -c "$(config_path hypr/hypridle.conf /usr/share/hypr/hypridle.conf)"
         ;;
     network) exec /usr/bin/nm-applet --indicator ;;

@@ -188,7 +188,7 @@ Description: Meta package for i3 Window Manager
 
 Package: parrot-desktop-hyprland
 Architecture: all
-Depends: parrot-core (>= 7.5.10),
+Depends: parrot-core (>= 7.5.11),
  hyprland (>= 0.57.2+ds-1parrot11),
  hypridle,
  xdg-desktop-portal,
@@ -209,6 +209,7 @@ Depends: parrot-core (>= 7.5.10),
  xdg-terminal-exec,
  xdg-user-dirs,
  cyberpunk-apps,
+ python3,
  nano,
  network-manager,
  network-manager-gnome,

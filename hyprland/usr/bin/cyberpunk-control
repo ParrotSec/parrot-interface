@@ -11,7 +11,13 @@ case "$choice" in
     Wallpaper)
         config="${XDG_CONFIG_HOME:-$HOME/.config}/hypr/hyprpaper.conf"
         if [ ! -e "$config" ]; then
-            /usr/bin/install -Dm644 /etc/xdg/hypr/hyprpaper.conf "$config"
+            template=/usr/lib/parrot-skel/etc/skel/.config/hypr/hyprpaper.conf
+            if [ -f "$template" ]; then
+                /usr/bin/install -Dm644 "$template" "$config"
+            else
+                /usr/bin/install -d "$(dirname "$config")"
+                printf '%s\n' 'source = /etc/xdg/hypr/hyprpaper.conf' >"$config"
+            fi
         fi
         if /usr/bin/kitty /usr/bin/nano "$config"; then
             /usr/bin/systemctl --user stop hyprpaper.service >/dev/null 2>&1 || true
@@ -20,9 +26,9 @@ case "$choice" in
         fi
         ;;
     'Idle timers')
-        config="${XDG_CONFIG_HOME:-$HOME/.config}/hypr/hypridle.conf"
+        config="${XDG_CONFIG_HOME:-$HOME/.config}/hypr/hypridle.settings"
         if [ ! -e "$config" ]; then
-            /usr/bin/install -Dm644 /etc/xdg/hypr/hypridle.conf "$config"
+            /usr/bin/install -Dm644 /etc/xdg/hypr/hypridle.settings "$config"
         fi
         if /usr/bin/kitty /usr/bin/nano "$config"; then
             /usr/bin/systemctl --user stop hypridle.service >/dev/null 2>&1 || true

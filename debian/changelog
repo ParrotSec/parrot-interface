@@ -1,3 +1,12 @@
+parrot-interface (7.5.11) echo; urgency=medium
+
+  * Generate the Hypridle configuration from the global template and
+    user timer settings.
+  * Use the source-based Hyprpaper template when creating a user
+    wallpaper configuration.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 26 Nov 2026 01:12:55 +0100
+
 parrot-interface (7.5.10) echo; urgency=medium
 
   * Add Lock and power to the Waybar settings menu.

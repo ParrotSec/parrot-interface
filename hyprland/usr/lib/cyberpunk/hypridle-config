@@ -1,0 +1,155 @@
+#!/usr/bin/python3
+"""Build a user Hypridle config from the Parrot template and user timers.
+
+The global file stays authoritative. Only the timeout values are replaced, so
+future Parrot changes to commands or listeners are inherited automatically.
+Set a timeout to 0 in ~/.config/hypr/hypridle.settings to remove that listener.
+"""
+
+import os
+import re
+import sys
+from pathlib import Path
+
+DEFAULTS = {
+    "lock_timeout": 600,
+    "display_timeout": 900,
+    "suspend_timeout": 1800,
+}
+MARKERS = {
+    "# @parrot-timeout: lock": "lock_timeout",
+    "# @parrot-timeout: display": "display_timeout",
+    "# @parrot-timeout: suspend": "suspend_timeout",
+}
+BASE_PATHS = (
+    "/etc/xdg/hypr/hypridle.conf",
+    "/usr/share/hypr/hypridle.conf",
+)
+
+
+def config_home() -> Path:
+    value = os.environ.get("XDG_CONFIG_HOME", "")
+    if value.startswith("/"):
+        return Path(value)
+    home = os.environ.get("HOME", "")
+    if not home.startswith("/"):
+        raise RuntimeError("HOME is not set; cannot locate the user configuration")
+    return Path(home) / ".config"
+
+
+def cache_home() -> Path:
+    value = os.environ.get("XDG_CACHE_HOME", "")
+    if value.startswith("/"):
+        return Path(value)
+    home = os.environ.get("HOME", "")
+    return Path(home) / ".cache"
+
+
+def read_settings(path: Path) -> dict[str, int]:
+    values = dict(DEFAULTS)
+    try:
+        lines = path.read_text(encoding="utf-8").splitlines()
+    except FileNotFoundError:
+        return values
+
+    for line in lines:
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        key = key.strip()
+        if key not in values:
+            continue
+        try:
+            timeout = int(value.strip())
+        except ValueError:
+            print(f"hypridle-config: ignoring invalid {key} value", file=sys.stderr)
+            continue
+        if timeout >= 0:
+            values[key] = timeout
+    return values
+
+
+def base_config() -> Path:
+    for candidate in BASE_PATHS:
+        path = Path(candidate)
+        if path.is_file():
+            return path
+    raise RuntimeError("could not find the Parrot hypridle.conf template")
+
+
+def listener_end(lines: list[str], start: int) -> int:
+    depth = 0
+    index = start
+    while index < len(lines):
+        depth += lines[index].count("{") - lines[index].count("}")
+        index += 1
+        if depth <= 0:
+            break
+    return index
+
+
+def generate(base: Path, settings: dict[str, int]) -> str:
+    lines = base.read_text(encoding="utf-8").splitlines()
+    result: list[str] = []
+    index = 0
+
+    while index < len(lines):
+        marker = lines[index].strip()
+        key = MARKERS.get(marker)
+        if key is None:
+            result.append(lines[index])
+            index += 1
+            continue
+
+        listener = index + 1
+        while listener < len(lines) and not re.match(r"\s*listener\s*\{", lines[listener]):
+            listener += 1
+        if listener >= len(lines):
+            print(f"hypridle-config: no listener after {marker}", file=sys.stderr)
+            index += 1
+            continue
+
+        end = listener_end(lines, listener)
+        block = lines[listener:end]
+        if settings[key] > 0:
+            for position, line in enumerate(block):
+                match = re.match(r"(\s*timeout\s*=\s*)\d+", line)
+                if match:
+                    block[position] = match.group(1) + str(settings[key]) + line[match.end():]
+                    break
+            result.extend(block)
+        index = end
+
+    if not any(re.match(r"\s*listener\s*\{", line) for line in result):
+        # Hypridle requires at least one listener. This one is effectively never
+        # reached and has no action, so all timers can be disabled safely.
+        result.extend([
+            "listener {",
+            "    timeout = 4294967",
+            "    on-timeout =",
+            "}",
+        ])
+
+    return "\n".join(result) + "\n"
+
+
+def main() -> int:
+    settings_path = config_home() / "hypr" / "hypridle.settings"
+    settings = read_settings(settings_path)
+    output = cache_home() / "cyberpunk" / "hypridle.conf"
+    output.parent.mkdir(parents=True, exist_ok=True)
+
+    temporary = output.with_name(output.name + ".tmp")
+    temporary.write_text(generate(base_config(), settings), encoding="utf-8")
+    os.replace(temporary, output)
+    print(output)
+    return 0
+
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except (OSError, RuntimeError) as error:
+        print(f"hypridle-config: {error}", file=sys.stderr)
+        raise SystemExit(1)
