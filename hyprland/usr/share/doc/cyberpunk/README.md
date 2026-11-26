@@ -57,12 +57,10 @@ the `hl.monitor(...)` example in `local.lua`; `hyprctl monitors` lists display n
   your wallpaper block. Change the `path` or `fit_mode` values; saving restarts
   Hyprpaper automatically. `hyprctl monitors` lists monitor names for
   per-monitor blocks.
-- **Idle timers:** **Settings → Idle timers** creates and opens
+- **Lock and Power:** **Settings → Lock and Power** creates and opens
   `~/.config/hypr/hypridle.settings`. Timeout values are in seconds; the default
   is lock after 10 minutes, display off after 15 minutes and suspend after
   30 minutes. Saving restarts Hypridle automatically.
-- **Lock and power:** **Settings → Lock and power** opens the session menu
-  for locking, suspending, logging out, restarting or shutting down.
 - **Panel:** `~/.config/waybar/config.jsonc` and `style.css` include the
   Parrot defaults. Add your own modules or rules to those local files instead
   of copying the whole global configuration.
